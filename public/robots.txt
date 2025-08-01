@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://punktwidzenia.info.pl
+
+# Sitemaps
+Sitemap: https://punktwidzenia.info.pl/sitemap.xml

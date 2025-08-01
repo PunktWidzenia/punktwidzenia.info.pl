@@ -1,0 +1,66 @@
+import Head from "next/head";
+import Link from "next/link";
+import AdSlot from "@/components/AdSlot";
+import RelatedArticles from "@/components/RelatedArticles";
+
+function Articlejanurbannowymselekcjoneremreprezentacjipolski() {
+  return (
+    <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
+      <Head>
+        <title>⚽ Jan Urban nowym selekcjonerem reprezentacji Polski!</title>
+        <meta name="description" content="Zaskoczenie w świecie futbolu: Jan Urban objął stanowisko selekcjonera reprezentacji Polski! Czy to nowy rozdział dla naszej kadry?" />
+        <meta property="og:title" content="⚽ Jan Urban nowym selekcjonerem reprezentacji Polski!" />
+        <meta property="og:description" content="Zaskoczenie w świecie futbolu: Jan Urban objął stanowisko selekcjonera reprezentacji Polski! Czy to nowy rozdział dla naszej kadry?" />
+        <meta property="og:image" content="https://punktwidzenia.info.pl/jan-urban-nowym-selekcjonerem-reprezentacji-polski.webp" />
+        <meta property="og:url" content="https://punktwidzenia.info.pl/jan-urban-nowym-selekcjonerem-reprezentacji-polski" />
+        <script type="application/ld+json">{
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'NewsArticle',
+            headline: '⚽ Jan Urban nowym selekcjonerem reprezentacji Polski!',
+            image: ['https://punktwidzenia.info.pl/jan-urban-nowym-selekcjonerem-reprezentacji-polski.webp'],
+            datePublished: '2025-07-17',
+            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Punkt Widzenia',
+              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
+            },
+            description: 'Zaskoczenie w świecie futbolu: Jan Urban objął stanowisko selekcjonera reprezentacji Polski! Czy to nowy rozdział dla naszej kadry?'
+          })
+        }</script>
+      </Head>
+
+      <article className="space-y-6">
+        <img
+          src={"/jan-urban-nowym-selekcjonerem-reprezentacji-polski.webp"}
+          alt={"⚽ Jan Urban nowym selekcjonerem reprezentacji Polski!"}
+          loading="lazy"
+          fetchPriority="low"
+          className="w-full h-auto rounded"
+        />
+        
+        <div className="space-y-6">
+            <h2 className="text-xl font-semibold">🇵🇱 PZPN postawił na doświadczonego trenera</h2>
+            <p>17 lipca Polski Związek Piłki Nożnej ogłosił, że Jan Urban obejmuje funkcję selekcjonera reprezentacji Polski. Decyzja wzbudziła mieszane reakcje – od nadziei po sceptycyzm. Urban, były zawodnik i trener, zadeklarował pracę i pełne zaangażowanie: „Nie obiecuję cudów, ale dam z siebie wszystko”.<br /></p>
+
+            <h2 className="text-xl font-semibold">🎯 Kim tak naprawdę jest Jan Urban?</h2>
+            <p>To były napastnik reprezentacji Polski i trener klubów z Polski, Hiszpanii i Słowacji. Prowadził m.in. Legię Warszawa, Górnika Zabrze i Śląsk Wrocław. Słynie z pragmatycznego podejścia i umiejętności pracy z młodymi piłkarzami, nawet przy ograniczonych zasobach kadrowych.<br /></p>
+            <AdSlot />
+
+            <h2 className="text-xl font-semibold">📊 Głos kibiców i komentatorów</h2>
+            <p>W sieci zawrzało – jedni chwalą wybór: „trener z charakterem”, inni krytykują go jako zbyt bezpieczny. Eksperci podkreślają, że Urban zna krajowy futbol od podszewki. Byli piłkarze ocenili nominację jako rozsądną, choć nie przełomową.<br /></p>
+
+            <h2 className="text-xl font-semibold">🚀 Reprezentacja przed nowym rozdziałem</h2>
+            <p>Urban ma przed sobą trudne zadanie: poprawić grę kadry i odbudować zaufanie kibiców. Eliminacje do Euro i wrześniowy mecz z Czechami będą testem. Nowy selekcjoner zapowiada analizę i selekcję, ale bez gwałtownych rewolucji.<br /></p>
+            <AdSlot />
+        </div>
+        <p className="text-sm text-gray-500 border-t pt-6 dark:text-gray-400">Artykuł przygotowany przez Punkt Widzenia.</p>
+        <RelatedArticles current="/jan-urban-nowym-selekcjonerem-reprezentacji-polski" />
+        <Link href="/" className="text-red-500 hover:underline block mt-10">← Powrót do strony głównej</Link>
+      </article>
+    </main>
+  );
+}
+
+export default Articlejanurbannowymselekcjoneremreprezentacjipolski;

@@ -1,0 +1,66 @@
+import Head from "next/head";
+import Link from "next/link";
+import AdSlot from "@/components/AdSlot";
+import RelatedArticles from "@/components/RelatedArticles";
+
+function Articledramatwkirgistaniepacjenciumierajaprzezbraklekow() {
+  return (
+    <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
+      <Head>
+        <title>💊 Dramat w Kirgistanie – pacjenci umierają przez brak leków</title>
+        <meta name="description" content="System zdrowia w Kirgistanie załamuje się pod ciężarem niedoborów leków. Chorzy walczą nie tylko z chorobą, ale i z państwową bezsilnością." />
+        <meta property="og:title" content="💊 Dramat w Kirgistanie – pacjenci umierają przez brak leków" />
+        <meta property="og:description" content="System zdrowia w Kirgistanie załamuje się pod ciężarem niedoborów leków. Chorzy walczą nie tylko z chorobą, ale i z państwową bezsilnością." />
+        <meta property="og:image" content="https://punktwidzenia.info.pl/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow.webp" />
+        <meta property="og:url" content="https://punktwidzenia.info.pl/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow" />
+        <script type="application/ld+json">{
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'NewsArticle',
+            headline: '💊 Dramat w Kirgistanie – pacjenci umierają przez brak leków',
+            image: ['https://punktwidzenia.info.pl/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow.webp'],
+            datePublished: '2025-07-30',
+            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Punkt Widzenia',
+              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
+            },
+            description: 'System zdrowia w Kirgistanie załamuje się pod ciężarem niedoborów leków. Chorzy walczą nie tylko z chorobą, ale i z państwową bezsilnością.'
+          })
+        }</script>
+      </Head>
+
+      <article className="space-y-6">
+        <img
+          src={"/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow.webp"}
+          alt={"💊 Dramat w Kirgistanie – pacjenci umierają przez brak leków"}
+          loading="lazy"
+          fetchPriority="low"
+          className="w-full h-auto rounded"
+        />
+        
+        <div className="space-y-6">
+            <h2 className="text-xl font-semibold">⚠️ Brakuje podstawowych leków</h2>
+            <p>Szpitale w Kirgistanie alarmują – na rynku brakuje leków onkologicznych, przeciwpadaczkowych i ratujących życie. Pacjenci zmuszeni są do samodzielnego importowania preparatów lub rezygnacji z leczenia. Państwowe placówki przyznają, że nie są w stanie zapewnić nawet podstawowych terapii.<br /></p>
+
+            <h2 className="text-xl font-semibold">💸 Leczenie tylko dla bogatych</h2>
+            <p>Coraz więcej obywateli musi zadłużać się, wyprzedawać majątek lub rezygnować z leczenia dzieci, by sprowadzić lekarstwa zza granicy. Ceny w prywatnych aptekach szybują, a dostęp do nich mają tylko najzamożniejsi. Władze twierdzą, że to „przejściowe trudności” – ale sytuacja trwa od miesięcy.<br /></p>
+            <AdSlot />
+
+            <h2 className="text-xl font-semibold">🕯️ Śmierć z powodu braku dostępu</h2>
+            <p>W ostatnich tygodniach media doniosły o tragicznej śmierci chorej kobiety, która nie otrzymała leków przeciwbólowych i przeciwnowotworowych na czas. Rodzina oskarża system o bezczynność. To nie pierwszy przypadek – skala dramatu rośnie, a obietnice reform pozostają bez pokrycia.<br /></p>
+
+            <h2 className="text-xl font-semibold">🏛️ Ministerstwo zdrowia milczy</h2>
+            <p>Mimo publicznych apeli lekarzy, rodzin i organizacji pomocowych, kirgiskie Ministerstwo Zdrowia nie ogłosiło żadnego konkretnego planu ratunkowego. Społeczeństwo traci zaufanie, a aktywiści zapowiadają protesty w stolicy. Międzynarodowe organizacje humanitarne rozważają interwencję.<br /></p>
+            <AdSlot />
+        </div>
+        <p className="text-sm text-gray-500 border-t pt-6 dark:text-gray-400">Artykuł przygotowany przez Punkt Widzenia.</p>
+        <RelatedArticles current="/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow" />
+        <Link href="/" className="text-red-500 hover:underline block mt-10">← Powrót do strony głównej</Link>
+      </article>
+    </main>
+  );
+}
+
+export default Articledramatwkirgistaniepacjenciumierajaprzezbraklekow;
