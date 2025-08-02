@@ -36,6 +36,8 @@ function Articlecoldplayikorporacyjnaburzakamerauchwyciaceoiszefowahr() {
         <Image
           src={"/coldplay-i-korporacyjna-burza-kamera-uchwycia-ceo-i-szefowa-hr.webp"}
           alt={"🎥 Coldplay i korporacyjna burza. Kamera uchwyciła CEO i szefową HR"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

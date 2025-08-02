@@ -56,7 +56,7 @@ const [articleId, setArticleId] = useState("");
   if (storedId && !articleId) {
     setArticleId(storedId);
   }
-}, []);
+}, [articleId]);
 
   useEffect(() => {
     const slugified = title
@@ -119,6 +119,8 @@ function Article${slugified.replace(/-/g, "")}() {
         <Image
           src={\"${img}\"}
           alt={\"${title}\"}
+            width={1200}
+  height={630}
           loading=\"lazy\"
           fetchPriority=\"low\"
           className=\"w-full h-auto rounded\"

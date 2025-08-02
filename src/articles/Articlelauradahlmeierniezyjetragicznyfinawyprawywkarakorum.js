@@ -36,6 +36,8 @@ function Articlelauradahlmeierniezyjetragicznyfinawyprawywkarakorum() {
         <Image
           src={"/laura-dahlmeier-nie-zyje-tragiczny-fina-wyprawy-w-karakorum.webp"}
           alt={"🏔️ Laura Dahlmeier nie żyje – tragiczny finał wyprawy w Karakorum"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

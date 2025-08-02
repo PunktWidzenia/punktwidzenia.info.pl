@@ -36,6 +36,8 @@ function Articletragicznywypadekwegipciezginelipolscyturysci() {
         <Image
           src={"/tragiczny-wypadek-w-egipcie-zgineli-polscy-turysci.webp"}
           alt={"🚨 Tragiczny wypadek w Egipcie – zginęli polscy turyści"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

@@ -36,6 +36,8 @@ function Articlepolskiastronautasawoszuznanskibezpieczniewrocinaziemie() {
         <Image
           src={"/polski-astronauta-sawosz-uznanski-bezpiecznie-wroci-na-ziemie.webp"}
           alt={"Polski astronauta Sławosz Uznański bezpiecznie wrócił na Ziemię!"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

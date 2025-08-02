@@ -36,6 +36,8 @@ function Articlesiniceatakujabatykplazezamknietegisbijenaalarm() {
         <Image
           src={"/sinice-atakuja-batyk-plaze-zamkniete-gis-bije-na-alarm.webp"}
           alt={"🌊 Sinice atakują Bałtyk! Plaże zamknięte, GIS bije na alarm"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

@@ -36,6 +36,8 @@ function Articletragediawdziwnowku16latekzaginawbatykumimoczerwonejflagi() {
         <Image
           src={"/tragedia-w-dziwnowku-16-latek-zagina-w-batyku-mimo-czerwonej-flagi.webp"}
           alt={"🆘 Tragedia w Dziwnówku: 16-latek zaginął w Bałtyku mimo czerwonej flagi"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

@@ -36,6 +36,8 @@ function Articlewaldemarzureknowymfaworytemdotekiministrasprawiedliwosci() {
         <Image
           src={"/waldemar-zurek-nowym-faworytem-do-teki-ministra-sprawiedliwosci.webp"}
           alt={"⚖️ Waldemar Żurek nowym faworytem do teki ministra sprawiedliwości?"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

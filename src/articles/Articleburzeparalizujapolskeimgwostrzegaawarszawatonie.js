@@ -36,6 +36,8 @@ function Articleburzeparalizujapolskeimgwostrzegaawarszawatonie() {
         <Image
           src={"/burze-paralizuja-polske-imgw-ostrzega-a-warszawa-tonie.webp"}
           alt={"Burze paraliżują Polskę. IMGW ostrzega, a Warszawa tonie ⛈️"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

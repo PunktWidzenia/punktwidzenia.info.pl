@@ -36,6 +36,8 @@ function Article800tylkodlawybranychwyciekpropozycjireformyoburzyopiniepubliczna
         <Image
           src={"/800-tylko-dla-wybranych-wyciek-propozycji-reformy-oburzy-opinie-publiczna.webp"}
           alt={"🧨 800+ tylko dla wybranych? Wyciek propozycji reformy oburzył opinię publiczną"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

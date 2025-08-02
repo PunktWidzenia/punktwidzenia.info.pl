@@ -36,6 +36,8 @@ function Articlemauritiuspodwodaostrzezenieprzedsilnymifalaminawybrzezu() {
         <Image
           src={"/mauritius-pod-woda-ostrzezenie-przed-silnymi-falami-na-wybrzezu.webp"}
           alt={"🌊 Mauritius pod wodą? Ostrzeżenie przed silnymi falami na wybrzeżu"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

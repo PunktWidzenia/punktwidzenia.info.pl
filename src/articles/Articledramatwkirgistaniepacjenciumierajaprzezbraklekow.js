@@ -36,6 +36,8 @@ function Articledramatwkirgistaniepacjenciumierajaprzezbraklekow() {
         <Image
           src={"/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow.webp"}
           alt={"💊 Dramat w Kirgistanie – pacjenci umierają przez brak leków"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"

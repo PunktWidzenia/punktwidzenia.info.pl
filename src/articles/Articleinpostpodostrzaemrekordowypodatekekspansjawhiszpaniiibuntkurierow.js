@@ -36,6 +36,8 @@ function Articleinpostpodostrzaemrekordowypodatekekspansjawhiszpaniiibuntkuriero
         <Image
           src={"/inpost-pod-ostrzaem-rekordowy-podatek-ekspansja-w-hiszpanii-i-bunt-kurierow.webp"}
           alt={"📦 InPost pod ostrzałem: rekordowy podatek, ekspansja w Hiszpanii i bunt kurierów"}
+            width={1200}
+  height={630}
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
