@@ -32,8 +32,13 @@ const { isDarkMode, toggleDarkMode, hasMounted } = useDarkMode();
         <div className="max-w-6xl mx-auto">
           <header className="px-6 py-4 border-b border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
             <div className="flex items-center space-x-2">
-              <Image src="/logo_header_56x56.webp" alt="Punkt Widzenia" className="h-12 w-auto" width="56" height="56" loading="lazy" />
-              <Link
+<Image
+  src="/logo_header_56x56.webp"
+  alt="Punkt Widzenia"
+  width={56}
+  height={56}
+  priority
+/>              <Link
                 href="/"
                 className="text-2xl font-bold hover:no-underline"
                 onClick={() => {
