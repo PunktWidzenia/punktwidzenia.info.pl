@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 30,
+  link: "/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie",
+  img: "/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie.webp",
+  title: "🛡️ 6,5 miliarda dolarów za czołgi z Korei – czy Polska zbroi się na poważnie?",
+  description: "Polska podpisała ogromny kontrakt na zakup czołgów K2 z Korei Południowej. Czy inwestycje zbrojeniowe są odpowiedzią na realne zagrożenie, czy politycznym ruchem przed wyborami?",
+  date: "2025-08-02",
+  component: "Article65miliardadolarowzaczogizkoreiczypolskazbroisienapowaznie"
+},
+  {
   id: 29,
   link: "/800-tylko-dla-wybranych-wyciek-propozycji-reformy-oburzy-opinie-publiczna",
   img: "/800-tylko-dla-wybranych-wyciek-propozycji-reformy-oburzy-opinie-publiczna.webp",

@@ -150,7 +150,7 @@ const objectCode = `{
   description: "${description}",
   date: "${date}",
   component: "Article${slugified.replace(/-/g, "")}"
-}`;
+},`;
 
 const blob = new Blob([jsCode], { type: "text/javascript;charset=utf-8" });
     const downloadUrl = URL.createObjectURL(blob);
@@ -182,7 +182,7 @@ const blob = new Blob([jsCode], { type: "text/javascript;charset=utf-8" });
 
 const resizeAndDownload = (format, callback) => {
   if (!thumbnailUrl) return;
-  const img = new Image();
+const img = new (typeof window !== "undefined" ? window.Image : Image)();
   img.crossOrigin = "Anonymous";
   img.onload = () => {
     const canvas = document.createElement("canvas");
@@ -279,11 +279,14 @@ const resizeAndDownload = (format, callback) => {
             className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
           />
           {thumbnailUrl && (
-            <Image
-              src={thumbnailUrl}
-              alt="Podgląd miniatury"
-              className="w-48 h-auto border rounded"
-            />
+<Image
+  src={thumbnailUrl}
+  alt="Podgląd miniatury"
+  width={200}
+  height={150}
+  unoptimized
+  className="w-48 h-auto border rounded"
+/>
           )}
         </div>
       </div>

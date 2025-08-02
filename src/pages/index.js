@@ -26,13 +26,16 @@ export default function Home() {
             <div key={article.id} className="w-full max-w-[672px]">
               <Link href={article.link}>
                 <div className="bg-white dark:bg-white/5 p-5 rounded-xl shadow-lg hover:bg-white/20 dark:hover:bg-white/10 transition cursor-pointer space-y-3 border border-black/10 dark:border-white/10">
-                  <Image
-                    src={article.img}
-                    alt={article.title}
-                    className="w-full h-48 object-cover rounded-md"
-                    loading={article.id === 4 ? undefined : "lazy"}
-                    fetchPriority={article.id === 4 ? "high" : undefined}
-                  />
+<Image
+  src={article.img}
+  alt={article.title}
+  width={800} 
+  height={450} 
+  className="w-full h-48 object-cover rounded-md"
+  loading={article.id === 4 ? undefined : "lazy"}
+  fetchPriority={article.id === 4 ? "high" : undefined}
+  unoptimized
+/>
                   <h3 className="text-xl font-bold text-black dark:text-white">{article.title}</h3>
                   <p className="text-xs text-black/50 dark:text-white/40">
                     {new Date(article.date).toLocaleDateString("pl-PL", {
