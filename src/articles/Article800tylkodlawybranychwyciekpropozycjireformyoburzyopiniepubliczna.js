@@ -39,8 +39,9 @@ function Article800tylkodlawybranychwyciekpropozycjireformyoburzyopiniepubliczna
           width={1200}
           height={630}
           loading="lazy"
-          fetchPriority="high"
+          fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         
         <div className="space-y-6">
