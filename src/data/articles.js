@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 31,
+  link: "/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze",
+  img: "/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze.webp",
+  title: "🧨 Demolka w izbie przyjęć w Sosnowcu – 36-latek wtargnął do szpitala i zdewastował wnętrze",
+  description: "W izbie przyjęć Sosnowieckiego Szpitala Miejskiego doszło do aktu agresji – 36-letni mężczyzna wtargnął do środka i zdemolował pomieszczenie. Zatrzymany nie był pod wpływem alkoholu i nie figurował jako pacjent.",
+  date: "2025-08-02",
+  component: "Articledemolkawizbieprzyjecwsosnowcu36latekwtargnadoszpitalaizdewastowawnetrze"
+},
+  {
   id: 30,
   link: "/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie",
   img: "/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie.webp",
