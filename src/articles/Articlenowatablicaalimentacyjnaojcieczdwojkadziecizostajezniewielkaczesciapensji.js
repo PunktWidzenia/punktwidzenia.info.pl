@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlenowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczesciapensji() {
   return (
@@ -32,7 +33,7 @@ function Articlenowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczes
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/nowa-tablica-alimentacyjna-ojciec-z-dwojka-dzieci-zostaje-z-niewielka-czescia-pensji.webp"}
           alt={"💥 Nowa tablica alimentacyjna. Ojciec z dwójką dzieci zostaje z niewielką częścią pensji!"}
           loading="lazy"

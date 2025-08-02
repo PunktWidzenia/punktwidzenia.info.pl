@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlepolskiastronautasawoszuznanskibezpieczniewrocinaziemie() {
   return (
@@ -32,7 +33,7 @@ function Articlepolskiastronautasawoszuznanskibezpieczniewrocinaziemie() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/polski-astronauta-sawosz-uznanski-bezpiecznie-wroci-na-ziemie.webp"}
           alt={"Polski astronauta Sławosz Uznański bezpiecznie wrócił na Ziemię!"}
           loading="lazy"

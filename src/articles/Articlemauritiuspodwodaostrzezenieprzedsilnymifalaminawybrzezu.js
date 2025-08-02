@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlemauritiuspodwodaostrzezenieprzedsilnymifalaminawybrzezu() {
   return (
@@ -32,7 +33,7 @@ function Articlemauritiuspodwodaostrzezenieprzedsilnymifalaminawybrzezu() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/mauritius-pod-woda-ostrzezenie-przed-silnymi-falami-na-wybrzezu.webp"}
           alt={"🌊 Mauritius pod wodą? Ostrzeżenie przed silnymi falami na wybrzeżu"}
           loading="lazy"

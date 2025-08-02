@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleprezydentdudawogniukrytykipowypowiedzionato() {
   return (
@@ -32,7 +33,7 @@ function Articleprezydentdudawogniukrytykipowypowiedzionato() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/prezydent-duda-w-ogniu-krytyki-po-wypowiedzi-o-nato.webp"}
           alt={"🧸 Prezydent Duda w ogniu krytyki po wypowiedzi o NATO!"}
           loading="lazy"

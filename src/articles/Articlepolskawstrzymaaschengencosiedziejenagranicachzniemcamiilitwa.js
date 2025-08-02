@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlepolskawstrzymaaschengencosiedziejenagranicachzniemcamiilitwa() {
   return (
@@ -32,7 +33,7 @@ function Articlepolskawstrzymaaschengencosiedziejenagranicachzniemcamiilitwa() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/polska-wstrzymaa-schengen-co-sie-dzieje-na-granicach-z-niemcami-i-litwa.webp"}
           alt={"🚨 POLSKA WSTRZYMAŁA SCHENGEN! Co się dzieje na granicach z Niemcami i Litwą?"}
           loading="lazy"

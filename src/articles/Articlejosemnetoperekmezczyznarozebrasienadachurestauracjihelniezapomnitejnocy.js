@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlejosemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomnitejnocy() {
   return (
@@ -32,7 +33,7 @@ function Articlejosemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomni
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/jo-sem-netoperek-mezczyzna-rozebra-sie-na-dachu-restauracji-hel-nie-zapomni-tej-nocy.webp"}
           alt={"🦇 „Jo sem netoperek!” – Mężczyzna rozebrał się na dachu restauracji. Hel nie zapomni tej nocy"}
           loading="lazy"

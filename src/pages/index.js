@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FaFacebookSquare, FaEnvelope, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
 import articles from "@/data/articles";
+import Image from "next/image";
 
 export default function Home() {
   const [visibleCount, setVisibleCount] = useState(3);
@@ -25,7 +26,7 @@ export default function Home() {
             <div key={article.id} className="w-full max-w-[672px]">
               <Link href={article.link}>
                 <div className="bg-white dark:bg-white/5 p-5 rounded-xl shadow-lg hover:bg-white/20 dark:hover:bg-white/10 transition cursor-pointer space-y-3 border border-black/10 dark:border-white/10">
-                  <img
+                  <Image
                     src={article.img}
                     alt={article.title}
                     className="w-full h-48 object-cover rounded-md"

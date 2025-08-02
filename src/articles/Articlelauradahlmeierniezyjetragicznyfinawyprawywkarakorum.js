@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlelauradahlmeierniezyjetragicznyfinawyprawywkarakorum() {
   return (
@@ -32,7 +33,7 @@ function Articlelauradahlmeierniezyjetragicznyfinawyprawywkarakorum() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/laura-dahlmeier-nie-zyje-tragiczny-fina-wyprawy-w-karakorum.webp"}
           alt={"🏔️ Laura Dahlmeier nie żyje – tragiczny finał wyprawy w Karakorum"}
           loading="lazy"

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function ArticleGenerator() {
   const [title, setTitle] = useState("");
@@ -84,6 +85,7 @@ const [articleId, setArticleId] = useState("");
 import Link from "next/link";
 import AdSlot from \"@/components/AdSlot\";
 import RelatedArticles from \"@/components/RelatedArticles\";
+import Image from "next/image";
 
 function Article${slugified.replace(/-/g, "")}() {
   return (
@@ -114,7 +116,7 @@ function Article${slugified.replace(/-/g, "")}() {
       </Head>
 
       <article className=\"space-y-6\">
-        <img
+        <Image
           src={\"${img}\"}
           alt={\"${title}\"}
           loading=\"lazy\"
@@ -274,7 +276,7 @@ const resizeAndDownload = (format, callback) => {
             className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
           />
           {thumbnailUrl && (
-            <img
+            <Image
               src={thumbnailUrl}
               alt="Podgląd miniatury"
               className="w-48 h-auto border rounded"

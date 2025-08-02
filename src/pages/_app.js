@@ -7,6 +7,7 @@ import GdprConsentBanner from "@/components/GdprConsentBanner";
 import AnalyticsAndAdsLoader from "@/components/AnalyticsAndAdsLoader";
 import ScrollToTop from "@/components/ScrollToTop";
 import useDarkMode from "@/hooks/useDarkMode";
+import Image from "next/image";
 
 export default function App({ Component, pageProps }) {
 const { isDarkMode, toggleDarkMode, hasMounted } = useDarkMode();
@@ -31,7 +32,7 @@ const { isDarkMode, toggleDarkMode, hasMounted } = useDarkMode();
         <div className="max-w-6xl mx-auto">
           <header className="px-6 py-4 border-b border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
             <div className="flex items-center space-x-2">
-              <img src="/logo_header_56x56.webp" alt="Punkt Widzenia" className="h-12 w-auto" width="56" height="56" loading="lazy" />
+              <Image src="/logo_header_56x56.webp" alt="Punkt Widzenia" className="h-12 w-auto" width="56" height="56" loading="lazy" />
               <Link
                 href="/"
                 className="text-2xl font-bold hover:no-underline"

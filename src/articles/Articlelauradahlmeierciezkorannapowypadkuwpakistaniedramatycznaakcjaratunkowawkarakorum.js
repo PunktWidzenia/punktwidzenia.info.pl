@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlelauradahlmeierciezkorannapowypadkuwpakistaniedramatycznaakcjaratunkowawkarakorum() {
   return (
@@ -32,7 +33,7 @@ function Articlelauradahlmeierciezkorannapowypadkuwpakistaniedramatycznaakcjarat
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/laura-dahlmeier-ciezko-ranna-po-wypadku-w-pakistanie-dramatyczna-akcja-ratunkowa-w-karakorum.webp"}
           alt={"🧗 Laura Dahlmeier ciężko ranna po wypadku w Pakistanie – dramatyczna akcja ratunkowa w Karakorum"}
           loading="lazy"

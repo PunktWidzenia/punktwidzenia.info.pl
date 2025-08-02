@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleozzyosbourneniezyjelegendarockapozegnaasiezfanami() {
   return (
@@ -32,7 +33,7 @@ function Articleozzyosbourneniezyjelegendarockapozegnaasiezfanami() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/ozzy-osbourne-nie-zyje-legenda-rocka-pozegnaa-sie-z-fanami.webp"}
           alt={"☠️ Ozzy Osbourne nie żyje – legenda rocka pożegnała się z fanami"}
           loading="lazy"

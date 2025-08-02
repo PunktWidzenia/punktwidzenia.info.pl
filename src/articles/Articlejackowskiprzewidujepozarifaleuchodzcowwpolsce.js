@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlejackowskiprzewidujepozarifaleuchodzcowwpolsce() {
   return (
@@ -32,7 +33,7 @@ function Articlejackowskiprzewidujepozarifaleuchodzcowwpolsce() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/jackowski-przewiduje-pozar-i-fale-uchodzcow-w-polsce.webp"}
           alt={"🔥 Jackowski przewiduje pożar i falę uchodźców w Polsce!"}
           loading="lazy"

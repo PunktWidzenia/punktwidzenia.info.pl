@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlecoldplayikorporacyjnaburzakamerauchwyciaceoiszefowahr() {
   return (
@@ -32,7 +33,7 @@ function Articlecoldplayikorporacyjnaburzakamerauchwyciaceoiszefowahr() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/coldplay-i-korporacyjna-burza-kamera-uchwycia-ceo-i-szefowa-hr.webp"}
           alt={"🎥 Coldplay i korporacyjna burza. Kamera uchwyciła CEO i szefową HR"}
           loading="lazy"

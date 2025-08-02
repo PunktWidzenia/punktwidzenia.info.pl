@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleintelrezygnujezinwestycjiwpolscecodalejzrynkiempoprzewodnikow() {
   return (
@@ -32,7 +33,7 @@ function Articleintelrezygnujezinwestycjiwpolscecodalejzrynkiempoprzewodnikow() 
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/intel-rezygnuje-z-inwestycji-w-polsce-co-dalej-z-rynkiem-poprzewodnikow.webp"}
           alt={"⚠️ Intel rezygnuje z inwestycji w Polsce – co dalej z rynkiem półprzewodników?"}
           loading="lazy"

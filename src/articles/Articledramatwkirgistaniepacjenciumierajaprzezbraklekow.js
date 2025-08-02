@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articledramatwkirgistaniepacjenciumierajaprzezbraklekow() {
   return (
@@ -32,7 +33,7 @@ function Articledramatwkirgistaniepacjenciumierajaprzezbraklekow() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow.webp"}
           alt={"💊 Dramat w Kirgistanie – pacjenci umierają przez brak leków"}
           loading="lazy"

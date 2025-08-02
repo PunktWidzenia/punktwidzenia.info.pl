@@ -1,4 +1,13 @@
 const articles = [
+  {
+  id: 29,
+  link: "/800-tylko-dla-wybranych-wyciek-propozycji-reformy-oburzy-opinie-publiczna",
+  img: "/800-tylko-dla-wybranych-wyciek-propozycji-reformy-oburzy-opinie-publiczna.webp",
+  title: "🧨 800+ tylko dla wybranych? Wyciek propozycji reformy oburzył opinię publiczną",
+  description: "Do mediów trafił przeciek projektu, który zakłada ograniczenie świadczenia Rodzina 800+ tylko dla rodzin spełniających określone kryteria. Pomysł wzbudził skrajne reakcje i wywołał falę komentarzy w sieci.",
+  date: "2025-08-01",
+  component: "Article800tylkodlawybranychwyciekpropozycjireformyoburzyopiniepubliczna"
+},
 {
   id: 28,
   link: "/bryan-adams-z-gwiazda-w-krakowie-tumy-fanow-i-wyprzedany-koncert",

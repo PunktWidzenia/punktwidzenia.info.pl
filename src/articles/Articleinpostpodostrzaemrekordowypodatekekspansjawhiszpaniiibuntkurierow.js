@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleinpostpodostrzaemrekordowypodatekekspansjawhiszpaniiibuntkurierow() {
   return (
@@ -32,7 +33,7 @@ function Articleinpostpodostrzaemrekordowypodatekekspansjawhiszpaniiibuntkuriero
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/inpost-pod-ostrzaem-rekordowy-podatek-ekspansja-w-hiszpanii-i-bunt-kurierow.webp"}
           alt={"📦 InPost pod ostrzałem: rekordowy podatek, ekspansja w Hiszpanii i bunt kurierów"}
           loading="lazy"

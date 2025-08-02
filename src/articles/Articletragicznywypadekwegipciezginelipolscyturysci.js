@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articletragicznywypadekwegipciezginelipolscyturysci() {
   return (
@@ -32,7 +33,7 @@ function Articletragicznywypadekwegipciezginelipolscyturysci() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/tragiczny-wypadek-w-egipcie-zgineli-polscy-turysci.webp"}
           alt={"🚨 Tragiczny wypadek w Egipcie – zginęli polscy turyści"}
           loading="lazy"

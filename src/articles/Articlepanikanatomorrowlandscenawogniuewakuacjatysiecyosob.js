@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlepanikanatomorrowlandscenawogniuewakuacjatysiecyosob() {
   return (
@@ -32,7 +33,7 @@ function Articlepanikanatomorrowlandscenawogniuewakuacjatysiecyosob() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/panika-na-tomorrowland-scena-w-ogniu-ewakuacja-tysiecy-osob.webp"}
           alt={"🔥 Panika na Tomorrowland! Scena w ogniu, ewakuacja tysięcy osób"}
           loading="lazy"

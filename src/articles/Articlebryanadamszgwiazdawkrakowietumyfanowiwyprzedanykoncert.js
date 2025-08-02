@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlebryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert() {
   return (
@@ -32,7 +33,7 @@ function Articlebryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/bryan-adams-z-gwiazda-w-krakowie-tumy-fanow-i-wyprzedany-koncert.webp"}
           alt={"🎸 Bryan Adams z gwiazdą w Krakowie! Tłumy fanów i wyprzedany koncert"}
           loading="lazy"

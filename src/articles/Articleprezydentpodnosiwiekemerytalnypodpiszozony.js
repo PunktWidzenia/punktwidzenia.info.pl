@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleprezydentpodnosiwiekemerytalnypodpiszozony() {
   return (
@@ -32,7 +33,7 @@ function Articleprezydentpodnosiwiekemerytalnypodpiszozony() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/prezydent-podnosi-wiek-emerytalny-podpis-zozony.webp"}
           alt={"💥 Prezydent podnosi wiek emerytalny! Podpis złożony"}
           loading="lazy"

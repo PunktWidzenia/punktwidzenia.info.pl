@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleusykznokautowaduboisawembleywidziaodominacje() {
   return (
@@ -32,7 +33,7 @@ function Articleusykznokautowaduboisawembleywidziaodominacje() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/usyk-znokautowa-duboisa-wembley-widziao-dominacje.webp"}
           alt={"💥 Usyk znokautował Duboisa! Wembley widziało dominację"}
           loading="lazy"

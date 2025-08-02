@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy() {
   return (
@@ -32,7 +33,7 @@ function Articleukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy()
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/ukrainski-w-kazdej-szkole-rzad-analizuje-kontrowersyjny-projekt-ustawy.webp"}
           alt={"📚 Ukraiński w każdej szkole? Rząd analizuje kontrowersyjny projekt ustawy"}
           loading="lazy"

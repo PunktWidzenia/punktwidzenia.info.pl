@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleusykvsduboisiidziswieczoremwalkaoczterypasywagiciezkiej() {
   return (
@@ -32,7 +33,7 @@ function Articleusykvsduboisiidziswieczoremwalkaoczterypasywagiciezkiej() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/usyk-vs-dubois-ii-dzis-wieczorem-walka-o-cztery-pasy-wagi-ciezkiej.webp"}
           alt={"🔥 Usyk vs Dubois II. Dziś wieczorem walka o cztery pasy wagi ciężkiej!"}
           loading="lazy"

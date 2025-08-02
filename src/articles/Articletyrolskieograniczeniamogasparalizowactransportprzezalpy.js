@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articletyrolskieograniczeniamogasparalizowactransportprzezalpy() {
   return (
@@ -32,7 +33,7 @@ function Articletyrolskieograniczeniamogasparalizowactransportprzezalpy() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/tyrolskie-ograniczenia-moga-sparalizowac-transport-przez-alpy.webp"}
           alt={"🚛 Tyrolskie ograniczenia mogą sparaliżować transport przez Alpy"}
           loading="lazy"

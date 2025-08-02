@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articletragediawdziwnowku16latekzaginawbatykumimoczerwonejflagi() {
   return (
@@ -32,7 +33,7 @@ function Articletragediawdziwnowku16latekzaginawbatykumimoczerwonejflagi() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/tragedia-w-dziwnowku-16-latek-zagina-w-batyku-mimo-czerwonej-flagi.webp"}
           alt={"🆘 Tragedia w Dziwnówku: 16-latek zaginął w Bałtyku mimo czerwonej flagi"}
           loading="lazy"

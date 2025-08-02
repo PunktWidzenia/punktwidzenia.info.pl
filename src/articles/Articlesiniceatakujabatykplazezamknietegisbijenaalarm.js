@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articlesiniceatakujabatykplazezamknietegisbijenaalarm() {
   return (
@@ -32,7 +33,7 @@ function Articlesiniceatakujabatykplazezamknietegisbijenaalarm() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/sinice-atakuja-batyk-plaze-zamkniete-gis-bije-na-alarm.webp"}
           alt={"🌊 Sinice atakują Bałtyk! Plaże zamknięte, GIS bije na alarm"}
           loading="lazy"

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
 
 function Articleandrzejdudaodebraodznaczeniejolancielangepowodwspopracazsb() {
   return (
@@ -32,7 +33,7 @@ function Articleandrzejdudaodebraodznaczeniejolancielangepowodwspopracazsb() {
       </Head>
 
       <article className="space-y-6">
-        <img
+        <Image
           src={"/andrzej-duda-odebra-odznaczenie-jolancie-lange-powod-wspopraca-z-sb.webp"}
           alt={"🎖️ Andrzej Duda odebrał odznaczenie Jolancie Lange – powód: współpraca z SB"}
           loading="lazy"
