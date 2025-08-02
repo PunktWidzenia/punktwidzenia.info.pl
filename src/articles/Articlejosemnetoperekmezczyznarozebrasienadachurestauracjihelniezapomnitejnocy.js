@@ -41,6 +41,7 @@ function Articlejosemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomni
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         
         <div className="space-y-6">

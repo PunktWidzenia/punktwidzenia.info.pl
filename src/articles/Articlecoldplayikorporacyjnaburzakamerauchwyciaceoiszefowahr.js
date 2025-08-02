@@ -41,6 +41,7 @@ function Articlecoldplayikorporacyjnaburzakamerauchwyciaceoiszefowahr() {
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         <p className="text-sm text-gray-500 dark:text-gray-400">Źródło: YouTube / materiały z koncertu – wykorzystane zgodnie z prawem cytatu</p>
         <div className="space-y-6">

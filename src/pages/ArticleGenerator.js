@@ -124,6 +124,7 @@ function Article${slugified.replace(/-/g, "")}() {
           loading=\"lazy\"
           fetchPriority=\"low\"
           className=\"w-full h-auto rounded\"
+          unoptimized
         />
         ${caption ? `<p className=\"text-sm text-gray-500 dark:text-gray-400\">${caption}</p>` : ""}
         <div className=\"space-y-6\">

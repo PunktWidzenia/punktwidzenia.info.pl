@@ -41,6 +41,7 @@ function Articlewaldemarzureknowymfaworytemdotekiministrasprawiedliwosci() {
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         <p className="text-sm text-gray-500 dark:text-gray-400">Zdjęcie: Platforma Obywatelska RP, CC BY-SA 2.0, via Wikimedia Commons</p>
         <div className="space-y-6">

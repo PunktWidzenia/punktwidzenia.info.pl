@@ -41,6 +41,7 @@ function Articleandrzejdudaodebraodznaczeniejolancielangepowodwspopracazsb() {
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         <p className="text-sm text-gray-500 dark:text-gray-400">Zdjęcie: Palácio do Planalto / Wikimedia Commons / CC BY 2.0</p>
         <div className="space-y-6">

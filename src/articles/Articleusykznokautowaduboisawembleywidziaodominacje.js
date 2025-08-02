@@ -41,6 +41,7 @@ function Articleusykznokautowaduboisawembleywidziaodominacje() {
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         <p className="text-sm text-gray-500 dark:text-gray-400">Zdjęcie: Kadr z filmu: YouTube – DAZN Boxing, wykorzystano zgodnie z prawem cytatu</p>
 <div className="space-y-6">

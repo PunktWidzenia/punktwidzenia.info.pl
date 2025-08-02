@@ -41,6 +41,7 @@ function Articleukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy()
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         <p className="text-sm text-gray-500 dark:text-gray-400">Zdjęcie: ArturM / Wikimedia Commons / CC BY-SA 3.0</p>
         <div className="space-y-6">

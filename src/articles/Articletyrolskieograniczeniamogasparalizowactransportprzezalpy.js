@@ -41,6 +41,7 @@ function Articletyrolskieograniczeniamogasparalizowactransportprzezalpy() {
           loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
+          unoptimized
         />
         <p className="text-sm text-gray-500 dark:text-gray-400">Zdjęcie: Naturpuur, Wikimedia Commons, CC BY 4.0</p>
         <div className="space-y-6">
