@@ -29,12 +29,11 @@ export default function Home() {
 <Image
   src={article.img}
   alt={article.title}
-  width={800} 
-  height={450} 
-  className="w-full h-48 object-cover rounded-md"
-  loading={article.id === 4 ? undefined : "lazy"}
+  width={800}
+  height={450}
+  className="w-full aspect-[16/9] object-cover rounded-md"
+  priority={article.id === 4}
   fetchPriority={article.id === 4 ? "high" : undefined}
-  unoptimized
 />
                   <h3 className="text-xl font-bold text-black dark:text-white">{article.title}</h3>
                   <p className="text-xs text-black/50 dark:text-white/40">
