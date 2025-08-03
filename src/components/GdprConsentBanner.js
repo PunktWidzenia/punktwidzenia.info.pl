@@ -6,13 +6,19 @@ const GdprConsentBanner = () => {
   const [showSettings, setShowSettings] = useState(false);
   const [adsConsent, setAdsConsent] = useState(false);
   const [analyticsConsent, setAnalyticsConsent] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
 
-  useEffect(() => {
-    const consent = localStorage.getItem("gdpr-consent");
-    if (!consent) {
-      setShowBanner(true);
-    }
-  }, []);
+useEffect(() => {
+  setHasMounted(true);
+}, []);
+
+useEffect(() => {
+  if (!hasMounted) return;
+  const consent = localStorage.getItem("gdpr-consent");
+  if (!consent) {
+    setShowBanner(true);
+  }
+}, [hasMounted]);
 
   const handleAcceptAll = () => {
     localStorage.setItem("gdpr-consent", JSON.stringify({
@@ -32,7 +38,7 @@ const GdprConsentBanner = () => {
     location.reload();
   };
 
-  if (!showBanner) return null;
+if (!hasMounted || !showBanner) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">

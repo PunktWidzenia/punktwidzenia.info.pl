@@ -1,8 +1,9 @@
 import { useEffect } from "react"
 
 const AnalyticsAndAdsLoader = () => {
-  useEffect(() => {
-    const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
+useEffect(() => {
+  if (typeof window === "undefined") return;
+      const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
 
     if (consent.ads) {
       const adsScript = document.createElement("script");

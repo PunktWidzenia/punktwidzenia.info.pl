@@ -4,8 +4,9 @@ export default function AdSlot() {
   const adRef = useRef(null);
   const [shouldRenderAd, setShouldRenderAd] = useState(false);
 
-  useEffect(() => {
-    const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
+useEffect(() => {
+  if (typeof window === "undefined") return;
+      const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
     if (!consent.ads) return;
 
     setShouldRenderAd(true);
