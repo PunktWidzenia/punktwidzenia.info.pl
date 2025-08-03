@@ -3,16 +3,17 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
 import { FaSun, FaMoon } from "react-icons/fa";
-import GdprConsentBanner from "@/components/GdprConsentBanner";
-import AnalyticsAndAdsLoader from "@/components/AnalyticsAndAdsLoader";
 import ScrollToTop from "@/components/ScrollToTop";
 import useDarkMode from "@/hooks/useDarkMode";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 export default function App({ Component, pageProps }) {
 const { isDarkMode, toggleDarkMode, hasMounted } = useDarkMode();
   const router = useRouter();
   const location = router.pathname;
+  const GdprConsentBanner = dynamic(() => import("@/components/GdprConsentBanner"), { ssr: false });
+const AnalyticsAndAdsLoader = dynamic(() => import("@/components/AnalyticsAndAdsLoader"), { ssr: false });
 
   return (
     <>
