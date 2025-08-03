@@ -39,15 +39,15 @@ useEffect(() => {
 
   return (
     <div className="my-8 text-center">
-      <ins
-        className="adsbygoogle"
-        style={{ display: "block" }}
-        data-ad-client="ca-pub-8092340253734147"
-        data-ad-slot="2964144418"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-        ref={adRef}
-      ></ins>
+<ins
+  className="adsbygoogle"
+  style={{ display: "block" }}
+  data-ad-client="ca-pub-3940256099942544"
+  data-ad-slot="6300978111"
+  data-ad-format="auto"
+  data-full-width-responsive="true"
+  ref={adRef}
+/>
     </div>
   );
 }
