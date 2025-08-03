@@ -11,7 +11,6 @@ export default function AdSlot() {
     if (consent.ads) {
       setShouldRenderAd(true);
 
-      // Wstrzykuj skrypt tylko raz
       const existingScript = document.querySelector(
         'script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]'
       );
@@ -28,20 +27,13 @@ export default function AdSlot() {
   useEffect(() => {
     if (!shouldRenderAd || !adRef.current) return;
 
-    let retries = 0;
     const interval = setInterval(() => {
-      if (Array.isArray(window.adsbygoogle)) {
+      if (window.adsbygoogle && Array.isArray(window.adsbygoogle)) {
         try {
           window.adsbygoogle.push({});
           clearInterval(interval);
         } catch (e) {
           console.error("AdSense push error:", e);
-          clearInterval(interval);
-        }
-      } else {
-        retries++;
-        if (retries >= 10) {
-          console.warn("AdSense script not available after multiple attempts.");
           clearInterval(interval);
         }
       }
@@ -61,7 +53,6 @@ export default function AdSlot() {
         data-ad-format="fluid"
         data-ad-client="ca-pub-8092340253734147"
         data-ad-slot="1589355129"
-        data-full-width-responsive="true"
         ref={adRef}
       />
     </div>
