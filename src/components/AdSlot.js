@@ -3,45 +3,40 @@ import { useEffect, useRef, useState } from "react";
 export default function AdSlot() {
   const adRef = useRef(null);
   const [shouldRenderAd, setShouldRenderAd] = useState(false);
-  const [hasMounted, setHasMounted] = useState(false);
-useEffect(() => setHasMounted(true), []);
-if (!hasMounted) return null;
-
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
-    if (!consent.ads) return;
+    const isClient = typeof window !== "undefined";
+    if (!isClient) return;
 
-    setShouldRenderAd(true);
+    const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
+    if (consent.ads) {
+      setShouldRenderAd(true);
+    }
   }, []);
 
   useEffect(() => {
-    if (!shouldRenderAd) return;
+    if (!shouldRenderAd || !adRef.current) return;
 
     let retries = 0;
-
-    const tryPushAd = () => {
-      const interval = setInterval(() => {
-        if (Array.isArray(window.adsbygoogle) && adRef.current) {
-          try {
-            window.adsbygoogle.push({});
-            clearInterval(interval);
-          } catch (e) {
-            console.error("AdSense push error:", e);
-            clearInterval(interval);
-          }
-        } else {
-          retries++;
-          if (retries >= 10) {
-            console.warn("AdSense script not available after multiple attempts.");
-            clearInterval(interval);
-          }
+    const interval = setInterval(() => {
+      if (Array.isArray(window.adsbygoogle)) {
+        try {
+          window.adsbygoogle.push({});
+          clearInterval(interval);
+        } catch (e) {
+          console.error("AdSense push error:", e);
+          clearInterval(interval);
         }
-      }, 1000);
-    };
+      } else {
+        retries++;
+        if (retries >= 10) {
+          console.warn("AdSense script not available after multiple attempts.");
+          clearInterval(interval);
+        }
+      }
+    }, 1000);
 
-    setTimeout(tryPushAd, 2000);
+    return () => clearInterval(interval);
   }, [shouldRenderAd]);
 
   if (!shouldRenderAd) return null;
@@ -53,8 +48,8 @@ if (!hasMounted) return null;
         style={{ display: "block", textAlign: "center" }}
         data-ad-layout="in-article"
         data-ad-format="fluid"
-data-ad-client="ca-pub-3940256099942544"
-data-ad-slot="6300978111"
+        data-ad-client="ca-pub-3940256099942544"
+        data-ad-slot="6300978111"
         data-full-width-responsive="true"
         ref={adRef}
       />
