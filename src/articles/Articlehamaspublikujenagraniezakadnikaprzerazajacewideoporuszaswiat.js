@@ -48,16 +48,6 @@ function Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat() {
             <h2 className="text-xl font-semibold">🎞️ Nagranie pokazuje skrajnie wycieńczonego zakładnika</h2>
             <p>W najnowszym filmie opublikowanym przez Hamas widzimy 24-letniego zakładnika Evyatara Davida w dramatycznych warunkach. Mężczyzna – wychudzony, zmęczony i wyraźnie osłabiony – stoi w wykopanym dole, który sam określa jako „swoją przyszłą mogiłę”. Na nagraniu odlicza dni spędzone w niewoli, błaga o ratunek i czyta wiadomość rzekomo własnoręcznie napisaną do rodziny.<br /><br />To już drugie wideo z udziałem Davida w ciągu ostatnich dni. Poprzednie przedstawiało go w tunelu Hamasu, bez dostępu do światła dziennego.</p>
 
-<div className="w-full max-w-sm mx-auto" style={{ position: 'relative', paddingTop: '177.77%' }}>
-  <iframe
-    src="https://www.youtube.com/shorts/X8INrn6XuPY"
-    title="David was kidnapped by Hamas (Short)"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-    className="rounded"
-  />
-</div>
             <h2 className="text-xl font-semibold">🌍 Międzynarodowe oburzenie i reakcje</h2>
             <p>Nagranie spotkało się z natychmiastową reakcją opinii publicznej i organizacji międzynarodowych. Rodzina Davida określiła film jako „propagandową ohydę”, a izraelskie władze potępiły Hamas za „nieludzkie traktowanie zakładników”.<br /><br />Jednocześnie wzrosła presja na rząd premiera Benjamina Netanjahu, który oskarżany jest przez protestujących w Tel Awiwie o bezczynność. W demonstracjach domagano się natychmiastowego zawarcia porozumienia prowadzącego do uwolnienia zakładników.</p>
             <AdSlot />
@@ -68,6 +58,12 @@ function Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat() {
             <h2 className="text-xl font-semibold">🧭 Co dalej z zakładnikami?</h2>
             <p>Według danych izraelskich władz, wciąż ponad 100 osób przetrzymywanych jest przez Hamas. Organizacja zapowiada, że nie rozbroi się ani nie uwolni wszystkich zakładników, dopóki nie powstanie państwo palestyńskie. Jednocześnie powtarzające się publikacje nagrań pogłębiają traumę rodzin porwanych i podsycają napięcia społeczne.<br /><br />Eksperci wskazują, że kolejne wideo może być częścią strategii psychologicznej mającej wymusić ustępstwa polityczne. W obliczu międzynarodowego oburzenia i wzrastających napięć, sytuacja staje się coraz bardziej niestabilna.</p>
             <AdSlot />
+            <a href="https://www.youtube.com/shorts/c6lbNu87L_0" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="inline-block mt-4 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700">
+  ▶️ Zobacz film na YouTube
+</a>
         </div>
         <p className="text-sm text-gray-500 border-t pt-6 dark:text-gray-400">Artykuł przygotowany przez Punkt Widzenia.</p>
         <RelatedArticles current="/hamas-publikuje-nagranie-zakadnika-przerazajace-wideo-porusza-swiat" />
