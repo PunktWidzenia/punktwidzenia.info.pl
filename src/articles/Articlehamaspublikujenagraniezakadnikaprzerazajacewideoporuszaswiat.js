@@ -48,6 +48,16 @@ function Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat() {
             <h2 className="text-xl font-semibold">🎞️ Nagranie pokazuje skrajnie wycieńczonego zakładnika</h2>
             <p>W najnowszym filmie opublikowanym przez Hamas widzimy 24-letniego zakładnika Evyatara Davida w dramatycznych warunkach. Mężczyzna – wychudzony, zmęczony i wyraźnie osłabiony – stoi w wykopanym dole, który sam określa jako „swoją przyszłą mogiłę”. Na nagraniu odlicza dni spędzone w niewoli, błaga o ratunek i czyta wiadomość rzekomo własnoręcznie napisaną do rodziny.<br /><br />To już drugie wideo z udziałem Davida w ciągu ostatnich dni. Poprzednie przedstawiało go w tunelu Hamasu, bez dostępu do światła dziennego.</p>
 
+<div className="w-full max-w-sm mx-auto" style={{ position: 'relative', paddingTop: '177.77%' }}>
+  <iframe
+    src="https://www.youtube.com/shorts/aBQu0XPArvo"
+    title="Usyk KO Dubois (Short)"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+    className="rounded"
+  />
+</div>
             <h2 className="text-xl font-semibold">🌍 Międzynarodowe oburzenie i reakcje</h2>
             <p>Nagranie spotkało się z natychmiastową reakcją opinii publicznej i organizacji międzynarodowych. Rodzina Davida określiła film jako „propagandową ohydę”, a izraelskie władze potępiły Hamas za „nieludzkie traktowanie zakładników”.<br /><br />Jednocześnie wzrosła presja na rząd premiera Benjamina Netanjahu, który oskarżany jest przez protestujących w Tel Awiwie o bezczynność. W demonstracjach domagano się natychmiastowego zawarcia porozumienia prowadzącego do uwolnienia zakładników.</p>
             <AdSlot />
