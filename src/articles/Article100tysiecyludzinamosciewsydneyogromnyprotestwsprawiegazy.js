@@ -56,7 +56,7 @@ width={311}
             <p>Protest był wspierany przez liczne środowiska: organizacje praw człowieka, związki zawodowe, studenckie i społeczność muzułmańską. Wydarzenie odbiło się szerokim echem w mediach na całym świecie. ONZ i organizacje humanitarne ponowiły apel o umożliwienie dostaw pomocy do Gazy.</p>
 
             <h2 className="text-xl font-semibold">🚨 Rośnie napięcie – apel do rządu Australii o zdecydowane działania</h2>
-            <p>Uczestnicy marszu zarzucili rządowi Anthony’ego Albanese'go bierność i brak wyraźnego stanowiska w sprawie trwającego konfliktu. Apelowano o wstrzymanie eksportu broni do Izraela i aktywne działania dyplomatyczne. Demonstracja zakończyła się pokojowo, ale organizatorzy zapowiadają kolejne działania, jeśli żądania nie zostaną spełnione.</p>
+            <p>Uczestnicy marszu zarzucili rządowi Anthony`ego Albanese`go bierność i brak wyraźnego stanowiska w sprawie trwającego konfliktu. Apelowano o wstrzymanie eksportu broni do Izraela i aktywne działania dyplomatyczne. Demonstracja zakończyła się pokojowo, ale organizatorzy zapowiadają kolejne działania, jeśli żądania nie zostaną spełnione.</p>
             <AdSlot />
         </div>
         <p className="text-sm text-gray-500 border-t pt-6 dark:text-gray-400">Artykuł przygotowany przez Punkt Widzenia.</p>
