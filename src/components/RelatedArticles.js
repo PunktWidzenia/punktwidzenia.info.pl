@@ -1,23 +1,32 @@
-import Link from "next/link"
-import articles from "@/data/articles"
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import articles from "@/data/articles";
 
 export default function RelatedArticles({ current }) {
-  const now = new Date();
-  const todayStr = now.toISOString().split("T")[0];
-  const sevenDaysAgoStr = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000)
-    .toISOString()
-    .split("T")[0];
+  const [related, setRelated] = useState([]);
 
-  const related = articles
-    .filter(
-      (a) =>
-        a?.link &&
-        a.link !== current &&
-        a.date >= sevenDaysAgoStr &&
-        a.date <= todayStr
-    )
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 3);
+  useEffect(() => {
+    const now = new Date();
+    const todayStr = now.toISOString().split("T")[0];
+    const sevenDaysAgoStr = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000)
+      .toISOString()
+      .split("T")[0];
+
+    const filtered = articles
+      .filter(
+        (a) =>
+          a?.link &&
+          a.link !== current &&
+          a.date >= sevenDaysAgoStr &&
+          a.date <= todayStr
+      )
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 3);
+
+    setRelated(filtered);
+  }, [current]);
+
+  if (related.length === 0) return null;
 
   return (
     <div className="mt-10">
