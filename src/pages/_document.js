@@ -21,7 +21,7 @@ export default function Document() {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#ff0000" />
       </Head>
-      <body>
+<body data-ad-client="ca-pub-8092340253734147">
         <Main />
         <NextScript />
       </body>
