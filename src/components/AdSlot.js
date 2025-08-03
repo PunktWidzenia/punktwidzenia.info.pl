@@ -5,12 +5,23 @@ export default function AdSlot() {
   const [shouldRenderAd, setShouldRenderAd] = useState(false);
 
   useEffect(() => {
-    const isClient = typeof window !== "undefined";
-    if (!isClient) return;
+    if (typeof window === "undefined") return;
 
     const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
     if (consent.ads) {
       setShouldRenderAd(true);
+
+      // Wstrzykuj skrypt tylko raz
+      const existingScript = document.querySelector(
+        'script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]'
+      );
+      if (!existingScript) {
+        const script = document.createElement("script");
+        script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8092340253734147";
+        script.async = true;
+        script.crossOrigin = "anonymous";
+        document.head.appendChild(script);
+      }
     }
   }, []);
 
@@ -19,7 +30,7 @@ export default function AdSlot() {
 
     let retries = 0;
     const interval = setInterval(() => {
-      if (Array.isArray(window.adsbygoogle) && typeof window.adsbygoogle.push === "function") {
+      if (Array.isArray(window.adsbygoogle)) {
         try {
           window.adsbygoogle.push({});
           clearInterval(interval);
@@ -45,16 +56,11 @@ export default function AdSlot() {
     <div className="my-8 text-center">
       <ins
         className="adsbygoogle"
-        style={{
-          display: "block",
-          textAlign: "center",
-          minHeight: "200px",   // ← minimalna wysokość
-          minWidth: "300px"     // ← minimalna szerokość
-        }}
+        style={{ display: "block", textAlign: "center" }}
         data-ad-layout="in-article"
         data-ad-format="fluid"
-        data-ad-client="ca-pub-3940256099942544"
-        data-ad-slot="6300978111"
+        data-ad-client="ca-pub-8092340253734147"
+        data-ad-slot="1589355129"
         data-full-width-responsive="true"
         ref={adRef}
       />
