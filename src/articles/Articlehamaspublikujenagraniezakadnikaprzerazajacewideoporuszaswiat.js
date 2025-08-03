@@ -50,8 +50,8 @@ function Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat() {
 
 <div className="w-full max-w-sm mx-auto" style={{ position: 'relative', paddingTop: '177.77%' }}>
   <iframe
-    src="https://www.youtube.com/shorts/rnyjukxnQGM"
-    title="Usyk KO Dubois (Short)"
+    src="https://www.youtube.com/shorts/X8INrn6XuPY"
+    title="David was kidnapped by Hamas (Short)"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
