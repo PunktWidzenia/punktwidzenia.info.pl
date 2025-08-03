@@ -5,15 +5,20 @@ export default function useDarkMode() {
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     setHasMounted(true);
-    if (typeof window !== "undefined") {
-      const isDark = localStorage.getItem("theme") === "dark" || window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setIsDarkMode(isDark);
-      document.documentElement.classList.toggle("dark", isDark);
-    }
+    const isDark =
+      localStorage.getItem("theme") === "dark" ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    setIsDarkMode(isDark);
+    document.documentElement.classList.toggle("dark", isDark);
   }, []);
 
   const toggleDarkMode = () => {
+    if (typeof window === "undefined") return;
+
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
     document.documentElement.classList.toggle("dark", newMode);
