@@ -4,9 +4,9 @@ export default function AdSlot() {
   const adRef = useRef(null);
   const [shouldRenderAd, setShouldRenderAd] = useState(false);
 
-useEffect(() => {
-  if (typeof window === "undefined") return;
-      const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const consent = JSON.parse(localStorage.getItem("gdpr-consent") || "{}");
     if (!consent.ads) return;
 
     setShouldRenderAd(true);
@@ -18,36 +18,42 @@ useEffect(() => {
     let retries = 0;
 
     const tryPushAd = () => {
-      if (Array.isArray(window.adsbygoogle) && adRef.current) {
-        try {
-          window.adsbygoogle.push({});
-        } catch (e) {
-          console.error("AdSense push error:", e);
+      const interval = setInterval(() => {
+        if (Array.isArray(window.adsbygoogle) && adRef.current) {
+          try {
+            window.adsbygoogle.push({});
+            clearInterval(interval);
+          } catch (e) {
+            console.error("AdSense push error:", e);
+            clearInterval(interval);
+          }
+        } else {
+          retries++;
+          if (retries >= 10) {
+            console.warn("AdSense script not available after multiple attempts.");
+            clearInterval(interval);
+          }
         }
-      } else if (retries < 10) {
-        retries++;
-        setTimeout(tryPushAd, 500);
-      } else {
-        console.warn("AdSense script not available after multiple attempts.");
-      }
+      }, 1000);
     };
 
-    tryPushAd();
+    setTimeout(tryPushAd, 2000);
   }, [shouldRenderAd]);
 
   if (!shouldRenderAd) return null;
 
   return (
     <div className="my-8 text-center">
-<ins
-  className="adsbygoogle"
-  style={{ display: "block" }}
-  data-ad-client="ca-pub-3940256099942544"
-  data-ad-slot="6300978111"
-  data-ad-format="auto"
-  data-full-width-responsive="true"
-  ref={adRef}
-/>
+      <ins
+        className="adsbygoogle"
+        style={{ display: "block", textAlign: "center" }}
+        data-ad-layout="in-article"
+        data-ad-format="fluid"
+        data-ad-client="ca-pub-8092340253734147"
+        data-ad-slot="1589355129"
+        data-full-width-responsive="true"
+        ref={adRef}
+      />
     </div>
   );
 }
