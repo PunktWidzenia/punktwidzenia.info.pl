@@ -1,4 +1,13 @@
 const articles = [
+  {
+  id: 34,
+  link: "/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy",
+  img: "/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy.webp",
+  title: "🌉 100 tysięcy ludzi na moście w Sydney – ogromny protest w sprawie Gazy",
+  description: "Ponad 100 tysięcy osób przemaszerowało dziś przez most Harbour Bridge w Sydney, domagając się zawieszenia broni w Strefie Gazy i zapewnienia pomocy humanitarnej. Protest odbył się mimo fatalnej pogody.",
+  date: "2025-08-03",
+  component: "Article100tysiecyludzinamosciewsydneyogromnyprotestwsprawiegazy"
+},
 {
   id: 33,
   link: "/hamas-publikuje-nagranie-zakadnika-przerazajace-wideo-porusza-swiat",

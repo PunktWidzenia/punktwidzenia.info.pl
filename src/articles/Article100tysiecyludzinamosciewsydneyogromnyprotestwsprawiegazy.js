@@ -1,0 +1,70 @@
+import Head from "next/head";
+import Link from "next/link";
+import AdSlot from "@/components/AdSlot";
+import RelatedArticles from "@/components/RelatedArticles";
+import Image from "next/image";
+
+function Article100tysiecyludzinamosciewsydneyogromnyprotestwsprawiegazy() {
+  return (
+    <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
+      <Head>
+        <title>🌉 100 tysięcy ludzi na moście w Sydney – ogromny protest w sprawie Gazy</title>
+        <meta name="description" content="Ponad 100 tysięcy osób przemaszerowało dziś przez most Harbour Bridge w Sydney, domagając się zawieszenia broni w Strefie Gazy i zapewnienia pomocy humanitarnej. Protest odbył się mimo fatalnej pogody." />
+        <meta property="og:title" content="🌉 100 tysięcy ludzi na moście w Sydney – ogromny protest w sprawie Gazy" />
+        <meta property="og:description" content="Ponad 100 tysięcy osób przemaszerowało dziś przez most Harbour Bridge w Sydney, domagając się zawieszenia broni w Strefie Gazy i zapewnienia pomocy humanitarnej. Protest odbył się mimo fatalnej pogody." />
+        <meta property="og:image" content="https://punktwidzenia.info.pl/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy.webp" />
+        <meta property="og:url" content="https://punktwidzenia.info.pl/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy" />
+        <script type="application/ld+json">{
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'NewsArticle',
+            headline: '🌉 100 tysięcy ludzi na moście w Sydney – ogromny protest w sprawie Gazy',
+            image: ['https://punktwidzenia.info.pl/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy.webp'],
+            datePublished: '2025-08-03',
+            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Punkt Widzenia',
+              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
+            },
+            description: 'Ponad 100 tysięcy osób przemaszerowało dziś przez most Harbour Bridge w Sydney, domagając się zawieszenia broni w Strefie Gazy i zapewnienia pomocy humanitarnej. Protest odbył się mimo fatalnej pogody.'
+          })
+        }</script>
+      </Head>
+
+      <article className="space-y-6">
+        <Image
+          src={"/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy.webp"}
+          alt={"🌉 100 tysięcy ludzi na moście w Sydney – ogromny protest w sprawie Gazy"}
+width={311}
+  height={163}
+            loading="lazy"
+          fetchPriority="low"
+          className="w-full h-auto rounded"
+          unoptimized
+        />
+        <p className="text-sm text-gray-500 dark:text-gray-400">Zdjęcie: Diliff / Wikimedia Commons / CC BY-SA 3.0</p>
+        <div className="space-y-6">
+            <h2 className="text-xl font-semibold">📍 Most Harbour Bridge zamknięty – potężna manifestacja w samym sercu Sydney</h2>
+            <p>Od wczesnych godzin porannych władze Sydney wstrzymały ruch na ikonicznym moście Harbour Bridge. Powodem był masowy marsz solidarnościowy z ludnością cywilną w Strefie Gazy. Uczestnicy domagali się natychmiastowego zawieszenia broni i swobodnego dostępu do pomocy humanitarnej. Policja oszacowała liczbę uczestników na ponad 100 tysięcy.</p>
+
+            <h2 className="text-xl font-semibold">🌧 Tłumy mimo deszczu – determinacja protestujących nie słabnie</h2>
+            <p>Choć przez Sydney przechodziły dziś ulewne deszcze i porywisty wiatr, marsz odbył się zgodnie z planem. Organizatorzy zadbali o bezpieczeństwo i zachowanie pokojowego charakteru wydarzenia. Tłumy niosły transparenty z hasłami „Stop bombing Gaza”, „Freedom for Palestine” oraz „Ceasefire now”.</p>
+            <AdSlot />
+
+            <h2 className="text-xl font-semibold">🌍 Głos australijskiej diaspory i reakcje międzynarodowe</h2>
+            <p>Protest był wspierany przez liczne środowiska: organizacje praw człowieka, związki zawodowe, studenckie i społeczność muzułmańską. Wydarzenie odbiło się szerokim echem w mediach na całym świecie. ONZ i organizacje humanitarne ponowiły apel o umożliwienie dostaw pomocy do Gazy.</p>
+
+            <h2 className="text-xl font-semibold">🚨 Rośnie napięcie – apel do rządu Australii o zdecydowane działania</h2>
+            <p>Uczestnicy marszu zarzucili rządowi Anthony’ego Albanese'go bierność i brak wyraźnego stanowiska w sprawie trwającego konfliktu. Apelowano o wstrzymanie eksportu broni do Izraela i aktywne działania dyplomatyczne. Demonstracja zakończyła się pokojowo, ale organizatorzy zapowiadają kolejne działania, jeśli żądania nie zostaną spełnione.</p>
+            <AdSlot />
+        </div>
+        <p className="text-sm text-gray-500 border-t pt-6 dark:text-gray-400">Artykuł przygotowany przez Punkt Widzenia.</p>
+        <RelatedArticles current="/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy" />
+        <Link href="/" className="text-red-500 hover:underline block mt-10">← Powrót do strony głównej</Link>
+      </article>
+    </main>
+  );
+}
+
+export default Article100tysiecyludzinamosciewsydneyogromnyprotestwsprawiegazy;
