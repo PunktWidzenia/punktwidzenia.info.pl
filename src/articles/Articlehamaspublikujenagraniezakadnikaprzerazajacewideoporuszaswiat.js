@@ -50,7 +50,7 @@ function Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat() {
 
 <div className="w-full max-w-sm mx-auto" style={{ position: 'relative', paddingTop: '177.77%' }}>
   <iframe
-    src="https://www.youtube.com/shorts/aBQu0XPArvo"
+    src="https://www.youtube.com/shorts/rnyjukxnQGM"
     title="Usyk KO Dubois (Short)"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
