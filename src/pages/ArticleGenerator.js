@@ -119,9 +119,9 @@ function Article${slugified.replace(/-/g, "")}() {
         <Image
           src={\"${img}\"}
           alt={\"${title}\"}
-            width={1200}
-  height={630}
-          loading=\"lazy\"
+width={311}
+  height={163}
+            loading=\"lazy\"
           fetchPriority=\"low\"
           className=\"w-full h-auto rounded\"
           unoptimized

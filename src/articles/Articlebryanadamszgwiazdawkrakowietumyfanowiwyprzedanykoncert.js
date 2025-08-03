@@ -36,9 +36,8 @@ function Articlebryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert() {
         <Image
           src={"/bryan-adams-z-gwiazda-w-krakowie-tumy-fanow-i-wyprzedany-koncert.webp"}
           alt={"🎸 Bryan Adams z gwiazdą w Krakowie! Tłumy fanów i wyprzedany koncert"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

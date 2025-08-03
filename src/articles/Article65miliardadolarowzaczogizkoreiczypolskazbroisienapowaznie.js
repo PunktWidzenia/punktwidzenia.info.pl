@@ -36,9 +36,8 @@ function Article65miliardadolarowzaczogizkoreiczypolskazbroisienapowaznie() {
         <Image
           src={"/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie.webp"}
           alt={"🛡️ 6,5 miliarda dolarów za czołgi z Korei – czy Polska zbroi się na poważnie?"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

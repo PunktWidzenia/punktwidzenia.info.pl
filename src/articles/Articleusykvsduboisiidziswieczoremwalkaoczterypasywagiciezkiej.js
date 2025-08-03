@@ -36,9 +36,8 @@ function Articleusykvsduboisiidziswieczoremwalkaoczterypasywagiciezkiej() {
         <Image
           src={"/usyk-vs-dubois-ii-dzis-wieczorem-walka-o-cztery-pasy-wagi-ciezkiej.webp"}
           alt={"🔥 Usyk vs Dubois II. Dziś wieczorem walka o cztery pasy wagi ciężkiej!"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

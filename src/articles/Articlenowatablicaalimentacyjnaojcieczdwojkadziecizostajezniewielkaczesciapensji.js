@@ -36,9 +36,8 @@ function Articlenowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczes
         <Image
           src={"/nowa-tablica-alimentacyjna-ojciec-z-dwojka-dzieci-zostaje-z-niewielka-czescia-pensji.webp"}
           alt={"💥 Nowa tablica alimentacyjna. Ojciec z dwójką dzieci zostaje z niewielką częścią pensji!"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

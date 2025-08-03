@@ -36,9 +36,8 @@ function Articleprezydentdudawogniukrytykipowypowiedzionato() {
         <Image
           src={"/prezydent-duda-w-ogniu-krytyki-po-wypowiedzi-o-nato.webp"}
           alt={"🧸 Prezydent Duda w ogniu krytyki po wypowiedzi o NATO!"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

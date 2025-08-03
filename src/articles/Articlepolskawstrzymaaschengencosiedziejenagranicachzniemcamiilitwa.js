@@ -36,9 +36,8 @@ function Articlepolskawstrzymaaschengencosiedziejenagranicachzniemcamiilitwa() {
         <Image
           src={"/polska-wstrzymaa-schengen-co-sie-dzieje-na-granicach-z-niemcami-i-litwa.webp"}
           alt={"🚨 POLSKA WSTRZYMAŁA SCHENGEN! Co się dzieje na granicach z Niemcami i Litwą?"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

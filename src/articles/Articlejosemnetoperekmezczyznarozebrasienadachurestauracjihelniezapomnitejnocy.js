@@ -36,9 +36,8 @@ function Articlejosemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomni
         <Image
           src={"/jo-sem-netoperek-mezczyzna-rozebra-sie-na-dachu-restauracji-hel-nie-zapomni-tej-nocy.webp"}
           alt={"🦇 „Jo sem netoperek!” – Mężczyzna rozebrał się na dachu restauracji. Hel nie zapomni tej nocy"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

@@ -36,9 +36,8 @@ function Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat() {
         <Image
           src={"/hamas-publikuje-nagranie-zakadnika-przerazajace-wideo-porusza-swiat.webp"}
           alt={"🎥 Hamas publikuje nagranie zakładnika – przerażające wideo porusza świat"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

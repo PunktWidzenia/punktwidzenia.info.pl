@@ -36,9 +36,8 @@ function Articletyrolskieograniczeniamogasparalizowactransportprzezalpy() {
         <Image
           src={"/tyrolskie-ograniczenia-moga-sparalizowac-transport-przez-alpy.webp"}
           alt={"🚛 Tyrolskie ograniczenia mogą sparaliżować transport przez Alpy"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

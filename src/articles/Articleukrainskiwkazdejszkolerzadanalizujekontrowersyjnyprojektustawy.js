@@ -36,9 +36,8 @@ function Articleukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy()
         <Image
           src={"/ukrainski-w-kazdej-szkole-rzad-analizuje-kontrowersyjny-projekt-ustawy.webp"}
           alt={"📚 Ukraiński w każdej szkole? Rząd analizuje kontrowersyjny projekt ustawy"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

@@ -36,9 +36,8 @@ function Articlepanikanatomorrowlandscenawogniuewakuacjatysiecyosob() {
         <Image
           src={"/panika-na-tomorrowland-scena-w-ogniu-ewakuacja-tysiecy-osob.webp"}
           alt={"🔥 Panika na Tomorrowland! Scena w ogniu, ewakuacja tysięcy osób"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

@@ -36,9 +36,8 @@ function Articleintelrezygnujezinwestycjiwpolscecodalejzrynkiempoprzewodnikow() 
         <Image
           src={"/intel-rezygnuje-z-inwestycji-w-polsce-co-dalej-z-rynkiem-poprzewodnikow.webp"}
           alt={"⚠️ Intel rezygnuje z inwestycji w Polsce – co dalej z rynkiem półprzewodników?"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

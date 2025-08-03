@@ -36,9 +36,8 @@ function Articledemolkawizbieprzyjecwsosnowcu36latekwtargnadoszpitalaizdewastowa
         <Image
           src={"/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze.webp"}
           alt={"🧨 Demolka w izbie przyjęć w Sosnowcu – 36-latek wtargnął do szpitala i zdewastował wnętrze"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

@@ -36,9 +36,8 @@ function Articleozzyosbourneniezyjelegendarockapozegnaasiezfanami() {
         <Image
           src={"/ozzy-osbourne-nie-zyje-legenda-rocka-pozegnaa-sie-z-fanami.webp"}
           alt={"☠️ Ozzy Osbourne nie żyje – legenda rocka pożegnała się z fanami"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

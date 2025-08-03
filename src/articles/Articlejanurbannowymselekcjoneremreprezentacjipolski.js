@@ -36,9 +36,8 @@ function Articlejanurbannowymselekcjoneremreprezentacjipolski() {
         <Image
           src={"/jan-urban-nowym-selekcjonerem-reprezentacji-polski.webp"}
           alt={"⚽ Jan Urban nowym selekcjonerem reprezentacji Polski!"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

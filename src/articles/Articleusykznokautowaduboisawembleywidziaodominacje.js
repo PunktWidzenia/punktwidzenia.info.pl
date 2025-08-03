@@ -36,9 +36,8 @@ function Articleusykznokautowaduboisawembleywidziaodominacje() {
         <Image
           src={"/usyk-znokautowa-duboisa-wembley-widziao-dominacje.webp"}
           alt={"💥 Usyk znokautował Duboisa! Wembley widziało dominację"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

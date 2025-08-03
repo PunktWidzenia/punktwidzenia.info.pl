@@ -36,9 +36,8 @@ function Articlelauradahlmeierciezkorannapowypadkuwpakistaniedramatycznaakcjarat
         <Image
           src={"/laura-dahlmeier-ciezko-ranna-po-wypadku-w-pakistanie-dramatyczna-akcja-ratunkowa-w-karakorum.webp"}
           alt={"🧗 Laura Dahlmeier ciężko ranna po wypadku w Pakistanie – dramatyczna akcja ratunkowa w Karakorum"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

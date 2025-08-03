@@ -36,9 +36,8 @@ function Articlegrozneburzeiupanadpolskaimgwostrzeganiemalpoowekraju() {
         <Image
           src={"/grozne-burze-i-upa-nad-polska-imgw-ostrzega-niemal-poowe-kraju.webp"}
           alt={"🌩️ Groźne burze i upał nad Polską – IMGW ostrzega niemal połowę kraju"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

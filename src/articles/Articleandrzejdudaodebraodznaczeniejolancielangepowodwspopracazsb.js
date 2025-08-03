@@ -36,9 +36,8 @@ function Articleandrzejdudaodebraodznaczeniejolancielangepowodwspopracazsb() {
         <Image
           src={"/andrzej-duda-odebra-odznaczenie-jolancie-lange-powod-wspopraca-z-sb.webp"}
           alt={"🎖️ Andrzej Duda odebrał odznaczenie Jolancie Lange – powód: współpraca z SB"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

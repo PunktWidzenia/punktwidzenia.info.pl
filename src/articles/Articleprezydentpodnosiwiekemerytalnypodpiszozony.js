@@ -36,9 +36,8 @@ function Articleprezydentpodnosiwiekemerytalnypodpiszozony() {
         <Image
           src={"/prezydent-podnosi-wiek-emerytalny-podpis-zozony.webp"}
           alt={"💥 Prezydent podnosi wiek emerytalny! Podpis złożony"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized

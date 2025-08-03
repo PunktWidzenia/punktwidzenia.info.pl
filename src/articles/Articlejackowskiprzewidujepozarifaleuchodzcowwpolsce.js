@@ -36,9 +36,8 @@ function Articlejackowskiprzewidujepozarifaleuchodzcowwpolsce() {
         <Image
           src={"/jackowski-przewiduje-pozar-i-fale-uchodzcow-w-polsce.webp"}
           alt={"🔥 Jackowski przewiduje pożar i falę uchodźców w Polsce!"}
-            width={1200}
-  height={630}
-          loading="lazy"
+width={311}
+  height={163}          loading="lazy"
           fetchPriority="low"
           className="w-full h-auto rounded"
           unoptimized
