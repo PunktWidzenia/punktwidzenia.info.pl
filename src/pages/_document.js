@@ -5,12 +5,7 @@ export default function Document() {
     <Html lang="pl">
       <Head>
         {/* Favicony */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8092340253734147"
-          crossOrigin="anonymous"
-        ></script>
-        <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="/apple-splash-640x1136.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 320px)" href="/apple-splash-640x1136.png" />
 <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px)" href="/apple-splash-750x1334.png" />
 <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="/apple-splash-828x1792.png" />
 <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px)" href="/apple-splash-1125x2436.png" />

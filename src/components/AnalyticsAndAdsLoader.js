@@ -11,8 +11,13 @@ const AnalyticsAndAdsLoader = () => {
         adsScript.async = true;
         adsScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8092340253734147";
         adsScript.crossOrigin = "anonymous";
-        document.head.appendChild(adsScript);
-        window.adsbygoogleLoaded = true;
+adsScript.onload = () => {
+  try {
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  } catch (e) {}
+};
+document.head.appendChild(adsScript);
+window.adsbygoogleLoaded = true;
       }
     };
 
