@@ -29,9 +29,9 @@ export async function getStaticProps({ params }) {
 }
 
 export default function ArticlePage({ articleData }) {
-  const Component = dynamic(() =>
-    import(`@/articles/${articleData.component}`)
-  );
+const Component = dynamic(() =>
+  import(`@/articles/${articleData.component}`).catch(() => import("@/components/ArticleNotFound"))
+);
   return (
     <>
       <Head>
