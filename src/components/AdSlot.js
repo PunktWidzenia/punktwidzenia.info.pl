@@ -19,7 +19,7 @@ export default function AdSlot() {
 
     let retries = 0;
     const interval = setInterval(() => {
-      if (Array.isArray(window.adsbygoogle)) {
+      if (Array.isArray(window.adsbygoogle) && typeof window.adsbygoogle.push === "function") {
         try {
           window.adsbygoogle.push({});
           clearInterval(interval);
@@ -45,7 +45,12 @@ export default function AdSlot() {
     <div className="my-8 text-center">
       <ins
         className="adsbygoogle"
-        style={{ display: "block", textAlign: "center" }}
+        style={{
+          display: "block",
+          textAlign: "center",
+          minHeight: "200px",   // ← minimalna wysokość
+          minWidth: "300px"     // ← minimalna szerokość
+        }}
         data-ad-layout="in-article"
         data-ad-format="fluid"
         data-ad-client="ca-pub-3940256099942544"
