@@ -1,4 +1,13 @@
 const articles = [
+{
+  id: 33,
+  link: "/hamas-publikuje-nagranie-zakadnika-przerazajace-wideo-porusza-swiat",
+  img: "/hamas-publikuje-nagranie-zakadnika-przerazajace-wideo-porusza-swiat.webp",
+  title: "🎥 Hamas publikuje nagranie zakładnika – przerażające wideo porusza świat",
+  description: "Hamas opublikował kolejne szokujące nagranie z izraelskim zakładnikiem Evyatrem Davidem. Mężczyzna w skrajnym stanie fizycznym kopie grób i błaga o życie. Wideo wywołało międzynarodowe oburzenie i ponownie rozpaliło debatę o losie porwanych oraz warunkach w Strefie Gazy.",
+  date: "2025-08-03",
+  component: "Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat"
+},
   {
   id: 32,
   link: "/grozne-burze-i-upa-nad-polska-imgw-ostrzega-niemal-poowe-kraju",
