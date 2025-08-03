@@ -187,18 +187,18 @@ const img = new (typeof window !== "undefined" ? window.Image : Image)();
   img.onload = () => {
     const canvas = document.createElement("canvas");
 
-    if (format === "webp") {
-      canvas.width = 1200;
-      canvas.height = 630;
-      canvas.getContext("2d").drawImage(img, 0, 0, 1200, 630);
-    } else {
-      const side = Math.min(img.width, img.height);
-      const sx = (img.width - side) / 2;
-      const sy = (img.height - side) / 2;
-      canvas.width = 1080;
-      canvas.height = 1080;
-      canvas.getContext("2d").drawImage(img, sx, sy, side, side, 0, 0, 1080, 1080);
-    }
+if (format === "webp") {
+  canvas.width = 311;
+  canvas.height = 163;
+  canvas.getContext("2d").drawImage(img, 0, 0, 311, 163);
+} else {
+  const side = Math.min(img.width, img.height);
+  const sx = (img.width - side) / 2;
+  const sy = (img.height - side) / 2;
+  canvas.width = 1080;
+  canvas.height = 1080;
+  canvas.getContext("2d").drawImage(img, sx, sy, side, side, 0, 0, 1080, 1080);
+}
 
     canvas.toBlob(
       (blob) => {
