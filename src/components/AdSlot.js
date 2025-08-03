@@ -3,6 +3,10 @@ import { useEffect, useRef, useState } from "react";
 export default function AdSlot() {
   const adRef = useRef(null);
   const [shouldRenderAd, setShouldRenderAd] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+useEffect(() => setHasMounted(true), []);
+if (!hasMounted) return null;
+
 
   useEffect(() => {
     if (typeof window === "undefined") return;
