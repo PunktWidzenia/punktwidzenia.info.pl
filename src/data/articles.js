@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 32,
+  link: "/grozne-burze-i-upa-nad-polska-imgw-ostrzega-niemal-poowe-kraju",
+  img: "/grozne-burze-i-upa-nad-polska-imgw-ostrzega-niemal-poowe-kraju.webp",
+  title: "🌩️ Groźne burze i upał nad Polską – IMGW ostrzega niemal połowę kraju",
+  description: "Instytut Meteorologii i Gospodarki Wodnej ostrzega przed silnymi burzami, intensywnym deszczem, gradem i upałem. Alerty obowiązują dziś w kilkunastu województwach – miejscami może dojść do podtopień.",
+  date: "2025-08-03",
+  component: "Articlegrozneburzeiupanadpolskaimgwostrzeganiemalpoowekraju"
+},
+  {
   id: 31,
   link: "/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze",
   img: "/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze.webp",
