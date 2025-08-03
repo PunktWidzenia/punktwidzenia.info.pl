@@ -49,8 +49,8 @@ export default function AdSlot() {
         style={{ display: "block", textAlign: "center" }}
         data-ad-layout="in-article"
         data-ad-format="fluid"
-        data-ad-client="ca-pub-8092340253734147"
-        data-ad-slot="1589355129"
+data-ad-client="ca-pub-3940256099942544"
+data-ad-slot="6300978111"
         data-full-width-responsive="true"
         ref={adRef}
       />
