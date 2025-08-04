@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 35,
+  link: "/dziaka-to-nowe-mieszkanie-polacy-zmieniaja-styl-zycia-na-zielony",
+  img: "/dziaka-to-nowe-mieszkanie-polacy-zmieniaja-styl-zycia-na-zielony.webp",
+  title: "🪴 Działka to nowe mieszkanie? Polacy zmieniają styl życia na zielony",
+  description: "Wzrost popularności działek rekreacyjnych w Polsce to nie chwilowa moda, lecz świadomy styl życia. Coraz więcej osób traktuje ROD jako miejsce pracy, odpoczynku i inwestycję. Co stoi za tym trendem i jakie są ograniczenia?",
+  date: "2025-08-04",
+  component: "Articledziakatonowemieszkaniepolacyzmieniajastylzycianazielony"
+},
+  {
   id: 34,
   link: "/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy",
   img: "/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy.webp",
