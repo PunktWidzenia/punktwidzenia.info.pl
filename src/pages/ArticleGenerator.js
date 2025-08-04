@@ -209,7 +209,7 @@ if (format === "webp") {
         if (typeof callback === "function") callback(); // <-- uruchamia następne
       },
       format === "webp" ? "image/webp" : "image/jpeg",
-      0.75
+      0.80
     );
   };
   img.src = thumbnailUrl;
