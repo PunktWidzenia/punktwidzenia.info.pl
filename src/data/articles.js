@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 37,
+  link: "/fim-enduro-vintage-trophy-2025-klasyczne-motocykle-wracaja-na-szlaki-piekoszowa",
+  img: "/fim-enduro-vintage-trophy-2025-klasyczne-motocykle-wracaja-na-szlaki-piekoszowa.webp",
+  title: "🏍️ FIM Enduro Vintage Trophy 2025: klasyczne motocykle wracają na szlaki Piekoszowa",
+  description: "Od 6 do 9 sierpnia 2025 roku Piekoszów gości 9. edycję FIM Enduro Vintage Trophy – prestiżowej imprezy dla fanów klasycznych motocykli terenowych. Udział biorą zawodnicy z całego świata, a wydarzeniu towarzyszy wyjątkowa retro atmosfera.",
+  date: "2025-08-04",
+  component: "Articlefimendurovintagetrophy2025klasycznemotocyklewracajanaszlakipiekoszowa"
+},
+  {
   id: 36,
   link: "/6-dni-pod-lupa-drogowki-ruszya-ogolnoeuropejska-akcja-roadpol",
   img: "/6-dni-pod-lupa-drogowki-ruszya-ogolnoeuropejska-akcja-roadpol.webp",
