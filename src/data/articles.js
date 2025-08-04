@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 36,
+  link: "/6-dni-pod-lupa-drogowki-ruszya-ogolnoeuropejska-akcja-roadpol",
+  img: "/6-dni-pod-lupa-drogowki-ruszya-ogolnoeuropejska-akcja-roadpol.webp",
+  title: "🚔 6 dni pod lupą drogówki – ruszyła ogólnoeuropejska akcja ROADPOL",
+  description: "Rozpoczęła się szeroko zakrojona akcja kontrolna ROADPOL. W całej Europie, w tym w Polsce, przez sześć dni kierowcy będą sprawdzani pod kątem najpoważniejszych wykroczeń. Mandaty mogą sięgać nawet 5 000 zł. Sprawdź, czego się spodziewać na drogach.",
+  date: "2025-08-04",
+  component: "Article6dnipodlupadrogowkiruszyaogolnoeuropejskaakcjaroadpol"
+},
+  {
   id: 35,
   link: "/dziaka-to-nowe-mieszkanie-polacy-zmieniaja-styl-zycia-na-zielony",
   img: "/dziaka-to-nowe-mieszkanie-polacy-zmieniaja-styl-zycia-na-zielony.webp",
