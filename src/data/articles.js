@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 38,
+  link: "/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312",
+  img: "/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312.webp",
+  title: "🌍 Trzęsienie ziemi na Dolnym Śląsku – Polkowice obudził wstrząs o 3:12",
+  description: "W nocy z 4 na 5 sierpnia doszło do trzęsienia ziemi w okolicach Polkowic. Magnituda wyniosła 3,0. Choć wstrząs był odczuwalny w regionie, nie odnotowano szkód ani poszkodowanych. To kolejny incydent sejsmiczny w tej części Dolnego Śląska.",
+  date: "2025-08-05",
+  component: "Articletrzesieniezieminadolnymslaskupolkowiceobudziwstrzaso312"
+},
+  {
   id: 37,
   link: "/fim-enduro-vintage-trophy-2025-klasyczne-motocykle-wracaja-na-szlaki-piekoszowa",
   img: "/fim-enduro-vintage-trophy-2025-klasyczne-motocykle-wracaja-na-szlaki-piekoszowa.webp",
