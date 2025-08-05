@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 39,
+  link: "/polityczny-klincz-przed-zaprzysiezeniem-nawrocki-kontra-tusk",
+  img: "/polityczny-klincz-przed-zaprzysiezeniem-nawrocki-kontra-tusk.webp",
+  title: "⚰️ Polityczny klincz przed zaprzysiężeniem – Nawrocki kontra Tusk",
+  description: "Nowo wybrany prezydent Karol Nawrocki ma zostać zaprzysiężony 6 sierpnia. Wszystko wskazuje na to, że już na starcie dojdzie do ostrego sporu z premierem Tuskiem. Polityczne napięcie może sparaliżować prace Sejmu i rządu.",
+  date: "2025-08-05",
+  component: "Articlepolitycznyklinczprzedzaprzysiezeniemnawrockikontratusk"
+},
+  {
   id: 38,
   link: "/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312",
   img: "/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312.webp",
