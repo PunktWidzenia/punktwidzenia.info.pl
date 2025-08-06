@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 40,
+  link: "/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu",
+  img: "/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu.webp",
+  title: "🕯️ 80 lat po Hiroszimie – świat znów igra z ogniem atomu",
+  description: "W 80. rocznicę zrzucenia bomby atomowej na Hiroszimę prezydent miasta Kazumi Matsui zaapelował o globalne rozbrojenie. W swoim przemówieniu odniósł się do zagrożeń nuklearnych we współczesnych konfliktach – od Ukrainy po Bliski Wschód.",
+  date: "2025-08-06",
+  component: "Article80latpohiroszimieswiatznowigrazogniematomu"
+},
+  {
   id: 39,
   link: "/polityczny-klincz-przed-zaprzysiezeniem-nawrocki-kontra-tusk",
   img: "/polityczny-klincz-przed-zaprzysiezeniem-nawrocki-kontra-tusk.webp",
