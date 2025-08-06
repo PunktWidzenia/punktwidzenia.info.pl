@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 42,
+  link: "/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny",
+  img: "/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny.webp",
+  title: "🐻 Trzy niedźwiedzie do odstrzału — ochrona ludzi czy skandal ekologiczny?",
+  description: "Decyzja polskich władz o odstrzale trzech dzikich niedźwiedzi wywołała falę oburzenia wśród organizacji ekologicznych. Czy bezpieczeństwo ludzi usprawiedliwia eliminację zagrożonych gatunków? Oto szczegóły tej bulwersującej sprawy.",
+  date: "2025-08-06",
+  component: "Articletrzyniedzwiedziedoodstrzauochronaludziczyskandalekologiczny"
+},
+  {
   id: 41,
   link: "/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni",
   img: "/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni.webp",
