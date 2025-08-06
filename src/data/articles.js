@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 41,
+  link: "/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni",
+  img: "/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni.webp",
+  title: "🐶 Mój pies pije wodę z kranu – hit czy obciach? Weterynarze podzieleni",
+  description: "Czy podawanie psu wody z kranu to przejaw odpowiedzialności, czy lekkomyślność? Weterynarze nie są zgodni, a właściciele dzielą się na dwa obozy. Oto fakty, mity i kontrowersje wokół kranówki dla zwierząt.",
+  date: "2025-08-06",
+  component: "Articlemojpiespijewodezkranuhitczyobciachweterynarzepodzieleni"
+},
+  {
   id: 40,
   link: "/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu",
   img: "/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu.webp",
