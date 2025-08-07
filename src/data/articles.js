@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 43,
+  link: "/polska-rozwaza-przywrocenie-wiz-dla-ukraincow-powrot-granic-czy-koniecznosc",
+  img: "/polska-rozwaza-przywrocenie-wiz-dla-ukraincow-powrot-granic-czy-koniecznosc.webp",
+  title: "🛂 Polska rozważa przywrócenie wiz dla Ukraińców – powrót granic czy konieczność?",
+  description: "Polski rząd analizuje możliwość przywrócenia obowiązku wizowego dla obywateli Ukrainy. Czy to decyzja podyktowana bezpieczeństwem i migracją, czy polityczny zwrot w relacjach między krajami?",
+  date: "2025-08-07",
+  component: "Articlepolskarozwazaprzywroceniewizdlaukraincowpowrotgranicczykoniecznosc"
+},
+  {
   id: 42,
   link: "/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny",
   img: "/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny.webp",
