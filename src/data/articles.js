@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 44,
+  link: "/masowy-stop-drive-dla-citroenow-kierowcy-bez-aut-serwisy-sparalizowane",
+  img: "/masowy-stop-drive-dla-citroenow-kierowcy-bez-aut-serwisy-sparalizowane.webp",
+  title: "🛑 Masowy „stop-drive” dla Citroënów – kierowcy bez aut, serwisy sparaliżowane",
+  description: "Citroën wzywa właścicieli C3 i DS3 do natychmiastowego zaprzestania jazdy z powodu wadliwych poduszek Takata. Problem dotyczy setek tysięcy aut w Europie.",
+  date: "2025-08-08",
+  component: "Articlemasowystopdrivedlacitroenowkierowcybezautserwisysparalizowane"
+},
+  {
   id: 43,
   link: "/polska-rozwaza-przywrocenie-wiz-dla-ukraincow-powrot-granic-czy-koniecznosc",
   img: "/polska-rozwaza-przywrocenie-wiz-dla-ukraincow-powrot-granic-czy-koniecznosc.webp",
