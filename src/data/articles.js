@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 45,
+  link: "/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje",
+  img: "/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje.webp",
+  title: "💰 Płaca minimalna w 2026 roku – rząd ujawnia propozycję",
+  description: "Rząd zaproponował wzrost płacy minimalnej w Polsce od stycznia 2026 roku do 4 806 zł brutto miesięcznie oraz 31,40 zł brutto za godzinę. To podwyżka o 140 zł względem 2025 roku, która ma objąć setki tysięcy pracowników w całym kraju.",
+  date: "2025-08-08",
+  component: "Articlepacaminimalnaw2026rokurzadujawniapropozycje"
+},
+  {
   id: 44,
   link: "/masowy-stop-drive-dla-citroenow-kierowcy-bez-aut-serwisy-sparalizowane",
   img: "/masowy-stop-drive-dla-citroenow-kierowcy-bez-aut-serwisy-sparalizowane.webp",
