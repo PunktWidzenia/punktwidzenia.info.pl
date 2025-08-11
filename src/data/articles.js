@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 47,
+  link: "/ukrainski-obywatel-oskarzony-o-probe-zamachu-paczka-bomba-w-polsce",
+  img: "/ukrainski-obywatel-oskarzony-o-probe-zamachu-paczka-bomba-w-polsce.webp",
+  title: "📰 Ukraiński obywatel oskarżony o próbę zamachu paczką-bombą w Polsce",
+  description: "ABW zatrzymała obywatela Ukrainy podejrzanego o wysłanie paczki-bomby. Grozi mu dożywocie. Trwają ustalenia motywów i powiązań.",
+  date: "2025-08-11",
+  component: "Articleukrainskiobywateloskarzonyoprobezamachupaczkabombawpolsce"
+},
+  {
   id: 46,
   link: "/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin",
   img: "/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin.webp",
