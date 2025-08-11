@@ -97,7 +97,7 @@ const formattedSections = sections
   })
   .join("\n\n");
 
-    const componentName = `Article_${slugified.replace(/-/g, "")}`;
+    const componentName = `Article${slugified.replace(/-/g, "")}`;
     const safeSections = formattedSections.replace(/\$\{/g, "\\${");
 
     const jsCode = `import Head from "next/head";
