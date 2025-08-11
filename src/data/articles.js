@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 46,
+  link: "/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin",
+  img: "/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin.webp",
+  title: "📰 Kosiniak-Kamysz: Zełenski powinien dołączyć do szczytu Trump–Putin",
+  description: "Kosiniak-Kamysz chce, by Zełenski dołączył do szczytu Trump–Putin. Ma to zagwarantować uwzględnienie interesów Ukrainy w rozmowach.",
+  date: "2025-08-11",
+  component: "Articlekosiniakkamyszzelenskipowiniendolaczycdoszczytutrumpputin"
+},
+  {
   id: 45,
   link: "/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje",
   img: "/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje.webp",
