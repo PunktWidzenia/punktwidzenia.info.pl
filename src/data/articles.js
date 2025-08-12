@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 48,
+  link: "/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai",
+  img: "/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai.webp",
+  title: "🛑 Autonomiczna taksówka Baidu wpada do wykopu w Chongqingu – poważne pytania o bezpieczeństwo AI",
+  description: "Awaria autonomicznej taksówki Baidu z pasażerką na pokładzie wywołała debatę o bezpieczeństwie robotaxi i konieczności zaostrzenia przepisów w Chinach.",
+  date: "2025-08-12",
+  component: "Articleautonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniaobezpieczenstwoai"
+},
+  {
   id: 47,
   link: "/ukrainski-obywatel-oskarzony-o-probe-zamachu-paczka-bomba-w-polsce",
   img: "/ukrainski-obywatel-oskarzony-o-probe-zamachu-paczka-bomba-w-polsce.webp",
