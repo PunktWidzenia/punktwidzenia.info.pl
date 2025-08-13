@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 50,
+  link: "/alkoholowa-plaga-czy-polska-traci-kontrole-nad-narodowym-nalogiem",
+  img: "/alkoholowa-plaga-czy-polska-traci-kontrole-nad-narodowym-nalogiem.webp",
+  title: "🍺 Alkoholowa plaga – czy Polska traci kontrolę nad narodowym nałogiem?",
+  description: "Polska ma drugie miejsce w UE pod względem zgonów spowodowanych alkoholem. Skala problemu, przyczyny i brak skutecznej reakcji państwa.",
+  date: "2025-08-13",
+  component: "Articlealkoholowaplagaczypolskatracikontrolenadnarodowymnalogiem"
+},
+  {
   id: 49,
   link: "/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce",
   img: "/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce.webp",
