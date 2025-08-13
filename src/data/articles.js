@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 49,
+  link: "/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce",
+  img: "/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce.webp",
+  title: "📈 Broń w rękach obywateli – co oznacza lawinowy wzrost pozwoleń na broń w Polsce?",
+  description: "W Polsce od 2020 roku liczba pozwoleń na broń wzrosła czterokrotnie. Analiza przyczyn, skutków i możliwych scenariuszy.",
+  date: "2025-08-13",
+  component: "Articlebronwrekachobywatelicooznaczalawinowywzrostpozwolennabronwpolsce"
+},
+  {
   id: 48,
   link: "/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai",
   img: "/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai.webp",
