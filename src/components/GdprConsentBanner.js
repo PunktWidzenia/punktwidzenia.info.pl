@@ -1,139 +1,192 @@
-import { useState, useEffect } from "react"
-import Link from "next/link"
+import { useState, useEffect, useRef } from "react";
 
-const GdprConsentBanner = () => {
+const CONSENT_KEY = "gdpr-consent";
+const CONSENT_VERSION = 1; // podbij, gdy zmienisz zakres celów/teksty
+
+function getConsentSafe() {
+  try {
+    const raw = localStorage.getItem(CONSENT_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+export default function GdprConsentBanner() {
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [adsConsent, setAdsConsent] = useState(false);
   const [analyticsConsent, setAnalyticsConsent] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
+  const settingsHeadingRef = useRef(null);
 
-useEffect(() => {
-  setHasMounted(true);
-}, []);
+  useEffect(() => setHasMounted(true), []);
 
-useEffect(() => {
-  if (!hasMounted) return;
-  const consent = localStorage.getItem("gdpr-consent");
-  if (!consent) {
-    setShowBanner(true);
-  }
-}, [hasMounted]);
+  // Po montażu sprawdź, czy jest ważna zgoda
+  useEffect(() => {
+    if (!hasMounted) return;
+    const saved = getConsentSafe();
+    if (!saved || saved.version !== CONSENT_VERSION) {
+      setShowBanner(true);
+    }
+  }, [hasMounted]);
+
+  // Po przejściu do ustawień ustaw focus i wczytaj stan z pamięci
+  useEffect(() => {
+    if (!showSettings) return;
+    const saved = getConsentSafe();
+    if (saved) {
+      setAdsConsent(!!saved.ads);
+      setAnalyticsConsent(!!saved.analytics);
+    }
+    // focus nagłówka dialogu
+    settingsHeadingRef.current?.focus();
+  }, [showSettings]);
+
+  const persistConsent = (opts) => {
+    const payload = {
+      ads: !!opts.ads,
+      analytics: !!opts.analytics,
+      version: CONSENT_VERSION,
+      timestamp: Date.now(),
+    };
+    localStorage.setItem(CONSENT_KEY, JSON.stringify(payload));
+
+    // poinformuj inne karty
+    // (storage event) i tę samą kartę (własny event)
+    window.dispatchEvent(new CustomEvent("consent-changed", { detail: payload }));
+  };
 
   const handleAcceptAll = () => {
-    localStorage.setItem("gdpr-consent", JSON.stringify({
-      ads: true,
-      analytics: true,
-    }));
+    persistConsent({ ads: true, analytics: true });
     setShowBanner(false);
-    location.reload();
   };
 
   const handleSaveSettings = () => {
-    localStorage.setItem("gdpr-consent", JSON.stringify({
-      ads: adsConsent,
-      analytics: analyticsConsent,
-    }));
+    persistConsent({ ads: adsConsent, analytics: analyticsConsent });
     setShowBanner(false);
-    location.reload();
   };
 
-if (!hasMounted || !showBanner) return null;
+  if (!hasMounted || !showBanner) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-  <div className="w-full max-w-xl bg-white dark:bg-neutral-900 text-black dark:text-white border border-neutral-300 dark:border-neutral-700 p-6 shadow-xl rounded">
-      {!showSettings ? (
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <p className="text-sm max-w-3xl">
-            Korzystamy z plików cookies w celu zapewnienia prawidłowego działania strony, wyświetlania reklam (Google AdSense) i analityki (Google Analytics).
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <button
-              onClick={handleAcceptAll}
-              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
-            >
-              Akceptuję i przechodzę do serwisu
-            </button>
-            <button
-              onClick={() => setShowSettings(true)}
-              className="border border-neutral-400 dark:border-neutral-600 px-4 py-2 rounded"
-            >
-              Ustawienia zaawansowane
-            </button>
-          </div>
-        </div>
-      ) : (
-        <div className="space-y-4">
-          <h2 className="text-lg font-semibold">Zarządzanie zgodami</h2>
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="font-medium">Niezbędne cookies</span>
-              <span className="text-xs text-neutral-500">Zawsze aktywne</span>
-            </div>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              Umożliwiają podstawowe funkcje strony, takie jak nawigacja i dostęp do bezpiecznych obszarów.
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+      aria-live="polite"
+    >
+      <div
+        className="w-full max-w-xl bg-white dark:bg-neutral-900 text-black dark:text-white border border-neutral-300 dark:border-neutral-700 p-6 shadow-xl rounded"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="consent-title"
+      >
+        {!showSettings ? (
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <p className="text-sm max-w-3xl">
+              Używamy plików cookies do zapewnienia działania serwisu (niezbędne),
+              wyświetlania reklam (Google AdSense) oraz analityki (Google Analytics).
+              Niezbędne cookies są zawsze aktywne i nie służą profilowaniu.
             </p>
-          </div>
-
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
-              <label className="font-medium" htmlFor="adsConsent">
-                Reklamowe (AdSense)
-              </label>
-              <input
-                id="adsConsent"
-                type="checkbox"
-                checked={adsConsent}
-                onChange={(e) => setAdsConsent(e.target.checked)}
-              />
+            <div className="flex flex-wrap gap-3">
+              <button
+                onClick={handleAcceptAll}
+                className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
+              >
+                Akceptuję i przechodzę do serwisu
+              </button>
+              <button
+                onClick={() => setShowSettings(true)}
+                className="border border-neutral-400 dark:border-neutral-600 px-4 py-2 rounded"
+                aria-haspopup="dialog"
+                aria-controls="consent-settings"
+              >
+                Ustawienia zaawansowane
+              </button>
             </div>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              Pozwalają na wyświetlanie spersonalizowanych reklam Google AdSense.
-            </p>
           </div>
+        ) : (
+          <div className="space-y-4" id="consent-settings">
+            <h2
+              id="consent-title"
+              ref={settingsHeadingRef}
+              tabIndex={-1}
+              className="text-lg font-semibold"
+            >
+              Zarządzanie zgodami
+            </h2>
 
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
-              <label className="font-medium" htmlFor="analyticsConsent">
-                Analityczne (Google Analytics)
-              </label>
-              <input
-                id="analyticsConsent"
-                type="checkbox"
-                checked={analyticsConsent}
-                onChange={(e) => setAnalyticsConsent(e.target.checked)}
-              />
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="font-medium">Niezbędne cookies</span>
+                <span className="text-xs text-neutral-500">Zawsze aktywne</span>
+              </div>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400">
+                Pozwalają na podstawowe funkcje (nawigacja, bezpieczeństwo).
+                Nie zawierają danych do profilowania.
+              </p>
             </div>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">
-              Pomagają nam zrozumieć, w jaki sposób odwiedzający korzystają z serwisu.
-            </p>
-          </div>
 
-          <div className="flex gap-3 pt-2">
-            <button
-              onClick={handleSaveSettings}
-              className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
-            >
-              Zapisz ustawienia
-            </button>
-            <button
-              onClick={() => setShowSettings(false)}
-              className="border border-neutral-400 dark:border-neutral-600 px-4 py-2 rounded"
-            >
-              Wróć
-            </button>
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <label className="font-medium" htmlFor="adsConsent">
+                  Reklamowe (AdSense)
+                </label>
+                <input
+                  id="adsConsent"
+                  type="checkbox"
+                  checked={adsConsent}
+                  onChange={(e) => setAdsConsent(e.target.checked)}
+                  aria-describedby="ads-desc"
+                />
+              </div>
+              <p id="ads-desc" className="text-sm text-neutral-600 dark:text-neutral-400">
+                Umożliwiają wyświetlanie reklam. Przy włączonej zgodzie mogą być personalizowane przez partnera.
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center justify-between">
+                <label className="font-medium" htmlFor="analyticsConsent">
+                  Analityczne (Google Analytics)
+                </label>
+                <input
+                  id="analyticsConsent"
+                  type="checkbox"
+                  checked={analyticsConsent}
+                  onChange={(e) => setAnalyticsConsent(e.target.checked)}
+                  aria-describedby="analytics-desc"
+                />
+              </div>
+              <p id="analytics-desc" className="text-sm text-neutral-600 dark:text-neutral-400">
+                Pomagają zrozumieć korzystanie z serwisu (statystyki zagregowane).
+              </p>
+            </div>
+
+            <div className="flex gap-3 pt-2">
+              <button
+                onClick={handleSaveSettings}
+                className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded"
+              >
+                Zapisz ustawienia
+              </button>
+              <button
+                onClick={() => setShowSettings(false)}
+                className="border border-neutral-400 dark:border-neutral-600 px-4 py-2 rounded"
+              >
+                Wróć
+              </button>
+              <a
+                href="/polityka-prywatnosci"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-auto text-sm hover:underline text-red-600"
+              >
+                Polityka prywatności
+              </a>
+            </div>
           </div>
-		  <p className="text-xs text-neutral-500 mt-2">
-  <a href="/polityka-prywatnosci" target="_blank" rel="noopener noreferrer" className="hover:underline text-red-500">
-  Zobacz naszą politykę prywatności
-</a>
-</p>
-        </div>
-      )}
+        )}
+      </div>
     </div>
-	</div>
   );
-};
-
-export default GdprConsentBanner;
+}
