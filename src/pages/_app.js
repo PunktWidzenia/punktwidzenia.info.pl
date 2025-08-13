@@ -52,20 +52,19 @@ export default function App({ Component, pageProps }) {
         <div className="max-w-6xl mx-auto">
           <header className="px-6 py-4 border-b border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
             <div className="flex items-center space-x-2">
-              <a href="/" onClick={onLogoClick} aria-label="Strona główna – Punkt Widzenia">
-                <Image
-                  src="/logo_header_56x56.webp"
-                  alt="Punkt Widzenia"
-                  width={56}
-                  height={56}
-                  priority={router.pathname === "/"}
-                  sizes="56px"
-                />
-              </a>
-
-              <a href="/" onClick={onLogoClick} className="text-2xl font-bold hover:no-underline">
-                PUNKT <span className="text-red-500 font-bold">WIDZENIA</span>
-              </a>
+<Link href="/" onClick={onLogoClick} aria-label="Strona główna – Punkt Widzenia">
+  <Image
+    src="/logo_header_56x56.webp"
+    alt="Punkt Widzenia"
+    width={56}
+    height={56}
+    priority={router.pathname === "/"}
+    sizes="56px"
+  />
+</Link>
+<Link href="/" onClick={onLogoClick} className="text-2xl font-bold hover:no-underline">
+  PUNKT <span className="text-red-500 font-bold">WIDZENIA</span>
+</Link>
             </div>
 
             <div className="flex items-center gap-4">
