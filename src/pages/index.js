@@ -50,20 +50,22 @@ export default function Home() {
           ))}
         </div>
 
-        {isLoading && (
-          <div className="flex justify-center py-4">
-            <div className="w-6 h-6 border-4 border-white/20 border-t-red-500 rounded-full animate-spin" />
-          </div>
-        )}
+{!isLoading && visibleCount < articles.length && (
+  <button
+    onClick={handleShowMore}
+    className="mt-4 px-6 py-2 bg-red-600 hover:bg-red-700 text-white dark:bg-red-500 dark:hover:bg-red-600 dark:text-white rounded-lg"
+    aria-label="Załaduj więcej artykułów"
+  >
+    Zobacz więcej
+  </button>
+)}
 
-        {!isLoading && visibleCount < articles.length && (
-          <button
-            onClick={handleShowMore}
-            className="mt-4 px-6 py-2 bg-red-600 hover:bg-red-700 text-white dark:bg-red-500 dark:hover:bg-red-600 dark:text-white rounded-lg"
-          >
-            Zobacz więcej
-          </button>
-        )}
+{isLoading && (
+  <div className="flex justify-center py-4" aria-live="polite" aria-busy="true">
+    <div className="w-6 h-6 border-4 border-white/20 border-t-red-500 rounded-full animate-spin" />
+  </div>
+)}
+
       </section>
 
       <section id="onas" className="space-y-4">
@@ -81,13 +83,13 @@ export default function Home() {
         </p>
         <ul className="text-black/70 dark:text-white/70 space-y-1">
           <li className="flex items-center gap-2">
-            <FaEnvelope className="text-red-400 text-lg" />
+<FaEnvelope className="text-red-400 text-lg" aria-hidden />
             <a href="mailto:kontaktpunktwidzenia@gmail.com" className="underline">
               kontaktpunktwidzenia@gmail.com
             </a>
           </li>
           <li className="flex items-center gap-2">
-            <FaFacebookSquare className="text-blue-500 text-lg" />
+<FaFacebookSquare className="text-blue-500 text-lg" aria-hidden />
             <a
               href="https://www.facebook.com/profile.php?id=61551541407685"
               target="_blank"
@@ -98,7 +100,7 @@ export default function Home() {
             </a>
           </li>
           <li className="flex items-center gap-2">
-            <FaInstagram className="text-pink-500 text-lg" />
+<FaInstagram className="text-pink-500 text-lg" aria-hidden />
             <a
               href="https://www.instagram.com/punkt_widzenia_news/"
               target="_blank"
