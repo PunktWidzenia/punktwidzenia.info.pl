@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 51,
+  link: "/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje",
+  img: "/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje.webp",
+  title: "🚨 Uczeń w rękach służb – nastolatek z Ukrainy zwerbowany przez Rosję",
+  description: "Polska policja zatrzymała 17-letniego obywatela Ukrainy podejrzanego o planowany akt wandalizmu na zlecenie rosyjskich służb.",
+  date: "2025-08-14",
+  component: "Articleuczenwrekachsluzbnastolatekzukrainyzwerbowanyprzezrosje"
+},
+  {
   id: 50,
   link: "/alkoholowa-plaga-czy-polska-traci-kontrole-nad-narodowym-nalogiem",
   img: "/alkoholowa-plaga-czy-polska-traci-kontrole-nad-narodowym-nalogiem.webp",
