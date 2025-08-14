@@ -46,7 +46,9 @@ function Articlemcdonaldspolskaukaranyrekordowagrzywna4mlnzawyciekdanychpracowni
           className="w-full h-auto rounded"
           unoptimized
         />
-        <p className="text-sm text-gray-500 dark:text-gray-400">📷 Zdjęcie: McDonald's / Creative Commons / Attribution 4.0 International</p>
+<p className="text-sm text-gray-500 dark:text-gray-400">
+  📷 Zdjęcie: McDonald&apos;s / Creative Commons / Attribution 4.0 International
+</p>
         <div className="space-y-6">
             <h2 className="text-xl font-semibold">📂 Wyciek, który wstrząsnął korporacją</h2>
             <p>Urząd Ochrony Danych Osobowych potwierdził, że McDonald’s Polska dopuścił do ujawnienia w internecie poufnych danych osobowych setek pracowników. Wśród ujawnionych informacji znalazły się m.in. imiona, nazwiska, numery PESEL, adresy oraz dane o wynagrodzeniach. Wyciek trwał kilka tygodni, zanim został wykryty i zablokowany.</p>
