@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 52,
+  link: "/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow",
+  img: "/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow.webp",
+  title: "⚠️ McDonald’s Polska ukarany rekordową grzywną – 4 mln € za wyciek danych pracowników",
+  description: "Urząd Ochrony Danych Osobowych nałożył na McDonald’s Polska karę 4 mln € za ujawnienie danych pracowników w internecie. Analizujemy przyczyny, skutki i konsekwencje tej decyzji.",
+  date: "2025-08-14",
+  component: "Articlemcdonaldspolskaukaranyrekordowagrzywna4mlnzawyciekdanychpracownikow"
+},
+  {
   id: 51,
   link: "/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje",
   img: "/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje.webp",
