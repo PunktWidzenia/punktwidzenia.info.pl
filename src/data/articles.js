@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 53,
+  link: "/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci",
+  img: "/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci.webp",
+  title: "🥩 15 sierpnia a jedzenie mięsa – rozwiewamy wątpliwości",
+  description: "15 sierpnia to święto Wniebowzięcia NMP. Wyjaśniamy, czy w ten dzień można jeść mięso, gdy wypada w piątek.",
+  date: "2025-08-15",
+  component: "Article15sierpniaajedzeniemiesarozwiewamywatpliwosci"
+},
+  {
   id: 52,
   link: "/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow",
   img: "/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow.webp",
