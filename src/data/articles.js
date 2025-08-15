@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 54,
+  link: "/obowiazkowe-badania-psychologiczne-dla-kierowcow-co-5-lat-bezpieczenstwo-czy-przesada",
+  img: "/obowiazkowe-badania-psychologiczne-dla-kierowcow-co-5-lat-bezpieczenstwo-czy-przesada.webp",
+  title: "🚗 Obowiązkowe badania psychologiczne dla kierowców co 5 lat – bezpieczeństwo czy przesada?",
+  description: "Pomysł badań psychologicznych dla wszystkich kierowców co pięć lat dzieli opinię publiczną. Czy to poprawi bezpieczeństwo, czy będzie tylko kosztowną przesadą?",
+  date: "2025-08-15",
+  component: "Articleobowiazkowebadaniapsychologicznedlakierowcowco5latbezpieczenstwoczyprzesada"
+},
+  {
   id: 53,
   link: "/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci",
   img: "/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci.webp",
