@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 56,
+  link: "/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu",
+  img: "/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu.webp",
+  title: "🌍 Spotkanie Trump–Putin w Anchorage – wielkie oczekiwania, brak przełomu",
+  description: "Donald Trump i Władimir Putin spotkali się w Anchorage, by rozmawiać o wojnie w Ukrainie. Po wielogodzinnych rozmowach nie ogłoszono zawieszenia broni ani konkr",
+  date: "2025-08-15",
+  component: "Articlespotkanietrumpputinwanchoragewielkieoczekiwaniabrakprzelomu"
+},
+  {
   id: 55,
   link: "/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu",
   img: "/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp",
