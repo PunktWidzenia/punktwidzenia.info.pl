@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 55,
+  link: "/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu",
+  img: "/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp",
+  title: "🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?",
+  description: "GPT-5 nie przyniósł przełomu. Zamiast rewolucji mamy drobne ulepszenia i rosnący sceptycyzm. Czy rozwój AI faktycznie spowolnił?",
+  date: "2025-08-15",
+  component: "Articlegpt5bezrewolucjiczysztucznainteligencjautknelawmiejscu"
+},
+  {
   id: 54,
   link: "/obowiazkowe-badania-psychologiczne-dla-kierowcow-co-5-lat-bezpieczenstwo-czy-przesada",
   img: "/obowiazkowe-badania-psychologiczne-dla-kierowcow-co-5-lat-bezpieczenstwo-czy-przesada.webp",
