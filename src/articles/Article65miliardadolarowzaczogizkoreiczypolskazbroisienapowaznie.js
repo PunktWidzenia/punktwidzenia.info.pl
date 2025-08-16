@@ -33,6 +33,12 @@ function Article65miliardadolarowzaczogizkoreiczypolskazbroisienapowaznie() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"65 miliardadolarowzaczogizkoreiczypolskazbroisienapowaznie"}
+    </h1>
+  </header>
+
         <Image
           src={"/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie.webp"}
           alt={"🛡️ 6,5 miliarda dolarów za czołgi z Korei – czy Polska zbroi się na poważnie?"}

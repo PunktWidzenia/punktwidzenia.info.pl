@@ -33,6 +33,12 @@ function Articlepacaminimalnaw2026rokurzadujawniapropozycje() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Pacaminimalnaw 2026 rokurzadujawniapropozycje"}
+    </h1>
+  </header>
+
         <Image
           src={"/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje.webp"}
           alt={"💰 Płaca minimalna w 2026 roku – rząd ujawnia propozycję"}

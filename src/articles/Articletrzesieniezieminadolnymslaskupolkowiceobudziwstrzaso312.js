@@ -33,6 +33,12 @@ function Articletrzesieniezieminadolnymslaskupolkowiceobudziwstrzaso312() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Trzesieniezieminadolnymslaskupolkowiceobudziwstrzaso 312"}
+    </h1>
+  </header>
+
         <Image
           src={"/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312.webp"}
           alt={"🌍 Trzęsienie ziemi na Dolnym Śląsku – Polkowice obudził wstrząs o 3:12"}

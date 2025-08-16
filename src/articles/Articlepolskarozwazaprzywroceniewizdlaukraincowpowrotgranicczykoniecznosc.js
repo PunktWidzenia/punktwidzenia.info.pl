@@ -33,6 +33,12 @@ function Articlepolskarozwazaprzywroceniewizdlaukraincowpowrotgranicczykonieczno
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Polskarozwazaprzywroceniewizdlaukraincowpowrotgranicczykoniecznosc"}
+    </h1>
+  </header>
+
         <Image
           src={"/polska-rozwaza-przywrocenie-wiz-dla-ukraincow-powrot-granic-czy-koniecznosc.webp"}
           alt={"🛂 Polska rozważa przywrócenie wiz dla Ukraińców – powrót granic czy konieczność?"}

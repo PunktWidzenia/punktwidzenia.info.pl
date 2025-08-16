@@ -33,6 +33,12 @@ function Articleukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy()
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Ukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy"}
+    </h1>
+  </header>
+
         <Image
           src={"/ukrainski-w-kazdej-szkole-rzad-analizuje-kontrowersyjny-projekt-ustawy.webp"}
           alt={"📚 Ukraiński w każdej szkole? Rząd analizuje kontrowersyjny projekt ustawy"}

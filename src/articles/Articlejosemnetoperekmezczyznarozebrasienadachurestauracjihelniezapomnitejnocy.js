@@ -33,6 +33,12 @@ function Articlejosemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomni
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Josemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomnitejnocy"}
+    </h1>
+  </header>
+
         <Image
           src={"/jo-sem-netoperek-mezczyzna-rozebra-sie-na-dachu-restauracji-hel-nie-zapomni-tej-nocy.webp"}
           alt={"🦇 „Jo sem netoperek!” – Mężczyzna rozebrał się na dachu restauracji. Hel nie zapomni tej nocy"}

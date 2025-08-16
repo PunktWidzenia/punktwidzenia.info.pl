@@ -33,6 +33,12 @@ function Articlehamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Hamaspublikujenagraniezakadnikaprzerazajacewideoporuszaswiat"}
+    </h1>
+  </header>
+
         <Image
           src={"/hamas-publikuje-nagranie-zakadnika-przerazajace-wideo-porusza-swiat.webp"}
           alt={"🎥 Hamas publikuje nagranie zakładnika – przerażające wideo porusza świat"}

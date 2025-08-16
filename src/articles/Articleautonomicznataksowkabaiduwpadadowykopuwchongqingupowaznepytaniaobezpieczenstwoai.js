@@ -118,6 +118,12 @@ function Articleautonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniao
       />
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Autonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniaobezpieczenstwoai"}
+    </h1>
+  </header>
+
         <NextImage
           src="/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai.webp"
           alt="🛑 Autonomiczna taksówka Baidu wpada do wykopu w Chongqingu – poważne pytania o bezpieczeństwo AI"

@@ -33,6 +33,12 @@ function Articleusykznokautowaduboisawembleywidziaodominacje() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Usykznokautowaduboisawembleywidziaodominacje"}
+    </h1>
+  </header>
+
         <Image
           src={"/usyk-znokautowa-duboisa-wembley-widziao-dominacje.webp"}
           alt={"💥 Usyk znokautował Duboisa! Wembley widziało dominację"}

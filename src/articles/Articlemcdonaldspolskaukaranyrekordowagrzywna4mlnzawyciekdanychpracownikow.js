@@ -36,6 +36,12 @@ function Articlemcdonaldspolskaukaranyrekordowagrzywna4mlnzawyciekdanychpracowni
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"⚠️ McDonald’s Polska ukarany rekordową grzywną – 4 mln € za wyciek danych pracowników"}
+    </h1>
+  </header>
+
         <NextImage
           src={"/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow.webp"}
           alt={"⚠️ McDonald’s Polska ukarany rekordową grzywną – 4 mln € za wyciek danych pracowników"}

@@ -36,6 +36,12 @@ function Articlealkoholowaplagaczypolskatracikontrolenadnarodowymnalogiem() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"🍺 Alkoholowa plaga – czy Polska traci kontrolę nad narodowym nałogiem?"}
+    </h1>
+  </header>
+
         <NextImage
           src={"/alkoholowa-plaga-czy-polska-traci-kontrole-nad-narodowym-nalogiem.webp"}
           alt={"🍺 Alkoholowa plaga – czy Polska traci kontrolę nad narodowym nałogiem?"}

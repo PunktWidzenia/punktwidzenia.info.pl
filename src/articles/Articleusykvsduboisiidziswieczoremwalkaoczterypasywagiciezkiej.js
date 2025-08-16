@@ -33,6 +33,12 @@ function Articleusykvsduboisiidziswieczoremwalkaoczterypasywagiciezkiej() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Usykvsduboisiidziswieczoremwalkaoczterypasywagiciezkiej"}
+    </h1>
+  </header>
+
         <Image
           src={"/usyk-vs-dubois-ii-dzis-wieczorem-walka-o-cztery-pasy-wagi-ciezkiej.webp"}
           alt={"🔥 Usyk vs Dubois II. Dziś wieczorem walka o cztery pasy wagi ciężkiej!"}

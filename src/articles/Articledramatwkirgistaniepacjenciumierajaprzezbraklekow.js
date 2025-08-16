@@ -33,6 +33,12 @@ function Articledramatwkirgistaniepacjenciumierajaprzezbraklekow() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Dramatwkirgistaniepacjenciumierajaprzezbraklekow"}
+    </h1>
+  </header>
+
         <Image
           src={"/dramat-w-kirgistanie-pacjenci-umieraja-przez-brak-lekow.webp"}
           alt={"💊 Dramat w Kirgistanie – pacjenci umierają przez brak leków"}

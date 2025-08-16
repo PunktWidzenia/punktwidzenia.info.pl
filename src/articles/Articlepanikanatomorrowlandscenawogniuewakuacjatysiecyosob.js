@@ -33,6 +33,12 @@ function Articlepanikanatomorrowlandscenawogniuewakuacjatysiecyosob() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Panikanatomorrowlandscenawogniuewakuacjatysiecyosob"}
+    </h1>
+  </header>
+
         <Image
           src={"/panika-na-tomorrowland-scena-w-ogniu-ewakuacja-tysiecy-osob.webp"}
           alt={"🔥 Panika na Tomorrowland! Scena w ogniu, ewakuacja tysięcy osób"}

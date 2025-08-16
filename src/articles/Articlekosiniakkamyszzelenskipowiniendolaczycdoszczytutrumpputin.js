@@ -36,6 +36,12 @@ function Article_kosiniakkamyszzelenskipowiniendolaczycdoszczytutrumpputin() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"📰 Kosiniak-Kamysz: Zełenski powinien dołączyć do szczytu Trump–Putin"}
+    </h1>
+  </header>
+
         <NextImage
           src={"/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin.webp"}
           alt={"📰 Kosiniak-Kamysz: Zełenski powinien dołączyć do szczytu Trump–Putin"}

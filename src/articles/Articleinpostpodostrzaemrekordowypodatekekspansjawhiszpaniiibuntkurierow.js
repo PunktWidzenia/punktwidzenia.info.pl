@@ -33,6 +33,12 @@ function Articleinpostpodostrzaemrekordowypodatekekspansjawhiszpaniiibuntkuriero
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Inpostpodostrzaemrekordowypodatekekspansjawhiszpaniiibuntkurierow"}
+    </h1>
+  </header>
+
         <Image
           src={"/inpost-pod-ostrzaem-rekordowy-podatek-ekspansja-w-hiszpanii-i-bunt-kurierow.webp"}
           alt={"📦 InPost pod ostrzałem: rekordowy podatek, ekspansja w Hiszpanii i bunt kurierów"}

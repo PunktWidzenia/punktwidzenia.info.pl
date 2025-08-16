@@ -33,6 +33,12 @@ function Articleprezydentdudawogniukrytykipowypowiedzionato() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Prezydentdudawogniukrytykipowypowiedzionato"}
+    </h1>
+  </header>
+
         <Image
           src={"/prezydent-duda-w-ogniu-krytyki-po-wypowiedzi-o-nato.webp"}
           alt={"🧸 Prezydent Duda w ogniu krytyki po wypowiedzi o NATO!"}

@@ -33,6 +33,12 @@ function Articletrzyniedzwiedziedoodstrzauochronaludziczyskandalekologiczny() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Trzyniedzwiedziedoodstrzauochronaludziczyskandalekologiczny"}
+    </h1>
+  </header>
+
         <Image
           src={"/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny.webp"}
           alt={"🐻 Trzy niedźwiedzie do odstrzału — ochrona ludzi czy skandal ekologiczny?"}

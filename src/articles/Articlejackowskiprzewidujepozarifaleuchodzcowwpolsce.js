@@ -33,6 +33,12 @@ function Articlejackowskiprzewidujepozarifaleuchodzcowwpolsce() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Jackowskiprzewidujepozarifaleuchodzcowwpolsce"}
+    </h1>
+  </header>
+
         <Image
           src={"/jackowski-przewiduje-pozar-i-fale-uchodzcow-w-polsce.webp"}
           alt={"🔥 Jackowski przewiduje pożar i falę uchodźców w Polsce!"}

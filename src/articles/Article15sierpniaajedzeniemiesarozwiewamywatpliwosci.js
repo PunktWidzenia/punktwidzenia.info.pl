@@ -36,6 +36,12 @@ function Article15sierpniaajedzeniemiesarozwiewamywatpliwosci() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"🥩 15 sierpnia a jedzenie mięsa – rozwiewamy wątpliwości"}
+    </h1>
+  </header>
+
         <NextImage
           src={"/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci.webp"}
           alt={"🥩 15 sierpnia a jedzenie mięsa – rozwiewamy wątpliwości"}

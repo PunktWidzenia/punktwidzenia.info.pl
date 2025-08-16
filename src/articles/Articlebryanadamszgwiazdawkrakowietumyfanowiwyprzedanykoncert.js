@@ -33,6 +33,12 @@ function Articlebryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Bryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert"}
+    </h1>
+  </header>
+
         <Image
           src={"/bryan-adams-z-gwiazda-w-krakowie-tumy-fanow-i-wyprzedany-koncert.webp"}
           alt={"🎸 Bryan Adams z gwiazdą w Krakowie! Tłumy fanów i wyprzedany koncert"}

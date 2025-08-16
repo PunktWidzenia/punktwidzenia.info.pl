@@ -33,6 +33,12 @@ function Articlelauradahlmeierciezkorannapowypadkuwpakistaniedramatycznaakcjarat
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Lauradahlmeierciezkorannapowypadkuwpakistaniedramatycznaakcjaratunkowawkarakorum"}
+    </h1>
+  </header>
+
         <Image
           src={"/laura-dahlmeier-ciezko-ranna-po-wypadku-w-pakistanie-dramatyczna-akcja-ratunkowa-w-karakorum.webp"}
           alt={"🧗 Laura Dahlmeier ciężko ranna po wypadku w Pakistanie – dramatyczna akcja ratunkowa w Karakorum"}

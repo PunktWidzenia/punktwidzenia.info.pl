@@ -33,6 +33,12 @@ function Articlejanurbannowymselekcjoneremreprezentacjipolski() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Janurbannowymselekcjoneremreprezentacjipolski"}
+    </h1>
+  </header>
+
         <Image
           src={"/jan-urban-nowym-selekcjonerem-reprezentacji-polski.webp"}
           alt={"⚽ Jan Urban nowym selekcjonerem reprezentacji Polski!"}

@@ -33,6 +33,12 @@ function Article800tylkodlawybranychwyciekpropozycjireformyoburzyopiniepubliczna
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"800 tylkodlawybranychwyciekpropozycjireformyoburzyopiniepubliczna"}
+    </h1>
+  </header>
+
         <Image
           src={"/800-tylko-dla-wybranych-wyciek-propozycji-reformy-oburzy-opinie-publiczna.webp"}
           alt={"🧨 800+ tylko dla wybranych? Wyciek propozycji reformy oburzył opinię publiczną"}

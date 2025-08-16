@@ -33,6 +33,12 @@ function Article100tysiecyludzinamosciewsydneyogromnyprotestwsprawiegazy() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"100 tysiecyludzinamosciewsydneyogromnyprotestwsprawiegazy"}
+    </h1>
+  </header>
+
         <Image
           src={"/100-tysiecy-ludzi-na-moscie-w-sydney-ogromny-protest-w-sprawie-gazy.webp"}
           alt={"🌉 100 tysięcy ludzi na moście w Sydney – ogromny protest w sprawie Gazy"}

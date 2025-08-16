@@ -33,6 +33,12 @@ function Article80latpohiroszimieswiatznowigrazogniematomu() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"80 latpohiroszimieswiatznowigrazogniematomu"}
+    </h1>
+  </header>
+
         <Image
           src={"/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu.webp"}
           alt={"🕯️ 80 lat po Hiroszimie – świat znów igra z ogniem atomu"}

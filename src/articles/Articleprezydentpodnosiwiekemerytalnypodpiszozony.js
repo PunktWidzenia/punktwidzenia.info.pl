@@ -33,6 +33,12 @@ function Articleprezydentpodnosiwiekemerytalnypodpiszozony() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Prezydentpodnosiwiekemerytalnypodpiszozony"}
+    </h1>
+  </header>
+
         <Image
           src={"/prezydent-podnosi-wiek-emerytalny-podpis-zozony.webp"}
           alt={"💥 Prezydent podnosi wiek emerytalny! Podpis złożony"}

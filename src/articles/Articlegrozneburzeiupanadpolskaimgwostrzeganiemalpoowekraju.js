@@ -33,6 +33,12 @@ function Articlegrozneburzeiupanadpolskaimgwostrzeganiemalpoowekraju() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Grozneburzeiupanadpolskaimgwostrzeganiemalpoowekraju"}
+    </h1>
+  </header>
+
         <Image
           src={"/grozne-burze-i-upa-nad-polska-imgw-ostrzega-niemal-poowe-kraju.webp"}
           alt={"🌩️ Groźne burze i upał nad Polską – IMGW ostrzega niemal połowę kraju"}

@@ -33,6 +33,12 @@ function Articletragediawdziwnowku16latekzaginawbatykumimoczerwonejflagi() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Tragediawdziwnowku 16 latekzaginawbatykumimoczerwonejflagi"}
+    </h1>
+  </header>
+
         <Image
           src={"/tragedia-w-dziwnowku-16-latek-zagina-w-batyku-mimo-czerwonej-flagi.webp"}
           alt={"🆘 Tragedia w Dziwnówku: 16-latek zaginął w Bałtyku mimo czerwonej flagi"}

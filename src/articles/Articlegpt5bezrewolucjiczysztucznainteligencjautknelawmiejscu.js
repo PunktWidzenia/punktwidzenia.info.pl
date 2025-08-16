@@ -52,6 +52,15 @@ function Articlegpt5bezrewolucjiczysztucznainteligencjautknelawmiejscu() {
  />      </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"}
+    </h1>
+    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+      <time dateTime="2025-08-16T10:00:00.000Z">2025-08-16</time>
+    </div>
+  </header>
+
         <NextImage
           src={"/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp"}
           alt={"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"}

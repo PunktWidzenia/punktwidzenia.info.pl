@@ -33,6 +33,12 @@ function Articlenowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczes
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Nowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczesciapensji"}
+    </h1>
+  </header>
+
         <Image
           src={"/nowa-tablica-alimentacyjna-ojciec-z-dwojka-dzieci-zostaje-z-niewielka-czescia-pensji.webp"}
           alt={"💥 Nowa tablica alimentacyjna. Ojciec z dwójką dzieci zostaje z niewielką częścią pensji!"}

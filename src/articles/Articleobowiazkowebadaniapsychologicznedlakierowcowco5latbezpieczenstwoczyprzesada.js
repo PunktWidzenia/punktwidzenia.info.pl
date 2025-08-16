@@ -52,6 +52,15 @@ function Articleobowiazkowebadaniapsychologicznedlakierowcowco5latbezpieczenstwo
  />      </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"🚗 Obowiązkowe badania psychologiczne dla kierowców co 5 lat – bezpieczeństwo czy przesada?"}
+    </h1>
+    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+      <time dateTime="2025-08-15T10:00:00.000Z">2025-08-15</time>
+    </div>
+  </header>
+
         <NextImage
           src={"/obowiazkowe-badania-psychologiczne-dla-kierowcow-co-5-lat-bezpieczenstwo-czy-przesada.webp"}
           alt={"🚗 Obowiązkowe badania psychologiczne dla kierowców co 5 lat – bezpieczeństwo czy przesada?"}

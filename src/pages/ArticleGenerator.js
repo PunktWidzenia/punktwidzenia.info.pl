@@ -2,21 +2,25 @@
 import { useState, useEffect, useRef } from "react";
 import NextImage from "next/image";
 const DRAFT_KEY = "article-draft-v1";
+// ——— Daty / walidacja ———
+const isYMD = (v) => /^\d{4}-\d{2}-\d{2}$/.test(String(v || ""));
+
+const getTodayLocal = () => {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`; // YYYY-MM-DD
+};
+
+// d = "YYYY-MM-DD" → ISO w południe lokalnie (bez krawędzi stref czasowych)
+const toIso = (d) => (isYMD(d) ? new Date(`${d}T12:00:00`).toISOString() : "");
 
 export default function ArticleGenerator() {
-    const toIso = (d) => {
-    // d = "YYYY-MM-DD" → bezpiecznie na południe dnia, by uniknąć krawędzi TZ
-    try { return new Date(`${d}T12:00:00`).toISOString(); } catch { return d; }
-  };
-  const [date, setDate] = useState(() => {
-    const d = new Date();
-    const y = d.getFullYear();
-    const m = String(d.getMonth() + 1).padStart(2, "0");
-    const day = String(d.getDate()).padStart(2, "0");
-    return `${y}-${m}-${day}`; // YYYY-MM-DD (lokalnie)
-  });
-  const [isoDate, setIsoDate] = useState("");
-  useEffect(() => { setIsoDate(toIso(date)); }, [date]);
+
+const [date, setDate] = useState(() => getTodayLocal());
+const [isoDate, setIsoDate] = useState("");
+useEffect(() => { setIsoDate(toIso(date)); }, [date]);
   const js = (val) => JSON.stringify(String(val ?? ""));
 
   const [title, setTitle] = useState("");
@@ -118,7 +122,7 @@ return `<ul className="list-disc pl-6 space-y-1">\n${items}\n</ul>`;
     if (typeof d.description === "string") setDescription(d.description);
     if (typeof d.caption === "string") setCaption(d.caption);
     if (typeof d.articleId === "string") setArticleId(d.articleId);
-    if (typeof d.date === "string") setDate(d.date);
+    if (isYMD(d?.date)) setDate(d.date);
 
     if (Array.isArray(d.sections) && d.sections.length) {
       // zabezpieczenie, żeby zawsze były 4 sekcje (jak w Twoim UI)
@@ -136,7 +140,7 @@ useEffect(() => {
     description,
     caption,
     articleId,
-    date,
+    date: isYMD(date) ? date : getTodayLocal(),
     sections,
   };
   const t = setTimeout(() => {
@@ -294,6 +298,14 @@ function ${componentName}() {
  />      </Head>
 
       <article className="space-y-6">
+  <header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {${js(title)}}
+    </h1>
+    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+      <time dateTime={${js(isoDate)}}>{${js(date)}} </time>
+    </div>
+  </header>
         <NextImage
           src={${js("/" + slugified + ".webp")}}
           alt={${js(title)}}
@@ -345,6 +357,7 @@ const objectCode = `{
     setSlug("");
     setDescription("");
     setCaption("");
+    setDate(getTodayLocal());
     setSections([
       { heading: "", paragraph: "" },
       { heading: "", paragraph: "" },
@@ -363,6 +376,7 @@ const objectCode = `{
     localStorage.removeItem(DRAFT_KEY);
     setPreview311("");
     setPreview1080("");
+    setPreviewOG("");
     setPreviewOpen(false);
   };
 
@@ -536,12 +550,14 @@ showToast(`Zapisz ${slug || "miniatura"}.webp do /public`);
           className="border p-2 rounded bg-gray-100 cursor-not-allowed dark:bg-gray-700 dark:text-white"
         />
         <input
-          type="date"
-          placeholder="Data publikacji"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-          className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
-        />
+  type="date"
+  placeholder="Data publikacji"
+  value={date || getTodayLocal()}
+  onChange={(e) => setDate(isYMD(e.target.value) ? e.target.value : getTodayLocal())}
+  max={getTodayLocal()}
+  className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
+/>
+
 <div className="space-y-1">
   <input
     type="text"

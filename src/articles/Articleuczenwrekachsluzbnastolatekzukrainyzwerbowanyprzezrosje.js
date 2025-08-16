@@ -36,6 +36,12 @@ function Articleuczenwrekachsluzbnastolatekzukrainyzwerbowanyprzezrosje() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"🚨 Uczeń w rękach służb – nastolatek z Ukrainy zwerbowany przez Rosję"}
+    </h1>
+  </header>
+
         <NextImage
           src={"/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje.webp"}
           alt={"🚨 Uczeń w rękach służb – nastolatek z Ukrainy zwerbowany przez Rosję"}

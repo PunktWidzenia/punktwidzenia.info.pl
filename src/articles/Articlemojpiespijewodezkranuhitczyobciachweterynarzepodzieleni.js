@@ -33,6 +33,12 @@ function Articlemojpiespijewodezkranuhitczyobciachweterynarzepodzieleni() {
       </Head>
 
       <article className="space-y-6">
+<header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      {"Mojpiespijewodezkranuhitczyobciachweterynarzepodzieleni"}
+    </h1>
+  </header>
+
         <Image
           src={"/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni.webp"}
           alt={"🐶 Mój pies pije wodę z kranu – hit czy obciach? Weterynarze podzieleni"}

@@ -52,6 +52,14 @@ function Articlespotkanietrumpputinwanchoragewielkieoczekiwaniabrakprzelomu() {
  />      </Head>
 
       <article className="space-y-6">
+          <header className="mb-4">
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+      🌍 Spotkanie Trump–Putin w Anchorage – wielkie oczekiwania, brak przełomu
+    </h1>
+    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+      <time dateTime="2025-08-16T10:00:00.000Z">2025-08-16</time>
+    </div>
+  </header>
         <NextImage
           src={"/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu.webp"}
           alt={"🌍 Spotkanie Trump–Putin w Anchorage – wielkie oczekiwania, brak przełomu"}
