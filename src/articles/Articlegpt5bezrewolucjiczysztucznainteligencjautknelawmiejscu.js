@@ -11,8 +11,8 @@ function Articlegpt5bezrewolucjiczysztucznainteligencjautknelawmiejscu() {
         <title>{"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"}</title>
         <meta name="description" content={"GPT-5 nie przyniósł przełomu. Zamiast rewolucji mamy drobne ulepszenia i rosnący sceptycyzm. Czy rozwój AI faktycznie spowolnił?"} />
         <meta property="og:title" content={"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"} />
-        <meta property="article:published_time" content={"2025-08-15T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-15T10:00:00.000Z"} />
+        <meta property="article:published_time" content={"2025-08-16T10:00:00.000Z"} />
+        <meta property="article:modified_time" content={"2025-08-16T10:00:00.000Z"} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Punkt Widzenia" />
@@ -36,8 +36,8 @@ function Articlegpt5bezrewolucjiczysztucznainteligencjautknelawmiejscu() {
        '@type': 'NewsArticle',
        headline: "🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?",
        image: ["https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp"],
-       datePublished: "2025-08-15T10:00:00.000Z",
-       dateModified: "2025-08-15T10:00:00.000Z",
+       datePublished: "2025-08-16T10:00:00.000Z",
+       dateModified: "2025-08-16T10:00:00.000Z",
        mainEntityOfPage: "https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu",
        articleSection: 'news',
        author: { '@type': 'Organization', name: 'Punkt Widzenia' },

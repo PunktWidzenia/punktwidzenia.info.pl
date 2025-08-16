@@ -11,8 +11,8 @@ function Articlespotkanietrumpputinwanchoragewielkieoczekiwaniabrakprzelomu() {
         <title>{"🌍 Spotkanie Trump–Putin w Anchorage – wielkie oczekiwania, brak przełomu"}</title>
         <meta name="description" content={"Donald Trump i Władimir Putin spotkali się w Anchorage, by rozmawiać o wojnie w Ukrainie. Po wielogodzinnych rozmowach nie ogłoszono zawieszenia broni ani konkr"} />
         <meta property="og:title" content={"🌍 Spotkanie Trump–Putin w Anchorage – wielkie oczekiwania, brak przełomu"} />
-        <meta property="article:published_time" content={"2025-08-15T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-15T10:00:00.000Z"} />
+        <meta property="article:published_time" content={"2025-08-16T10:00:00.000Z"} />
+        <meta property="article:modified_time" content={"2025-08-16T10:00:00.000Z"} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Punkt Widzenia" />
@@ -36,8 +36,8 @@ function Articlespotkanietrumpputinwanchoragewielkieoczekiwaniabrakprzelomu() {
        '@type': 'NewsArticle',
        headline: "🌍 Spotkanie Trump–Putin w Anchorage – wielkie oczekiwania, brak przełomu",
        image: ["https://punktwidzenia.info.pl/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu.webp"],
-       datePublished: "2025-08-15T10:00:00.000Z",
-       dateModified: "2025-08-15T10:00:00.000Z",
+       datePublished: "2025-08-16T10:00:00.000Z",
+       dateModified: "2025-08-16T10:00:00.000Z",
        mainEntityOfPage: "https://punktwidzenia.info.pl/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu",
        articleSection: 'news',
        author: { '@type': 'Organization', name: 'Punkt Widzenia' },

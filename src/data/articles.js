@@ -5,7 +5,7 @@ const articles = [
   img: "/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu.webp",
   title: "🌍 Spotkanie Trump–Putin w Anchorage – wielkie oczekiwania, brak przełomu",
   description: "Donald Trump i Władimir Putin spotkali się w Anchorage, by rozmawiać o wojnie w Ukrainie. Po wielogodzinnych rozmowach nie ogłoszono zawieszenia broni ani konkr",
-  date: "2025-08-15",
+  date: "2025-08-16",
   component: "Articlespotkanietrumpputinwanchoragewielkieoczekiwaniabrakprzelomu"
 },
   {
@@ -14,7 +14,7 @@ const articles = [
   img: "/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp",
   title: "🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?",
   description: "GPT-5 nie przyniósł przełomu. Zamiast rewolucji mamy drobne ulepszenia i rosnący sceptycyzm. Czy rozwój AI faktycznie spowolnił?",
-  date: "2025-08-15",
+  date: "2025-08-16",
   component: "Articlegpt5bezrewolucjiczysztucznainteligencjautknelawmiejscu"
 },
   {
