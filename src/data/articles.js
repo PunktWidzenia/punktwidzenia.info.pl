@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 57,
+  link: "/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach",
+  img: "/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach.webp",
+  title: "🥇 Polska z medalami na Igrzyskach Światowych 2025 – imponujący dorobek w Chinach",
+  description: "Polska reprezentacja zdobyła aż 13 medali na Igrzyskach Światowych 2025 w Chinach. Złoto, srebro i brąz w różnych dyscyplinach pokazują siłę i wszechstronność p",
+  date: "2025-08-17",
+  component: "Articlepolskazmedalaminaigrzyskachswiatowych2025imponujacydorobekwchinach"
+},
+  {
   id: 56,
   link: "/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu",
   img: "/spotkanie-trumpputin-w-anchorage-wielkie-oczekiwania-brak-przelomu.webp",
