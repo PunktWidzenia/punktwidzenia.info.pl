@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 58,
+  link: "/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki",
+  img: "/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki.webp",
+  title: "🎬 „Chopin, a Sonata in Paris” – polska superprodukcja o legendzie muzyki",
+  description: "Jesienią 2025 roku do kin trafi „Chopin, a Sonata in Paris” – biograficzny film o Fryderyku Chopinie. Superprodukcja z budżetem 72 mln zł.",
+  date: "2025-08-17",
+  component: "Articlechopinasonatainparispolskasuperprodukcjaolegendziemuzyki"
+},
+  {
   id: 57,
   link: "/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach",
   img: "/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach.webp",
