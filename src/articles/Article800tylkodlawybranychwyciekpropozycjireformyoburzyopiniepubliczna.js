@@ -35,7 +35,7 @@ function Article800tylkodlawybranychwyciekpropozycjireformyoburzyopiniepubliczna
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"800 tylkodlawybranychwyciekpropozycjireformyoburzyopiniepubliczna"}
+      {"🧨 800+ tylko dla wybranych? Wyciek propozycji reformy oburzył opinię publiczną"}
     </h1>
   </header>
 

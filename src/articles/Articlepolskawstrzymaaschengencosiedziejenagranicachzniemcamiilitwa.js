@@ -35,7 +35,7 @@ function Articlepolskawstrzymaaschengencosiedziejenagranicachzniemcamiilitwa() {
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Polskawstrzymaaschengencosiedziejenagranicachzniemcamiilitwa"}
+      {"🚨 POLSKA WSTRZYMAŁA SCHENGEN! Co się dzieje na granicach z Niemcami i Litwą?"}
     </h1>
   </header>
 

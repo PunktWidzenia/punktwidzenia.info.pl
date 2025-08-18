@@ -35,7 +35,7 @@ function Articlebryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert() {
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Bryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert"}
+      {"🎸 Bryan Adams z gwiazdą w Krakowie! Tłumy fanów i wyprzedany koncert"}
     </h1>
   </header>
 

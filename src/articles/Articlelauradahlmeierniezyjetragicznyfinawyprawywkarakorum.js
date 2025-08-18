@@ -35,7 +35,7 @@ function Articlelauradahlmeierniezyjetragicznyfinawyprawywkarakorum() {
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Lauradahlmeierniezyjetragicznyfinawyprawywkarakorum"}
+      {"🏔️ Laura Dahlmeier nie żyje – tragiczny finał wyprawy w Karakorum"}
     </h1>
   </header>
 

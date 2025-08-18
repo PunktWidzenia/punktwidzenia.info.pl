@@ -35,7 +35,7 @@ function Articletragicznywypadekwegipciezginelipolscyturysci() {
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Tragicznywypadekwegipciezginelipolscyturysci"}
+      {"🚨 Tragiczny wypadek w Egipcie – zginęli polscy turyści"}
     </h1>
   </header>
 

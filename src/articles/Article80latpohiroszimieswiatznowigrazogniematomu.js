@@ -35,7 +35,7 @@ function Article80latpohiroszimieswiatznowigrazogniematomu() {
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"80 latpohiroszimieswiatznowigrazogniematomu"}
+      {"🕯️ 80 lat po Hiroszimie – świat znów igra z ogniem atomu"}
     </h1>
   </header>
 

@@ -120,7 +120,7 @@ function Articleautonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniao
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Autonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniaobezpieczenstwoai"}
+      {"🛑 Autonomiczna taksówka Baidu wpada do wykopu w Chongqingu – poważne pytania o bezpieczeństwo AI"}
     </h1>
   </header>
 

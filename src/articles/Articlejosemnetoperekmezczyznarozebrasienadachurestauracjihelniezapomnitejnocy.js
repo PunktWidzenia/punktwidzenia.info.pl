@@ -35,7 +35,7 @@ function Articlejosemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomni
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Josemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomnitejnocy"}
+      {"🦇 „Jo sem netoperek!” – Mężczyzna rozebrał się na dachu restauracji. Hel nie zapomni tej nocy"}
     </h1>
   </header>
 

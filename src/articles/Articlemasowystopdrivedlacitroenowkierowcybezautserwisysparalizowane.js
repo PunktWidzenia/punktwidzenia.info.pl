@@ -35,7 +35,7 @@ function Articlemasowystopdrivedlacitroenowkierowcybezautserwisysparalizowane() 
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Masowystopdrivedlacitroenowkierowcybezautserwisysparalizowane"}
+      {"🛑 Masowy „stop-drive” dla Citroënów – kierowcy bez aut, serwisy sparaliżowane"}
     </h1>
   </header>
 

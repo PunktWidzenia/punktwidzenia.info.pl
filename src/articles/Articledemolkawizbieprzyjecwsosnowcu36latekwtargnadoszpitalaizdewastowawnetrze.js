@@ -35,7 +35,7 @@ function Articledemolkawizbieprzyjecwsosnowcu36latekwtargnadoszpitalaizdewastowa
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Demolkawizbieprzyjecwsosnowcu 36 latekwtargnadoszpitalaizdewastowawnetrze"}
+      {"🧨 Demolka w izbie przyjęć w Sosnowcu – 36-latek wtargnął do szpitala i zdewastował wnętrze"}
     </h1>
   </header>
 

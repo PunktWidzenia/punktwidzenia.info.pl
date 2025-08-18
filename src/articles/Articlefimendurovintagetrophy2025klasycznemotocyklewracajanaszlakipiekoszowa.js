@@ -35,7 +35,7 @@ function Articlefimendurovintagetrophy2025klasycznemotocyklewracajanaszlakipieko
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Fimendurovintagetrophy 2025 klasycznemotocyklewracajanaszlakipiekoszowa"}
+      {"🏍️ FIM Enduro Vintage Trophy 2025: klasyczne motocykle wracają na szlaki Piekoszowa"}
     </h1>
   </header>
 

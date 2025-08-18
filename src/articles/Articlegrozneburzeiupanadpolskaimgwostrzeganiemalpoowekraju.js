@@ -35,7 +35,7 @@ function Articlegrozneburzeiupanadpolskaimgwostrzeganiemalpoowekraju() {
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Grozneburzeiupanadpolskaimgwostrzeganiemalpoowekraju"}
+      {"🌩️ Groźne burze i upał nad Polską – IMGW ostrzega niemal połowę kraju"}
     </h1>
   </header>
 

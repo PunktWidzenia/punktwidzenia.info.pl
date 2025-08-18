@@ -35,7 +35,7 @@ function Articleukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy()
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Ukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy"}
+      {"📚 Ukraiński w każdej szkole? Rząd analizuje kontrowersyjny projekt ustawy"}
     </h1>
   </header>
 

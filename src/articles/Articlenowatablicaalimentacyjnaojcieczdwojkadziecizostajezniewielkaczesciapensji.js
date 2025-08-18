@@ -35,7 +35,7 @@ function Articlenowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczes
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Nowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczesciapensji"}
+      {"💥 Nowa tablica alimentacyjna. Ojciec z dwójką dzieci zostaje z niewielką częścią pensji!"}
     </h1>
   </header>
 

@@ -35,7 +35,7 @@ function Articlewaldemarzureknowymfaworytemdotekiministrasprawiedliwosci() {
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Waldemarzureknowymfaworytemdotekiministrasprawiedliwosci"}
+      {"⚖️ Waldemar Żurek nowym faworytem do teki ministra sprawiedliwości?"}
     </h1>
   </header>
 

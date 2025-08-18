@@ -35,7 +35,7 @@ function Articleintelrezygnujezinwestycjiwpolscecodalejzrynkiempoprzewodnikow() 
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {"Intelrezygnujezinwestycjiwpolscecodalejzrynkiempoprzewodnikow"}
+      {"⚠️ Intel rezygnuje z inwestycji w Polsce – co dalej z rynkiem półprzewodników?"}
     </h1>
   </header>
 
