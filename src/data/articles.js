@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 59,
+  link: "/tragedia-w-stegnie-ojciec-utonal-ratujac-corki",
+  img: "/tragedia-w-stegnie-ojciec-utonal-ratujac-corki.webp",
+  title: "🚨 Tragedia w Stegnie: ojciec utonął ratując córki",
+  description: "W Stegnie 48-letni ojciec utonął, ratując dwie córki porwane przez fale. Dziewczynki dopłynęły do brzegu, ale mimo reanimacji mężczyzny nie udało się uratować.",
+  date: "2025-08-18",
+  component: "Articletragediawstegnieojciecutonalratujaccorki"
+},
+  {
   id: 58,
   link: "/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki",
   img: "/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki.webp",
