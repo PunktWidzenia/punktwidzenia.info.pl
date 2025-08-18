@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 60,
+  link: "/katowicka-kwk-wieczorek-zmienia-sie-w-nowoczesny-hub-technologiczny",
+  img: "/katowicka-kwk-wieczorek-zmienia-sie-w-nowoczesny-hub-technologiczny.webp",
+  title: "✨ Katowicka KWK Wieczorek zmienia się w nowoczesny hub technologiczny",
+  description: "Katowicka KWK Wieczorek po zamknięciu w 2018 roku przechodzi metamorfozę. W miejscu kopalni powstanie hub technologiczny – symbol transformacji Śląska.",
+  date: "2025-08-18",
+  component: "Articlekatowickakwkwieczorekzmieniasiewnowoczesnyhubtechnologiczny"
+},
+  {
   id: 59,
   link: "/tragedia-w-stegnie-ojciec-utonal-ratujac-corki",
   img: "/tragedia-w-stegnie-ojciec-utonal-ratujac-corki.webp",
