@@ -32,8 +32,7 @@ export default function Home() {
   width={800}
   height={450}
   className="w-full aspect-[16/9] object-cover rounded-md"
-  priority={article.id === 4}
-  fetchPriority={article.id === 4 ? "high" : undefined}
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 />
                   <h3 className="text-xl font-bold text-black dark:text-white">{article.title}</h3>
                   <p className="text-xs text-black/50 dark:text-white/40">

@@ -1,26 +1,44 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import NextImage from "next/image";
+
 const DRAFT_KEY = "article-draft-v1";
+
 // ——— Daty / walidacja ———
 const isYMD = (v) => /^\d{4}-\d{2}-\d{2}$/.test(String(v || ""));
-
 const getTodayLocal = () => {
   const d = new Date();
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, "0");
   const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`; // YYYY-MM-DD
+  return `${y}-${m}-${day}`;
 };
-
-// d = "YYYY-MM-DD" → ISO w południe lokalnie (bez krawędzi stref czasowych)
 const toIso = (d) => (isYMD(d) ? new Date(`${d}T12:00:00`).toISOString() : "");
 
-export default function ArticleGenerator() {
+// ——— Obrazki / skalowanie ———
+const MAX_MASTER_WIDTH = 1920;
 
-const [date, setDate] = useState(() => getTodayLocal());
-const [isoDate, setIsoDate] = useState("");
-useEffect(() => { setIsoDate(toIso(date)); }, [date]);
+// Konwersja canvas → blob URL
+function canvasToBlobUrl(canvas, mime, quality) {
+  return new Promise((resolve) => {
+    if (canvas.toBlob) {
+      canvas.toBlob((blob) => {
+        if (!blob) return resolve({ url: "", blob: null });
+        const url = URL.createObjectURL(blob);
+        resolve({ url, blob });
+      }, mime, quality);
+    } else {
+      const dataUrl = canvas.toDataURL(mime, quality);
+      resolve({ url: dataUrl, blob: null });
+    }
+  });
+}
+
+export default function ArticleGenerator() {
+  const [date, setDate] = useState(() => getTodayLocal());
+  const [isoDate, setIsoDate] = useState("");
+  useEffect(() => { setIsoDate(toIso(date)); }, [date]);
+
   const js = (val) => JSON.stringify(String(val ?? ""));
 
   const [title, setTitle] = useState("");
@@ -34,51 +52,54 @@ useEffect(() => { setIsoDate(toIso(date)); }, [date]);
     { heading: "", paragraph: "" },
     { heading: "", paragraph: "" },
   ]);
+
   const [generatedCode, setGeneratedCode] = useState("");
   const [previewOpen, setPreviewOpen] = useState(false);
-const [preview311, setPreview311] = useState("");
-const [preview1080, setPreview1080] = useState("");
-const [previewOG, setPreviewOG] = useState("");
   const [articleObjectCode, setArticleObjectCode] = useState("");
-  const [thumbnailUrl, setThumbnailUrl] = useState("");
+  const [masterUrl, setMasterUrl] = useState("");
+  const [imagePreviewUrl, setImagePreviewUrl] = useState("");
   const [downloadLink, setDownloadLink] = useState("");
   const [titleError, setTitleError] = useState("");
   const [toastMsg, setToastMsg] = useState("");
-const toastTimerRef = useRef(null);
-const closeBtnRef = useRef(null);
-const previewBtnRef = useRef(null);
-const lastActiveRef = useRef(null);
-const closePreview = () => {
-  setPreviewOpen(false);
-  (lastActiveRef.current || previewBtnRef.current)?.focus?.();
-};
 
-function showToast(msg) {
-  setToastMsg(msg);
-  if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
-  toastTimerRef.current = setTimeout(() => setToastMsg(""), 2000);
-}
-
-  // Limit długości opisu SEO
-const MAX_DESC = 160;
-
-// Setter z twardym przycięciem
-function handleDescriptionChange(e) {
-  const v = String(e.target.value ?? "");
-  setDescription(v.length <= MAX_DESC ? v : v.slice(0, MAX_DESC));
-}
-function handleTitleChange(e) {
-  const v = e.target.value;
-  setTitle(v);
-  if (!v.trim()) {
-    setTitleError("Podaj tytuł — bez niego nie wygenerujemy pliku ani slugu.");
-  } else {
-    setTitleError("");
-  }
-}
-
-  // Ref do sprzątania URL-i blobów
+  const toastTimerRef = useRef(null);
+  const closeBtnRef = useRef(null);
+  const previewBtnRef = useRef(null);
+  const lastActiveRef = useRef(null);
   const downloadUrlRef = useRef(null);
+
+  const baseFileName = useMemo(() => {
+    const s = String(title || "")
+      .toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/ł/g, "l")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-");
+    return s || "artykul";
+  }, [title]);
+
+  const canGenerate = Boolean(title.trim() && description.trim());
+
+  function showToast(msg) {
+    setToastMsg(msg);
+    if (toastTimerRef.current) clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => setToastMsg(""), 2000);
+  }
+
+  // Limit SEO
+  const MAX_DESC = 160;
+  function handleDescriptionChange(e) {
+    const v = String(e.target.value ?? "");
+    setDescription(v.length <= MAX_DESC ? v : v.slice(0, MAX_DESC));
+  }
+  function handleTitleChange(e) {
+    const v = e.target.value;
+    setTitle(v);
+    if (!v.trim()) setTitleError("Podaj tytuł — bez niego nie wygenerujemy pliku ani slugu.");
+    else setTitleError("");
+  }
 
   const escapeHtml = (text) =>
     String(text ?? "")
@@ -94,146 +115,129 @@ function handleTitleChange(e) {
       .map((l) => l.trim());
     if (lines.length > 1 && lines.every((l) => l.startsWith("- "))) {
       const items = lines.map((l) => `<li>${escapeHtml(l.slice(2))}</li>`).join("\n");
-return `<ul className="list-disc pl-6 space-y-1">\n${items}\n</ul>`;
+      return `<ul className="list-disc pl-6 space-y-1">\n${items}\n</ul>`;
     }
     return `<p>${escapeHtml(text).replace(/\n/g, "<br />")}</p>`;
   };
 
-  // lastArticleId – inicjalizacja jednokrotna
+  // lastArticleId
   useEffect(() => {
     const stored = localStorage.getItem("lastArticleId");
-    if (stored) {
-      setArticleId(stored);
-    } else {
+    if (stored) setArticleId(stored);
+    else {
       localStorage.setItem("lastArticleId", "1");
       setArticleId("1");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // auto-save
   useEffect(() => {
-  try {
-    const raw = localStorage.getItem(DRAFT_KEY);
-    if (!raw) return;
-    const d = JSON.parse(raw);
+    const payload = {
+      title, description, caption, articleId,
+      date: isYMD(date) ? date : getTodayLocal(),
+      sections,
+    };
+    const t = setTimeout(() => {
+      try { localStorage.setItem(DRAFT_KEY, JSON.stringify(payload)); } catch {}
+    }, 500);
+    return () => clearTimeout(t);
+  }, [title, description, caption, articleId, date, sections]);
 
-    if (typeof d.title === "string") setTitle(d.title);
-    if (d.title && d.title.trim()) setTitleError("");
-    if (typeof d.description === "string") setDescription(d.description);
-    if (typeof d.caption === "string") setCaption(d.caption);
-    if (typeof d.articleId === "string") setArticleId(d.articleId);
-    if (isYMD(d?.date)) setDate(d.date);
+  // Sprzątanie blobów
+  useEffect(() => {
+    return () => {
+      if (masterUrl && masterUrl.startsWith("blob:")) URL.revokeObjectURL(masterUrl);
+      if (imagePreviewUrl && imagePreviewUrl.startsWith("blob:")) URL.revokeObjectURL(imagePreviewUrl);
+    };
+  }, [masterUrl, imagePreviewUrl]);
 
-    if (Array.isArray(d.sections) && d.sections.length) {
-      // zabezpieczenie, żeby zawsze były 4 sekcje (jak w Twoim UI)
-      const base = [{heading:"",paragraph:""},{heading:"",paragraph:""},{heading:"",paragraph:""},{heading:"",paragraph:""}];
-      const merged = base.map((s, i) => ({ ...s, ...(d.sections[i] || {}) }));
-      setSections(merged);
-    }
-  } catch {}
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-}, []);
+  // Sprzątanie linku do .js
+  useEffect(() => {
+    return () => {
+      if (downloadUrlRef.current) {
+        URL.revokeObjectURL(downloadUrlRef.current);
+        downloadUrlRef.current = null;
+      }
+    };
+  }, []);
 
-useEffect(() => {
-  const payload = {
-    title,
-    description,
-    caption,
-    articleId,
-    date: isYMD(date) ? date : getTodayLocal(),
-    sections,
-  };
-  const t = setTimeout(() => {
-    try {
-      localStorage.setItem(DRAFT_KEY, JSON.stringify(payload));
-    } catch {}
-  }, 500);
-  return () => clearTimeout(t);
-}, [title, description, caption, articleId, date, sections]);
+  // Sprzątanie timera toasta
+  useEffect(() => {
+    return () => {
+      if (toastTimerRef.current) {
+        clearTimeout(toastTimerRef.current);
+        toastTimerRef.current = null;
+      }
+    };
+  }, []);
 
-// Sprzątanie blobów TYLKO przy odmontowaniu komponentu
-useEffect(() => {
-  return () => {
-    if (thumbnailUrl) {
-      URL.revokeObjectURL(thumbnailUrl);
-    }
-    if (downloadUrlRef.current) {
-      URL.revokeObjectURL(downloadUrlRef.current);
-      downloadUrlRef.current = null;
-    }
-  };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-}, []);
-
-// Sprzątanie timera toasta TYLKO przy odmontowaniu komponentu
-useEffect(() => {
-  return () => {
-    if (toastTimerRef.current) {
-      clearTimeout(toastTimerRef.current);
-      toastTimerRef.current = null;
-    }
-  };
-}, []);
-
-function slugifyTitle(t) {
-  return String(t || "")
-    .toLowerCase()
-    .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // usuń diakrytyki
-    .replace(/ł/g, "l")                               // polskie wyjątki
-    .replace(/[^a-z0-9\s-]/g, "")                     // usuń znaki inne niż a-z, 0-9, spacja, myślnik
-    .trim()
-    .replace(/\s+/g, "-")                             // spacje → myślniki
-    .replace(/-+/g, "-");                             // sklej wielokrotne "-"
-}
-
-useEffect(() => {
-  if (!previewOpen) return;
-  const onKey = (e) => { if (e.key === "Escape") closePreview(); };
-  window.addEventListener("keydown", onKey);
-  return () => window.removeEventListener("keydown", onKey);
-}, [previewOpen]);
-
-useEffect(() => {
-  if (!previewOpen) return;
-  const prev = document.body.style.overflow;
-  document.body.style.overflow = "hidden";
-  return () => { document.body.style.overflow = prev; };
-}, [previewOpen]);
-
-useEffect(() => {
-  if (!previewOpen) return;
-  // po otwarciu modala ustaw focus na przycisku Zamknij
-  setTimeout(() => closeBtnRef.current?.focus(), 0);
-}, [previewOpen]);
-
-useEffect(() => {
-  const slugified = slugifyTitle(title);
-  // Zawsze aktualizuj slug do wyświetlenia w polu (nawet bez opisu)
-  setSlug(slugified);
-
-  // Brak tytułu/opisu albo slug po normalizacji pusty? — nie generujemy plików
-  if (!title.trim() || !description.trim() || !slugified) {
-    setGeneratedCode("");
-    setArticleObjectCode("");
-    if (downloadUrlRef.current) {
-      URL.revokeObjectURL(downloadUrlRef.current);
-      downloadUrlRef.current = null;
-    }
-    setDownloadLink("");
-    return;
+  function slugifyTitle(t) {
+    return String(t || "")
+      .toLowerCase()
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .replace(/ł/g, "l")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-");
   }
-  const imgPath = `/${slugified}.webp`;
 
-  const descSafe = description.length > MAX_DESC ? description.slice(0, MAX_DESC) : description;
+  // focus/scroll lock dla modala
+  useEffect(() => {
+    if (!previewOpen) return;
+    const onKey = (e) => { if (e.key === "Escape") closePreview(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [previewOpen]);
+
+  useEffect(() => {
+    if (!previewOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = prev; };
+  }, [previewOpen]);
+
+  useEffect(() => {
+    if (!previewOpen) return;
+    setTimeout(() => closeBtnRef.current?.focus(), 0);
+  }, [previewOpen]);
+
+  const closePreview = () => {
+    setPreviewOpen(false);
+    (lastActiveRef.current || previewBtnRef.current)?.focus?.();
+  };
+
+  // GŁÓWNY efekt generujący komponent i obiekt articles
+  useEffect(() => {
+    const slugified = slugifyTitle(title);
+    const imagePath = `/${slugified}.webp`;
+    const ogAbsUrl = `https://punktwidzenia.info.pl/${slugified}.webp`;
+
+    setSlug(slugified);
+
+    if (!title.trim() || !description.trim() || !slugified) {
+      setGeneratedCode("");
+      setArticleObjectCode("");
+      if (downloadUrlRef.current) {
+        URL.revokeObjectURL(downloadUrlRef.current);
+        downloadUrlRef.current = null;
+      }
+      setDownloadLink("");
+      return;
+    }
+
+    const descSafe = description.length > MAX_DESC ? description.slice(0, MAX_DESC) : description;
+
     const formattedSections = sections
-  .map((s, i) => {
-    let txt =
-      `            <h2 className="text-xl font-semibold">${escapeHtml(s.heading)}</h2>\n` +
-      `            ${formatParagraph(s.paragraph)}`;
-    if (i === 1 || i === 3) txt += "\n            <AdSlot />";
-    return txt;
-  })
-  .join("\n\n");
+      .map((s, i) => {
+        let txt =
+          `            <h2 className="text-xl font-semibold">${escapeHtml(s.heading)}</h2>\n` +
+          `            ${formatParagraph(s.paragraph)}`;
+        if (i === 1 || i === 3) txt += "\n            <AdSlot />";
+        return txt;
+      })
+      .join("\n\n");
 
     const componentName = `Article${slugified.replace(/-/g, "")}`;
     const safeSections = formattedSections.replace(/\$\{/g, "\\${");
@@ -259,67 +263,66 @@ function ${componentName}() {
         <meta property="og:locale" content="pl_PL" />
         <meta property="og:type" content="article" />
         <meta property="og:description" content={${js(descSafe)}} />
-        <meta property="og:image" content={${js(
-          "https://punktwidzenia.info.pl/" + slugified + ".webp"
-        )}} />
-        <meta property="og:url" content={${js(
-          "https://punktwidzenia.info.pl/" + slugified
-        )}} />
+        <meta property="og:image" content={${js(ogAbsUrl)}} />
+        <meta property="og:url" content={${js("https://punktwidzenia.info.pl/" + slugified)}} />
         <meta property="og:image:alt" content={${js(title)}} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={${js(title)}} />
-      <meta name="twitter:description" content={${js(descSafe)}} />
-      <meta name="twitter:image" content={${js(
-        "https://punktwidzenia.info.pl/" + slugified + ".webp"
-      )}} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={${js(title)}} />
+        <meta name="twitter:description" content={${js(descSafe)}} />
+        <meta name="twitter:image" content={${js(ogAbsUrl)}} />
         <meta name="robots" content="index,follow" />
         <link rel="canonical" href={${js("https://punktwidzenia.info.pl/" + slugified)}} />
-<script
-   type="application/ld+json"
-   dangerouslySetInnerHTML={{
-     __html: JSON.stringify({
-       '@context': 'https://schema.org',
-       '@type': 'NewsArticle',
-       headline: ${js(title)},
-       image: [${js("https://punktwidzenia.info.pl/" + slugified + ".webp")}],
-       datePublished: ${js(isoDate)},
-       dateModified: ${js(isoDate)},
-       mainEntityOfPage: ${js("https://punktwidzenia.info.pl/" + slugified)},
-       articleSection: 'news',
-       author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-       publisher: {
-         '@type': 'Organization',
-         name: 'Punkt Widzenia',
-         logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-       },
-       description: ${js(descSafe)}
-     })
-   }}
- />      </Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'NewsArticle',
+              headline: ${js(title)},
+              image: [${js(ogAbsUrl)}],
+              datePublished: ${js(isoDate)},
+              dateModified: ${js(isoDate)},
+              mainEntityOfPage: ${js("https://punktwidzenia.info.pl/" + slugified)},
+              articleSection: 'news',
+              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Punkt Widzenia',
+                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
+              },
+              description: ${js(descSafe)}
+            })
+          }}
+        />
+      </Head>
 
       <article className="space-y-6">
-  <header className="mb-4">
-    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-      {${js(title)}}
-    </h1>
-    <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-      <time dateTime={${js(isoDate)}}>{${js(date)}} </time>
-    </div>
-  </header>
-        <NextImage
-          src={${js("/" + slugified + ".webp")}}
-          alt={${js(title)}}
-          width={311}
-          height={163}
-          loading="lazy"
-          fetchPriority="low"
-          className="w-full h-auto rounded"
-          unoptimized
-        />
+        <header className="mb-4">
+          <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
+            {${js(title)}}
+          </h1>
+          <div className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+            <time dateTime={${js(isoDate)}}>{${js(getTodayLocal())}} </time>
+          </div>
+        </header>
+
+<div className="relative w-full rounded overflow-hidden">
+  <NextImage
+    src={${js(imagePath)}}
+    alt={${js(title)}}
+    width={1200}
+    height={675}
+    className="w-full h-auto rounded"
+    priority
+  />
+</div>
+
         ${caption ? `<p className="text-sm text-gray-500 dark:text-gray-400">${escapeHtml(caption)}</p>` : ""}
+
         <div className="space-y-6">
 ${safeSections}
         </div>
+
         <p className="text-sm text-gray-500 border-t pt-6 dark:text-gray-400">Artykuł przygotowany przez Punkt Widzenia.</p>
         <RelatedArticles current="/${slugified}" />
         <Link href="/" className="text-red-500 hover:underline block mt-10">← Powrót do strony głównej</Link>
@@ -331,11 +334,13 @@ ${safeSections}
 export default ${componentName};
 `;
 
-    const idValue = parseInt(articleId, 10);
-const objectCode = `{
+    const idParsed = parseInt(articleId, 10);
+    const idValue = Number.isFinite(idParsed) ? idParsed : 0;
+
+    const objectCode = `{
   id: ${!isNaN(idValue) ? idValue : 0},
   link: ${js("/" + slugified)},
-  img: ${js(imgPath)},
+  img: ${js(imagePath)},
   title: ${js(title)},
   description: ${js(descSafe)},
   date: ${js(date)},
@@ -352,7 +357,17 @@ const objectCode = `{
     setArticleObjectCode(objectCode);
   }, [title, date, isoDate, description, caption, sections, articleId]);
 
+  // CZYSZCZENIE formularza – tylko istniejące stany
   const clearForm = () => {
+    if (masterUrl && masterUrl.startsWith("blob:")) URL.revokeObjectURL(masterUrl);
+    if (imagePreviewUrl && imagePreviewUrl.startsWith("blob:")) URL.revokeObjectURL(imagePreviewUrl);
+    if (downloadUrlRef.current) {
+      URL.revokeObjectURL(downloadUrlRef.current);
+      downloadUrlRef.current = null;
+    }
+
+    setMasterUrl("");
+    setImagePreviewUrl("");
     setTitle("");
     setSlug("");
     setDescription("");
@@ -366,182 +381,110 @@ const objectCode = `{
     ]);
     setGeneratedCode("");
     setArticleObjectCode("");
-    if (thumbnailUrl) URL.revokeObjectURL(thumbnailUrl);
-    setThumbnailUrl("");
-    if (downloadUrlRef.current) {
-      URL.revokeObjectURL(downloadUrlRef.current);
-      downloadUrlRef.current = null;
-    }
     setDownloadLink("");
     localStorage.removeItem(DRAFT_KEY);
-    setPreview311("");
-    setPreview1080("");
-    setPreviewOG("");
     setPreviewOpen(false);
   };
 
-function drawCover(ctx, img, targetW, targetH) {
-  // centralny crop z zachowaniem proporcji ("cover")
-  const sRatio = img.width / img.height;
-  const tRatio = targetW / targetH;
-
-  let sx, sy, sw, sh;
-  if (sRatio > tRatio) {
-    // źródło szersze – utnij boki
-    sh = img.height;
-    sw = Math.floor(sh * tRatio);
-    sx = Math.floor((img.width - sw) / 2);
-    sy = 0;
-  } else {
-    // źródło wyższe – utnij górę/dół
-    sw = img.width;
-    sh = Math.floor(sw / tRatio);
-    sx = 0;
-    sy = Math.floor((img.height - sh) / 2);
+  function openPreviewModal() {
+    if (!imagePreviewUrl) {
+      showToast("Brak wygenerowanego obrazu");
+      return;
+    }
+    lastActiveRef.current = document.activeElement;
+    setPreviewOpen(true);
   }
 
-  ctx.drawImage(img, sx, sy, sw, sh, 0, 0, targetW, targetH);
-}
+  function downloadUrlAs(filename, url) {
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.click();
+  }
 
-function makePreviewDataURL(img, w, h, mime = "image/webp", quality = 0.8) {
-  const canvas = document.createElement("canvas");
-  const ctx = canvas.getContext("2d");
-  if (!ctx) return ""; // 👈 guard
-  canvas.width = w;
-  canvas.height = h;
-  ctx.imageSmoothingEnabled = true;
-  ctx.imageSmoothingQuality = "high";
-  drawCover(ctx, img, w, h);
-  return canvas.toDataURL(mime, quality);
-}
-
-function openPreviewModal() {
-  lastActiveRef.current = document.activeElement;
-  if (!thumbnailUrl) return;
-  const img = new window.Image();
-  img.crossOrigin = "anonymous";
-  img.decoding = "async";
-  img.onload = () => {
-    try {
-      const url311 = makePreviewDataURL(img, 311, 163, "image/webp", 0.8);
-      const url1080 = makePreviewDataURL(img, 1080, 1080, "image/jpeg", 0.8);
-      const urlOG = makePreviewDataURL(img, 1200, 630, "image/jpeg", 0.8);
-      setPreview311(url311);
-      setPreview1080(url1080);
-      setPreviewOG(urlOG);
-      setPreviewOpen(true);
-    } catch {
-      showToast("Nie udało się wygenerować podglądu");
+  const downloadImage = () => {
+    if (!imagePreviewUrl) {
+      showToast("Brak wygenerowanego obrazu");
+      return;
     }
+    downloadUrlAs(`${baseFileName}.webp`, imagePreviewUrl);
+    setTimeout(() => showToast(`Pobrano: ${baseFileName}.webp`), 600);
   };
-  img.onerror = () => showToast("Błąd wczytywania miniatury");
-  img.src = thumbnailUrl;
-}
-
-const resizeAndDownload = (variant, callback) => {
-  if (!thumbnailUrl || typeof window === "undefined") return;
-
-  const img = new window.Image();
-  img.crossOrigin = "anonymous";
-  img.decoding = "async";
-
-  img.onload = () => {
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-    if (!ctx) { showToast("Canvas 2D niedostępny"); return; }
-
-    ctx.imageSmoothingEnabled = true;
-    ctx.imageSmoothingQuality = "high";
-
-    // warianty i nazwy
-    let w = 1080, h = 1080, mime = "image/jpeg", filename = `${slug}.jpg`;
-    if (variant === "webp") {
-      w = 311; h = 163; mime = "image/webp"; filename = `${slug}.webp`;
-    } else if (variant === "og") {
-      w = 1200; h = 630; mime = "image/jpeg"; filename = `${slug}-og.jpg`;
-    } else if (variant === "jpg") {
-      w = 1080; h = 1080; mime = "image/jpeg"; filename = `${slug}.jpg`;
-    }
-
-    canvas.width = w;
-    canvas.height = h;
-    drawCover(ctx, img, w, h);
-
-    const quality = 0.8;
-
-    const save = (blobOrDataUrl) => {
-      const a = document.createElement("a");
-      if (blobOrDataUrl instanceof Blob) {
-        const href = URL.createObjectURL(blobOrDataUrl);
-        a.href = href;
-        a.download = filename;
-        a.click();
-        URL.revokeObjectURL(href);
-      } else {
-        a.href = blobOrDataUrl;
-        a.download = filename;
-        a.click();
-      }
-      if (typeof callback === "function") callback();
-    };
-
-    if (canvas.toBlob) {
-      canvas.toBlob((blob) => blob && save(blob), mime, quality);
-    } else {
-      save(canvas.toDataURL(mime, quality));
-    }
-  };
-
-  img.src = thumbnailUrl;
-};
 
   const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const okTypes = ["image/jpeg","image/png","image/webp","image/gif","image/avif"];
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    if (!file) return;
+
+    const okTypes = ["image/jpeg","image/png","image/webp","image/gif","image/avif"];
     if (!okTypes.includes(file.type)) {
       showToast("Nieobsługiwany typ pliku");
-      e.target.value = "";
       return;
     }
     const MAX_MB = 10;
     if (file.size > MAX_MB * 1024 * 1024) {
       showToast(`Plik za duży (> ${MAX_MB} MB)`);
-      e.target.value = "";
       return;
     }
-      if (thumbnailUrl) URL.revokeObjectURL(thumbnailUrl);
-      const url = URL.createObjectURL(file);
-      setThumbnailUrl(url);
-      e.target.value = "";
-showToast(`Zapisz ${slug || "miniatura"}.webp do /public`);
-    }
+
+    const fr = new FileReader();
+    fr.onload = () => {
+      const img = new Image();
+      img.decoding = "async";
+      img.onload = async () => {
+        try {
+          // 1) „master” (zabezpieczenie: max 1920 px szer.)
+          const scale = img.width > MAX_MASTER_WIDTH ? MAX_MASTER_WIDTH / img.width : 1;
+          const mW = Math.round(img.width * scale);
+          const mH = Math.round(img.height * scale);
+          const masterCanvas = document.createElement("canvas");
+          masterCanvas.width = mW; masterCanvas.height = mH;
+          const mctx = masterCanvas.getContext("2d");
+          mctx.imageSmoothingEnabled = true;
+          mctx.imageSmoothingQuality = "high";
+          mctx.drawImage(img, 0, 0, mW, mH);
+
+          // 2) Zrób pojedynczy WEBP z mastera
+          const { url: webpUrl } = await canvasToBlobUrl(masterCanvas, "image/webp", 0.85);
+
+          if (masterUrl) URL.revokeObjectURL(masterUrl);
+          setMasterUrl(URL.createObjectURL(file));
+          setImagePreviewUrl(webpUrl);
+
+          showToast(`Zapisz do /public: ${baseFileName}.webp`);
+        } catch {
+          showToast("Błąd przetwarzania obrazu");
+        }
+      };
+      img.onerror = () => showToast("Nie udało się wczytać obrazu");
+      img.src = fr.result;
+    };
+    fr.onerror = () => showToast("Błąd odczytu pliku");
+    fr.readAsDataURL(file);
   };
 
   return (
-   <div
-   className="p-4 max-w-4xl mx-auto space-y-4"
-   aria-hidden={previewOpen ? "true" : undefined}
->
+    <div className="p-4 max-w-4xl mx-auto space-y-4" aria-hidden={previewOpen ? "true" : undefined}>
       <h1 className="text-2xl font-bold">Generator artykułu</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div className="space-y-1">
-  <input
-    type="text"
-    placeholder="Tytuł artykułu"
-    value={title}
-    onChange={handleTitleChange}
-    aria-invalid={!!titleError}
-    aria-describedby="title-error"
-    className={`border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white ${titleError ? "border-red-500" : ""}`}
-  />
-  {titleError && (
-    <div id="title-error" className="text-xs text-red-600">
-      {titleError}
-    </div>
-  )}
-</div>
+        <div className="space-y-1">
+          <input
+            type="text"
+            placeholder="Tytuł artykułu"
+            value={title}
+            onChange={handleTitleChange}
+            aria-invalid={!!titleError}
+            aria-describedby={titleError ? "title-error" : undefined}
+            className={`border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white ${titleError ? "border-red-500" : ""}`}
+          />
+          {titleError && (
+            <div id="title-error" className="text-xs text-red-600">
+              {titleError}
+            </div>
+          )}
+        </div>
+
         <input
           type="text"
           placeholder="Slug (URL)"
@@ -549,32 +492,31 @@ showToast(`Zapisz ${slug || "miniatura"}.webp do /public`);
           readOnly
           className="border p-2 rounded bg-gray-100 cursor-not-allowed dark:bg-gray-700 dark:text-white"
         />
-        <input
-  type="date"
-  placeholder="Data publikacji"
-  value={date || getTodayLocal()}
-  onChange={(e) => setDate(isYMD(e.target.value) ? e.target.value : getTodayLocal())}
-  max={getTodayLocal()}
-  className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
-/>
 
-<div className="space-y-1">
-  <input
-    type="text"
-    placeholder="Opis artykułu (SEO)"
-    value={description}
-    onChange={handleDescriptionChange}
-    aria-describedby="seo-desc-counter"
-    maxLength={MAX_DESC}
-    className="border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white"
-  />
-  <div
-    id="seo-desc-counter"
-    className="text-xs text-gray-500 dark:text-gray-400"
-  >
-    {description.length} / {MAX_DESC} (zalecane ≤ {MAX_DESC})
-  </div>
-</div>
+        <input
+          type="date"
+          placeholder="Data publikacji"
+          value={date || getTodayLocal()}
+          onChange={(e) => setDate(isYMD(e.target.value) ? e.target.value : getTodayLocal())}
+          max={getTodayLocal()}
+          className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
+        />
+
+        <div className="space-y-1">
+          <input
+            type="text"
+            placeholder="Opis artykułu (SEO)"
+            value={description}
+            onChange={handleDescriptionChange}
+            aria-describedby="seo-desc-counter"
+            maxLength={MAX_DESC}
+            className="border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white"
+          />
+          <div id="seo-desc-counter" className="text-xs text-gray-500 dark:text-gray-400">
+            {description.length} / {MAX_DESC} (zalecane ≤ {MAX_DESC})
+          </div>
+        </div>
+
         <input
           type="text"
           placeholder="Podpis pod zdjęciem (opcjonalnie)"
@@ -582,25 +524,30 @@ showToast(`Zapisz ${slug || "miniatura"}.webp do /public`);
           onChange={(e) => setCaption(e.target.value)}
           className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
         />
+
         <input
           type="text"
           placeholder="ID artykułu (np. 12)"
           value={articleId}
-          onChange={(e) => setArticleId(e.target.value)}
+          onChange={(e) => {
+            const onlyDigits = e.target.value.replace(/\D/g, "");
+            setArticleId(onlyDigits);
+          }}
           className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
         />
+
         <div className="sm:col-span-2 space-y-2">
-          <label className="block">Wybierz plik miniatury</label>
+          <label className="block">Wybierz plik obrazu</label>
           <input
             type="file"
             accept="image/*,.jpg,.jpeg,.png,.webp,.avif"
             onChange={handleFileChange}
             className="border p-2 rounded bg-white text-black dark:bg-gray-800 dark:text-white"
           />
-          {thumbnailUrl && (
+          {imagePreviewUrl && (
             <NextImage
-              src={thumbnailUrl}
-              alt="Podgląd miniatury"
+              src={imagePreviewUrl}
+              alt="Podgląd obrazu"
               width={200}
               height={150}
               unoptimized
@@ -634,35 +581,36 @@ showToast(`Zapisz ${slug || "miniatura"}.webp do /public`);
               }}
               className="border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white"
               rows={4}
-            ></textarea>
+            />
           </div>
         ))}
       </div>
 
       <div className="flex gap-4 flex-wrap">
-        <button type="button"
-        disabled={!articleObjectCode.trim()}
-onClick={() => {
-  if (navigator.clipboard?.writeText) {
-    navigator.clipboard.writeText(articleObjectCode)
-      .then(() => showToast("Skopiowano do schowka"))
-      .catch(() => showToast("Nie udało się skopiować"));
-  } else {
-    try {
-      const ta = document.createElement("textarea");
-      ta.value = articleObjectCode;
-      ta.style.position = "fixed";
-      ta.style.opacity = "0";
-      document.body.appendChild(ta);
-      ta.select();
-      document.execCommand("copy");
-      document.body.removeChild(ta);
-      showToast("Skopiowano do schowka");
-    } catch {
-      showToast("Brak dostępu do schowka");
-    }
-  }
-}}
+        <button
+          type="button"
+          disabled={!articleObjectCode.trim()}
+          onClick={() => {
+            if (navigator.clipboard?.writeText) {
+              navigator.clipboard.writeText(articleObjectCode)
+                .then(() => showToast("Skopiowano do schowka"))
+                .catch(() => showToast("Nie udało się skopiować"));
+            } else {
+              try {
+                const ta = document.createElement("textarea");
+                ta.value = articleObjectCode;
+                ta.style.position = "fixed";
+                ta.style.opacity = "0";
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand("copy");
+                document.body.removeChild(ta);
+                showToast("Skopiowano do schowka");
+              } catch {
+                showToast("Brak dostępu do schowka");
+              }
+            }
+          }}
           className="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50"
         >
           Kopiuj
@@ -673,7 +621,8 @@ onClick={() => {
         </button>
 
         {downloadLink && (
-          <button type="button"
+          <button
+            type="button"
             onClick={() => {
               const link = document.createElement("a");
               link.href = downloadLink;
@@ -691,47 +640,30 @@ onClick={() => {
               }
             }}
             className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 disabled:opacity-50"
-            disabled={!downloadLink}
+            disabled={!downloadLink || !canGenerate}
           >
             Pobierz plik .js
           </button>
         )}
 
-{thumbnailUrl && (
-  <>
-    <button type="button" ref={previewBtnRef}
-      onClick={openPreviewModal}
-      className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 disabled:opacity-50"
-      disabled={!thumbnailUrl || !slug || !title.trim()}
-      title={!thumbnailUrl ? "Brak miniatury" : !slug ? "Brak slugu" : !title.trim() ? "Brak tytułu" : ""}
-    >
-      Podgląd obrazów
-    </button>
+        <button
+          type="button"
+          ref={previewBtnRef}
+          onClick={openPreviewModal}
+          className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 disabled:opacity-50"
+          disabled={!imagePreviewUrl || !canGenerate}
+        >
+          Podgląd obrazu
+        </button>
 
-    <button type="button"
-      onClick={() => {
-        resizeAndDownload("webp", () => {
-          setTimeout(() => resizeAndDownload("jpg"), 300);
-        });
-      }}
-      className="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 disabled:opacity-50"
-      disabled={!thumbnailUrl || !slug || !title.trim()}
-      title={!thumbnailUrl ? "Brak miniatury" : !slug ? "Brak slugu" : !title.trim() ? "Brak tytułu" : ""}
-    >
-      Pobierz obrazy
-    </button>
-
-    <button
-   type="button"
-   onClick={() => resizeAndDownload("og")}
-   className="bg-emerald-700 text-white px-4 py-2 rounded hover:bg-emerald-800 disabled:opacity-50"
-   disabled={!thumbnailUrl || !slug || !title.trim()}
-   title="Pobierz obraz 1200×630 (OG)"
- >
-   Pobierz OG 1200×630
- </button>
-  </>
-)}
+        <button
+          type="button"
+          onClick={downloadImage}
+          className="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 disabled:opacity-50"
+          disabled={!imagePreviewUrl || !canGenerate}
+        >
+          Pobierz obraz
+        </button>
       </div>
 
       {generatedCode && (
@@ -747,115 +679,53 @@ onClick={() => {
           </pre>
         </>
       )}
-{toastMsg && (
-  <div
-    role="status"
-    aria-live="polite"
-    className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 rounded px-4 py-2 shadow bg-black text-white text-sm"
-  >
-    {toastMsg}
-  </div>
-)}
 
-{previewOpen && (
-  <div
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="preview-title"
-    aria-describedby="preview-desc"
-    className="fixed inset-0 z-50 flex items-center justify-center"
-    onKeyDown={(e) => {
-      if (e.key !== "Tab") return;
-      const root = e.currentTarget;
-      const focusables = root.querySelectorAll(
-        'button, [href], input, textarea, [tabindex]:not([tabindex="-1"])'
-      );
-      if (!focusables.length) return;
-      const first = focusables[0];
-      const last = focusables[focusables.length - 1];
-      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-    }}
-  >
-    {/* Backdrop */}
-    <div
-      className="absolute inset-0 bg-black/60"
-      onClick={closePreview}
-      aria-hidden="true"
-    />
-
-    {/* Dialog */}
-    <div className="relative z-10 max-w-5xl w-[90%] bg-white dark:bg-gray-900 rounded-xl p-4 shadow-lg">
-      <div className="flex items-center justify-between mb-4">
-        <h3 id="preview-title" className="text-lg font-semibold">
-          Podgląd wygenerowanych obrazów
-        </h3>
-        <button
-          type="button"
-          ref={closeBtnRef}
-          onClick={closePreview}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") closePreview();
-          }}
-          aria-label="Zamknij podgląd"
-          className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700"
+      {toastMsg && (
+        <div
+          role="status"
+          aria-live="polite"
+          className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 rounded px-4 py-2 shadow bg-black text-white text-sm"
         >
-          Zamknij
-        </button>
-      </div>
-
-      <p id="preview-desc" className="sr-only">
-        Podgląd trzech kadrów: 311×163 (WEBP), 1080×1080 (JPG) i 1200×630 (OG, JPG).
-      </p>
-
-      {/* GRID — tu wcześniej brakowało otwarcia i zamknięcia */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="border rounded p-3">
-          <div className="text-sm mb-2">311 × 163 (WEBP)</div>
-          {preview311 ? (
-            <img
-              src={preview311}
-              alt="Podgląd 311×163"
-              loading="lazy"
-              className="w-full h-auto rounded"
-            />
-          ) : (
-            <div className="text-sm text-gray-500">Brak podglądu</div>
-          )}
+          {toastMsg}
         </div>
+      )}
 
-        <div className="border rounded p-3">
-          <div className="text-sm mb-2">1080 × 1080 (JPG)</div>
-          {preview1080 ? (
-            <img
-              src={preview1080}
-              alt="Podgląd 1080×1080"
-              loading="lazy"
-              className="w-full h-auto rounded"
-            />
-          ) : (
-            <div className="text-sm text-gray-500">Brak podglądu</div>
-          )}
+      {previewOpen && imagePreviewUrl && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 flex items-center justify-center"
+          onKeyDown={(e) => {
+            if (e.key === "Escape") closePreview();
+            if (e.key !== "Tab") return;
+            const root = e.currentTarget;
+            const focusables = root.querySelectorAll(
+              'button:not([disabled]), [href], input:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+            );
+            if (!focusables.length) return;
+            const first = focusables[0];
+            const last = focusables[focusables.length - 1];
+            if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+            else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+          }}
+        >
+          <div className="absolute inset-0 bg-black/60" onClick={closePreview} aria-hidden="true" />
+          <div className="relative z-10 max-w-5xl w-[90%] bg-white dark:bg-gray-900 rounded-xl p-4 shadow-lg">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold">Podgląd obrazu</h3>
+              <button
+                type="button"
+                ref={closeBtnRef}
+                onClick={closePreview}
+                className="px-3 py-1 rounded bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700"
+              >
+                Zamknij
+              </button>
+            </div>
+            <img src={imagePreviewUrl} alt="Podgląd obrazu" className="w-full h-auto rounded" />
+          </div>
         </div>
-
-        <div className="border rounded p-3">
-          <div className="text-sm mb-2">1200 × 630 (OG, JPG)</div>
-          {previewOG ? (
-            <img
-              src={previewOG}
-              alt="Podgląd 1200×630"
-              loading="lazy"
-              className="w-full h-auto rounded"
-            />
-          ) : (
-            <div className="text-sm text-gray-500">Brak podglądu</div>
-          )}
-        </div>
-      </div>
-      {/* /GRID */}
+      )}
     </div>
-  </div>
-)}
-</div>
   );
 }
