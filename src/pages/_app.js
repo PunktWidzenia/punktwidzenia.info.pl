@@ -68,19 +68,20 @@ export default function App({ Component, pageProps }) {
             </div>
 
             <div className="flex items-center gap-4">
-              <nav className="space-x-4 text-sm sm:text-base" aria-label="Główna nawigacja">
-                <Link href="/" className="hover:underline">Newsy</Link>
-                <Link href="/#onas" className="hover:underline">O nas</Link>
-                <Link href="/#kontakt" className="hover:underline">Kontakt</Link>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61551541407685"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  Facebook
-                </a>
-              </nav>
+              <nav className="flex flex-nowrap gap-4 text-sm sm:text-base" aria-label="Główna nawigacja">
+  <Link href="/" className="whitespace-nowrap hover:underline">Newsy</Link>
+  <Link href="/#onas" className="whitespace-nowrap hover:underline">O&nbsp;nas</Link>
+  <Link href="/#kontakt" className="whitespace-nowrap hover:underline">Kontakt</Link>
+  <a
+    href="https://www.facebook.com/profile.php?id=61551541407685"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="whitespace-nowrap hover:underline"
+  >
+    Facebook
+  </a>
+</nav>
+
 
               <button
                 onClick={toggleDarkMode}
