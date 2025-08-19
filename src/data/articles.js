@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 61,
+  link: "/zarzut-dla-roberta-bakiewicza-zniewazenie-sluzb-na-moscie-w-slubicach",
+  img: "/zarzut-dla-roberta-bakiewicza-zniewazenie-sluzb-na-moscie-w-slubicach.webp",
+  title: "⚠️ Zarzut dla Roberta Bąkiewicza: znieważenie służb na moście w Słubicach",
+  description: "Robert Bąkiewicz usłyszał zarzut znieważenia funkcjonariuszy Straży Granicznej i Żandarmerii Wojskowej podczas incydentu w Słubicach.",
+  date: "2025-08-19",
+  component: "Articlezarzutdlarobertabakiewiczazniewazeniesluzbnamosciewslubicach"
+},
+  {
   id: 60,
   link: "/katowicka-kwk-wieczorek-zmienia-sie-w-nowoczesny-hub-technologiczny",
   img: "/katowicka-kwk-wieczorek-zmienia-sie-w-nowoczesny-hub-technologiczny.webp",
