@@ -21,14 +21,16 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
 
-        {/* Schemat kolorów dla natywnych elementów UI */}
+        {/* Schemat kolorów i domyślny theme-color */}
         <meta name="color-scheme" content="dark light" />
-
-        {/* Domyślnie pod ciemny motyw (nadpisywane przez skrypt) */}
         <meta name="theme-color" content="#000000" />
-      </Head>
-      <body>
-        {/* Anti-FOUC: ustaw motyw i theme-color przed hydratacją */}
+
+        {/* Krytyczny styl – działa zanim załaduje się bundel CSS */}
+        <style>{`
+          html.dark, html.dark body { background:#000 !important; color:#fff !important; }
+        `}</style>
+
+        {/* Anti-FOUC: ustaw motyw najwcześniej jak się da */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -49,10 +51,11 @@ export default function Document() {
             `,
           }}
         />
-
+      </Head>
+      <body>
         {/* Fallback dla wyłączonego JS */}
         <noscript>
-          <style>{`html.dark body { background: #000; color: #fff; }`}</style>
+          <style>{`html.dark body { background:#000; color:#fff; }`}</style>
         </noscript>
 
         <Main />
