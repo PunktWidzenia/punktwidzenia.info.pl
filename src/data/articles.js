@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 62,
+  link: "/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie",
+  img: "/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie.webp",
+  title: "🎯 Śmierć podczas polowania na Lubelszczyźnie – tragedia w lesie",
+  description: "Tragedia na polowaniu w Lubelskiem. 60-letni mężczyzna zginął od strzału oddanego przez 40-letniego myśliwego, który usłyszał zarzut zabójstwa.",
+  date: "2025-08-19",
+  component: "Articlesmiercpodczaspolowanianalubelszczyznietragediawlesie"
+},
+  {
   id: 61,
   link: "/zarzut-dla-roberta-bakiewicza-zniewazenie-sluzb-na-moscie-w-slubicach",
   img: "/zarzut-dla-roberta-bakiewicza-zniewazenie-sluzb-na-moscie-w-slubicach.webp",
