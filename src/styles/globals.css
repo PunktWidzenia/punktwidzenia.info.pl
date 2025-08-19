@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fallback: zawsze czarne tło, jeśli html ma klasę dark */
+html.dark, html.dark body {
+  background: #000 !important;
+  color: #fff !important;
+}
+
 body {
   @apply bg-white text-black dark:bg-black dark:text-white font-sans;
 }
