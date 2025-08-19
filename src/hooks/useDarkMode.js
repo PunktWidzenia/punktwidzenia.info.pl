@@ -18,9 +18,8 @@ export default function useDarkMode() {
     if (typeof window === "undefined") return;
 
     // 1) odczytaj preferencję: lokalna > systemowa
-    const stored = localStorage.getItem(LS_KEY); // 'dark' | 'light' | null
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const dark = stored ? stored === "dark" : prefersDark;
+    const stored = localStorage.getItem(LS_KEY);
+    const dark = stored ? stored === "dark" : true; // domyślnie dark
 
     setIsDarkMode(dark);
     applyTheme(dark);
