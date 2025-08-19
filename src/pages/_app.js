@@ -39,49 +39,51 @@ export default function App({ Component, pageProps }) {
       <AnalyticsAndAdsLoader />
       <ScrollToTop />
 
-      {/* opcjonalnie: zapobiegaj miganiu motywu */}
+      {/* bez wymuszania kolorów/tła – motyw pochodzi z <html class="dark"> oraz z body */}
       <div
-        className="bg-white text-black dark:bg-black dark:text-white min-h-screen font-sans px-4 lg:px-0"
+        className="min-h-screen font-sans px-4 lg:px-0"
         suppressHydrationWarning
         style={!hasMounted ? { visibility: "hidden" } : undefined}
       >
-        <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-black text-white px-3 py-1 rounded">
+        <a
+          href="#content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-black text-white px-3 py-1 rounded"
+        >
           Przejdź do treści
         </a>
 
         <div className="max-w-6xl mx-auto">
-          <header className="px-6 py-4 border-b border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
+          <header className="px-6 py-4 border-b border-black/10 dark:border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
             <div className="flex items-center space-x-2">
-<Link href="/" onClick={onLogoClick} aria-label="Strona główna – Punkt Widzenia">
-  <Image
-    src="/logo_header_56x56.webp"
-    alt="Punkt Widzenia"
-    width={56}
-    height={56}
-    priority={router.pathname === "/"}
-    sizes="56px"
-  />
-</Link>
-<Link href="/" onClick={onLogoClick} className="text-2xl font-bold hover:no-underline">
-  PUNKT <span className="text-red-500 font-bold">WIDZENIA</span>
-</Link>
+              <Link href="/" onClick={onLogoClick} aria-label="Strona główna – Punkt Widzenia">
+                <Image
+                  src="/logo_header_56x56.webp"
+                  alt="Punkt Widzenia"
+                  width={56}
+                  height={56}
+                  priority={router.pathname === "/"}
+                  sizes="56px"
+                />
+              </Link>
+              <Link href="/" onClick={onLogoClick} className="text-2xl font-bold hover:no-underline">
+                PUNKT <span className="text-red-500 font-bold">WIDZENIA</span>
+              </Link>
             </div>
 
             <div className="flex items-center gap-4">
               <nav className="flex flex-nowrap gap-4 text-sm sm:text-base" aria-label="Główna nawigacja">
-  <Link href="/" className="whitespace-nowrap hover:underline">Newsy</Link>
-  <Link href="/#onas" className="whitespace-nowrap hover:underline">O&nbsp;nas</Link>
-  <Link href="/#kontakt" className="whitespace-nowrap hover:underline">Kontakt</Link>
-  <a
-    href="https://www.facebook.com/profile.php?id=61551541407685"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="whitespace-nowrap hover:underline"
-  >
-    Facebook
-  </a>
-</nav>
-
+                <Link href="/" className="whitespace-nowrap hover:underline">Newsy</Link>
+                <Link href="/#onas" className="whitespace-nowrap hover:underline">O&nbsp;nas</Link>
+                <Link href="/#kontakt" className="whitespace-nowrap hover:underline">Kontakt</Link>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61551541407685"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whitespace-nowrap hover:underline"
+                >
+                  Facebook
+                </a>
+              </nav>
 
               <button
                 onClick={toggleDarkMode}
@@ -90,12 +92,12 @@ export default function App({ Component, pageProps }) {
                 aria-pressed={isDarkMode}
                 title={isDarkMode ? "Tryb jasny" : "Tryb ciemny"}
               >
-{hasMounted && (
-    isDarkMode
-      ? <FaSun className="text-yellow-400" aria-hidden />
-      : <FaMoon className="text-gray-600" aria-hidden />
-  )}
-</button>
+                {hasMounted && (
+                  isDarkMode
+                    ? <FaSun className="text-yellow-400" aria-hidden />
+                    : <FaMoon className="text-gray-600" aria-hidden />
+                )}
+              </button>
             </div>
           </header>
 
