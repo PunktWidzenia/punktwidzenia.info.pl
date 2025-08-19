@@ -75,14 +75,14 @@ export default function GdprConsentBanner() {
       aria-live="polite"
     >
       <div
-        className="w-full max-w-xl bg-white dark:bg-neutral-900 text-black dark:text-white border border-neutral-300 dark:border-neutral-700 p-6 shadow-xl rounded"
+        className="w-full max-w-xl bg-neutral-900 text-white border border-neutral-700 p-6 shadow-xl rounded"
         role="dialog"
         aria-modal="true"
         aria-labelledby="consent-title"
       >
         {!showSettings ? (
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <p className="text-sm max-w-3xl">
+            <p className="text-sm max-w-3xl text-neutral-300">
               Używamy plików cookies do zapewnienia działania serwisu (niezbędne),
               wyświetlania reklam (Google AdSense) oraz analityki (Google Analytics).
               Niezbędne cookies są zawsze aktywne i nie służą profilowaniu.
@@ -96,7 +96,7 @@ export default function GdprConsentBanner() {
               </button>
               <button
                 onClick={() => setShowSettings(true)}
-                className="border border-neutral-400 dark:border-neutral-600 px-4 py-2 rounded"
+                className="border border-neutral-600 px-4 py-2 rounded text-neutral-200 hover:bg-neutral-800"
                 aria-haspopup="dialog"
                 aria-controls="consent-settings"
               >
@@ -118,9 +118,9 @@ export default function GdprConsentBanner() {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <span className="font-medium">Niezbędne cookies</span>
-                <span className="text-xs text-neutral-500">Zawsze aktywne</span>
+                <span className="text-xs text-neutral-400">Zawsze aktywne</span>
               </div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
+              <p className="text-sm text-neutral-400">
                 Pozwalają na podstawowe funkcje (nawigacja, bezpieczeństwo).
                 Nie zawierają danych do profilowania.
               </p>
@@ -139,7 +139,7 @@ export default function GdprConsentBanner() {
                   aria-describedby="ads-desc"
                 />
               </div>
-              <p id="ads-desc" className="text-sm text-neutral-600 dark:text-neutral-400">
+              <p id="ads-desc" className="text-sm text-neutral-400">
                 Umożliwiają wyświetlanie reklam. Przy włączonej zgodzie mogą być personalizowane przez partnera.
               </p>
             </div>
@@ -157,7 +157,7 @@ export default function GdprConsentBanner() {
                   aria-describedby="analytics-desc"
                 />
               </div>
-              <p id="analytics-desc" className="text-sm text-neutral-600 dark:text-neutral-400">
+              <p id="analytics-desc" className="text-sm text-neutral-400">
                 Pomagają zrozumieć korzystanie z serwisu (statystyki zagregowane).
               </p>
             </div>
@@ -171,7 +171,7 @@ export default function GdprConsentBanner() {
               </button>
               <button
                 onClick={() => setShowSettings(false)}
-                className="border border-neutral-400 dark:border-neutral-600 px-4 py-2 rounded"
+                className="border border-neutral-600 px-4 py-2 rounded text-neutral-200 hover:bg-neutral-800"
               >
                 Wróć
               </button>
@@ -179,7 +179,7 @@ export default function GdprConsentBanner() {
                 href="/polityka-prywatnosci"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-auto text-sm hover:underline text-red-600"
+                className="ml-auto text-sm hover:underline text-red-400"
               >
                 Polityka prywatności
               </a>

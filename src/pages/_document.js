@@ -38,8 +38,8 @@ export default function Document() {
   try {
     var KEY = 'pw-theme';
     var pref = localStorage.getItem(KEY); // 'dark' | 'light' | null
-    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var dark = pref ? (pref === 'dark') : prefersDark;
+    // Domyślnie zawsze dark; tylko świadomy wybór 'light' przełącza na jasny
+    var dark = pref ? (pref === 'dark') : true;
 
     var doc = document.documentElement;
     if (dark) doc.classList.add('dark'); else doc.classList.remove('dark');
