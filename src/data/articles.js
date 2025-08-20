@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 64,
+  link: "/eksplozja-drona-na-wschodzie-polski-rosnace-napiecia-przy-granicy",
+  img: "/eksplozja-drona-na-wschodzie-polski-rosnace-napiecia-przy-granicy.webp",
+  title: "🚨 Eksplozja drona na wschodzie Polski – rosnące napięcia przy granicy",
+  description: "Na polu w woj. lubelskim doszło do eksplozji drona. Nikt nie został ranny, ale zdarzenie zwiększa obawy o bezpieczeństwo na wschodniej granicy Polski.",
+  date: "2025-08-20",
+  component: "Articleeksplozjadronanawschodziepolskirosnacenapieciaprzygranicy"
+},
+  {
   id: 63,
   link: "/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem",
   img: "/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem.webp",
