@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 65,
+  link: "/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze",
+  img: "/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze.webp",
+  title: "🏛️ Wystawa „Our Boys” w Gdańsku wywołała polityczną burzę",
+  description: "Wystawa w Muzeum Gdańska o Polakach wcielanych do Wehrmachtu wywołała ostre spory polityczne i historyczne.",
+  date: "2025-08-20",
+  component: "Articlewystawaourboyswgdanskuwywolalapolitycznaburze"
+},
+  {
   id: 64,
   link: "/eksplozja-drona-na-wschodzie-polski-rosnace-napiecia-przy-granicy",
   img: "/eksplozja-drona-na-wschodzie-polski-rosnace-napiecia-przy-granicy.webp",

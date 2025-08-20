@@ -34,6 +34,29 @@ function canvasToBlobUrl(canvas, mime, quality) {
   });
 }
 
+// ——— Helpery do zapisu przez API ———
+async function blobUrlToDataUrl(blobUrl) {
+  const resp = await fetch(blobUrl);
+  const blob = await resp.blob();
+  return await new Promise((resolve, reject) => {
+    const r = new FileReader();
+    r.onload = () => resolve(r.result);
+    r.onerror = reject;
+    r.readAsDataURL(blob);
+  });
+}
+
+async function saveArticleToServer({ jsFilename, jsCode, imgFilename, imgBlobUrl }) {
+  const imgDataUrl = await blobUrlToDataUrl(imgBlobUrl);
+  const res = await fetch("/api/save-article", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ jsFilename, jsCode, imgFilename, imgDataUrl }),
+  });
+  if (!res.ok) throw new Error("Błąd zapisu na serwerze");
+  return res.json();
+}
+
 export default function ArticleGenerator() {
   const [date, setDate] = useState(() => getTodayLocal());
   const [isoDate, setIsoDate] = useState("");
@@ -411,6 +434,38 @@ export default ${componentName};
     setTimeout(() => showToast(`Pobrano: ${baseFileName}.webp`), 600);
   };
 
+async function saveViaApi() {
+  if (!generatedCode) { showToast("Brak wygenerowanego kodu .js"); return; }
+  if (!imagePreviewUrl) { showToast("Brak wygenerowanego obrazu"); return; }
+
+  try {
+    const jsFilename = `Article${slug.replace(/-/g, "")}.js`;
+    const imgFilename = `${baseFileName}.webp`;
+
+    await saveArticleToServer({
+      jsFilename,
+      jsCode: generatedCode,
+      imgFilename,
+      imgBlobUrl: imagePreviewUrl,
+    });
+
+    showToast(`Zapisano: A/${jsFilename} oraz B/${imgFilename}`);
+
+    // automatyczne podbicie ID (tak jak miałeś przy „Pobierz plik .js”)
+    const currentId = parseInt(articleId, 10);
+    if (!isNaN(currentId)) {
+      const nextId = currentId + 1;
+      localStorage.setItem("lastArticleId", nextId.toString());
+      setArticleId(nextId.toString());
+    } else {
+      localStorage.setItem("lastArticleId", "1");
+      setArticleId("1");
+    }
+  } catch (e) {
+    showToast("Błąd: nie udało się zapisać na serwerze");
+  }
+}
+
   const handleFileChange = (e) => {
     const file = e.target.files?.[0];
     e.target.value = "";
@@ -587,6 +642,14 @@ export default ${componentName};
       </div>
 
       <div className="flex gap-4 flex-wrap">
+      <button
+  type="button"
+  onClick={saveViaApi}
+  className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 disabled:opacity-50"
+  disabled={!generatedCode || !imagePreviewUrl || !canGenerate}
+>
+  Zapisz na serwer (A/B)
+</button>
         <button
           type="button"
           disabled={!articleObjectCode.trim()}
