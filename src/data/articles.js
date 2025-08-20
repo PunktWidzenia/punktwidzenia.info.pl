@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 63,
+  link: "/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem",
+  img: "/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem.webp",
+  title: "💼 Ukraińcy ratują polski rynek pracy – Fitch ostrzega przed rosnącym deficytem",
+  description: "Fitch prognozuje wzrost polskiej gospodarki dzięki pracownikom z Ukrainy, ale ostrzega przed rosnącym deficytem budżetowym.",
+  date: "2025-08-20",
+  component: "Articleukraincyratujapolskirynekpracyfitchostrzegaprzedrosnacymdeficytem"
+},
+  {
   id: 62,
   link: "/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie",
   img: "/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie.webp",
