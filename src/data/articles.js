@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 69,
+  link: "/rzad-podnosi-podatek-dla-bankow-dodatkowe-65-mld-zl-na-obrone",
+  img: "/rzad-podnosi-podatek-dla-bankow-dodatkowe-65-mld-zl-na-obrone.webp",
+  title: "💰 Rząd podnosi podatek dla banków – dodatkowe 6,5 mld zł na obronę",
+  description: "Rząd planuje podwyższyć CIT dla banków z 19% do 30%, by sfinansować wydatki obronne. Zmiana ma przynieść 6,5 mld zł w 2026 roku.",
+  date: "2025-08-21",
+  component: "Articlerzadpodnosipodatekdlabankowdodatkowe65mldzlnaobrone"
+},
+  {
   id: 68,
   link: "/polska-modernizuje-flote-f-16-kontrakt-wart-38-mld-usd",
   img: "/polska-modernizuje-flote-f-16-kontrakt-wart-38-mld-usd.webp",
