@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 68,
+  link: "/polska-modernizuje-flote-f-16-kontrakt-wart-38-mld-usd",
+  img: "/polska-modernizuje-flote-f-16-kontrakt-wart-38-mld-usd.webp",
+  title: "✈️ Polska modernizuje flotę F-16 – kontrakt wart 3,8 mld USD",
+  description: "Polska przeznaczy 3,8 mld USD na modernizację 48 myśliwców F-16C/D. To największy kontrakt serwisowy w historii Sił Powietrznych RP.",
+  date: "2025-08-21",
+  component: "Articlepolskamodernizujeflotef16kontraktwart38mldusd"
+},
+  {
   id: 67,
   link: "/inflacja-spada-ale-ceny-w-sklepach-wciaz-wysokie-gdzie-tkwi-problem",
   img: "/inflacja-spada-ale-ceny-w-sklepach-wciaz-wysokie-gdzie-tkwi-problem.webp",
