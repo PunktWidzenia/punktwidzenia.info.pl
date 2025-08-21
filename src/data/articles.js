@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 67,
+  link: "/inflacja-spada-ale-ceny-w-sklepach-wciaz-wysokie-gdzie-tkwi-problem",
+  img: "/inflacja-spada-ale-ceny-w-sklepach-wciaz-wysokie-gdzie-tkwi-problem.webp",
+  title: "💸 Inflacja spada, ale ceny w sklepach wciąż wysokie – gdzie tkwi problem?",
+  description: "Inflacja spada, ale ceny w sklepach pozostają wysokie. Eksperci wyjaśniają przyczyny tej różnicy.",
+  date: "2025-08-21",
+  component: "Articleinflacjaspadaalecenywsklepachwciazwysokiegdzietkwiproblem"
+},
+  {
   id: 66,
   link: "/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce",
   img: "/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce.webp",
