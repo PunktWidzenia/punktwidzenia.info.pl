@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 66,
+  link: "/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce",
+  img: "/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce.webp",
+  title: "🛡️ Holandia wysyła żołnierzy i system Patriot do Polski – solidarność NATO w praktyce",
+  description: "Holandia ogłosiła wysłanie 300 żołnierzy i systemu Patriot do Polski. To element wsparcia NATO i odpowiedź na rosnące zagrożenie ze strony Rosji.",
+  date: "2025-08-21",
+  component: "Articleholandiawysylazolnierzyisystempatriotdopolskisolidarnoscnatowpraktyce"
+},
+  {
   id: 65,
   link: "/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze",
   img: "/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze.webp",
