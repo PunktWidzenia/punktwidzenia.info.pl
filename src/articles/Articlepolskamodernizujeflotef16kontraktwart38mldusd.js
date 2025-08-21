@@ -73,7 +73,7 @@ function Articlepolskamodernizujeflotef16kontraktwart38mldusd() {
   />
 </div>
 
-        <p className="text-sm text-gray-500 dark:text-gray-400">📷 Zdjęcie: Steven Lek / Wikimedia Commons / CC BY-SA 4.0</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">Zdjęcie: Steven Lek / Wikimedia Commons / CC BY-SA 4.0</p>
 
         <div className="space-y-6">
             <h2 className="text-xl font-semibold">🛫 Największy kontrakt w historii polskich F-16</h2>
