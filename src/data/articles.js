@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 70,
+  link: "/sensacyjne-odkrycie-w-gdansku-grob-rycerza-pod-lodziarnia",
+  img: "/sensacyjne-odkrycie-w-gdansku-grob-rycerza-pod-lodziarnia.webp",
+  title: "⚔️ Sensacyjne odkrycie w Gdańsku – grób rycerza pod lodziarnią",
+  description: "W Gdańsku odkryto grób średniowiecznego rycerza pod lodziarnią. Płyta nagrobna sprzed ponad 700 lat zachowała się w świetnym stanie.",
+  date: "2025-08-22",
+  component: "Articlesensacyjneodkryciewgdanskugrobrycerzapodlodziarnia"
+},
+  {
   id: 69,
   link: "/rzad-podnosi-podatek-dla-bankow-dodatkowe-65-mld-zl-na-obrone",
   img: "/rzad-podnosi-podatek-dla-bankow-dodatkowe-65-mld-zl-na-obrone.webp",
