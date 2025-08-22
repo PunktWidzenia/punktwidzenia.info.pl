@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 72,
+  link: "/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci",
+  img: "/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci.webp",
+  title: "💥 Masowy atak Rosji na Ukrainę – Polska w stanie czujności",
+  description: "Rosja przeprowadziła największy atak powietrzny na Ukrainę, Polska poderwała myśliwce w obronie granic.",
+  date: "2025-08-22",
+  component: "Articlemasowyatakrosjinaukrainepolskawstanieczujnosci"
+},
+  {
   id: 71,
   link: "/rzad-rezygnuje-z-podatku-od-rezerw-bankowych",
   img: "/rzad-rezygnuje-z-podatku-od-rezerw-bankowych.webp",
