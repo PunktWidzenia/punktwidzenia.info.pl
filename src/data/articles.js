@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 71,
+  link: "/rzad-rezygnuje-z-podatku-od-rezerw-bankowych",
+  img: "/rzad-rezygnuje-z-podatku-od-rezerw-bankowych.webp",
+  title: "💰 Rząd rezygnuje z podatku od rezerw bankowych",
+  description: "Ministerstwo Finansów wycofało się z planu podatku od rezerw bankowych po gwałtownej reakcji rynku.",
+  date: "2025-08-22",
+  component: "Articlerzadrezygnujezpodatkuodrezerwbankowych"
+},
+  {
   id: 70,
   link: "/sensacyjne-odkrycie-w-gdansku-grob-rycerza-pod-lodziarnia",
   img: "/sensacyjne-odkrycie-w-gdansku-grob-rycerza-pod-lodziarnia.webp",
