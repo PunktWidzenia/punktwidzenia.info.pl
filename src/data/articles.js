@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 73,
+  link: "/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami",
+  img: "/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami.webp",
+  title: "⚔️ Manewry „Zapad-2025” – Ukraina ostrzega przed prowokacjami",
+  description: "Ukraina ostrzegła Białoruś przed prowokacjami podczas wrześniowych ćwiczeń wojskowych „Zapad-2025”, wskazując na ryzyko eskalacji konfliktu w regionie.",
+  date: "2025-08-23",
+  component: "Articlemanewryzapad2025ukrainaostrzegaprzedprowokacjami"
+},
+  {
   id: 72,
   link: "/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci",
   img: "/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci.webp",
