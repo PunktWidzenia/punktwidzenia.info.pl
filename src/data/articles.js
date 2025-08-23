@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 76,
+  link: "/wroclaw-na-liscie-najpiekniejszych-miast-europy",
+  img: "/wroclaw-na-liscie-najpiekniejszych-miast-europy.webp",
+  title: "🏙️ Wrocław na liście najpiękniejszych miast Europy",
+  description: "Wrocław, nazywany „Wenecją Polski”, został doceniony jako jedno z najbardziej urokliwych miast Europy, zachwycając turystów kanałami, zabytkami i atmosferą.",
+  date: "2025-08-23",
+  component: "Articlewroclawnaliscienajpiekniejszychmiasteuropy"
+},
+  {
   id: 75,
   link: "/pierwsza-kobieta-kapitan-w-polskiej-sluzbie-sar",
   img: "/pierwsza-kobieta-kapitan-w-polskiej-sluzbie-sar.webp",
