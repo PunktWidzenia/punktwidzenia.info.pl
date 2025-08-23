@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 75,
+  link: "/pierwsza-kobieta-kapitan-w-polskiej-sluzbie-sar",
+  img: "/pierwsza-kobieta-kapitan-w-polskiej-sluzbie-sar.webp",
+  title: "🚤 Pierwsza kobieta kapitan w polskiej służbie SAR",
+  description: "Paulina Pacuła została pierwszą kobietą-kapitanem w historii Morskiej Służby Poszukiwania i Ratownictwa, obejmując dowództwo jednostki „Sztorm” na Helu.",
+  date: "2025-08-23",
+  component: "Articlepierwszakobietakapitanwpolskiejsluzbiesar"
+},
+  {
   id: 74,
   link: "/rzadkie-zjawisko-nad-baltykiem-az-osiem-trab-wodnych-jednoczesnie",
   img: "/rzadkie-zjawisko-nad-baltykiem-az-osiem-trab-wodnych-jednoczesnie.webp",
