@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 74,
+  link: "/rzadkie-zjawisko-nad-baltykiem-az-osiem-trab-wodnych-jednoczesnie",
+  img: "/rzadkie-zjawisko-nad-baltykiem-az-osiem-trab-wodnych-jednoczesnie.webp",
+  title: "🌪️ Rzadkie zjawisko nad Bałtykiem – aż osiem trąb wodnych jednocześnie",
+  description: "Nad Bałtykiem pojawiło się niezwykle rzadkie zjawisko – osiem trąb wodnych jednocześnie.",
+  date: "2025-08-23",
+  component: "Articlerzadkiezjawiskonadbaltykiemazosiemtrabwodnychjednoczesnie"
+},
+  {
   id: 73,
   link: "/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami",
   img: "/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami.webp",
