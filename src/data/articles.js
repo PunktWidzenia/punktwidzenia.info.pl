@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 81,
+  link: "/wisla-na-rekordowo-niskim-poziomie-historyczne-ostrzezenie-dla-polski",
+  img: "/wisla-na-rekordowo-niskim-poziomie-historyczne-ostrzezenie-dla-polski.webp",
+  title: "💧 Wisła na rekordowo niskim poziomie – historyczne ostrzeżenie dla Polski",
+  description: "Wisła osiągnęła najniższy poziom w historii pomiarów, co rodzi pytania o skutki suszy, zmiany klimatu i przyszłość zasobów wodnych w Polsce.",
+  date: "2025-08-24",
+  component: "Articlewislanarekordowoniskimpoziomiehistoryczneostrzezeniedlapolski"
+},
+  {
   id: 80,
   link: "/rocznica-paktu-ribbentropmolotow-ostrzezenie-prezydenta-nawrockiego",
   img: "/rocznica-paktu-ribbentropmolotow-ostrzezenie-prezydenta-nawrockiego.webp",
