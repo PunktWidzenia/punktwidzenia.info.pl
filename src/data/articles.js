@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 78,
+  link: "/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi",
+  img: "/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi.webp",
+  title: "🤝 Mark Carney w Polsce – kanadyjski premier zacieśnia strategiczne więzi",
+  description: "Premier Kanady Mark Carney rozpoczął wizytę w Polsce, Niemczech i na Łotwie. Główne tematy to bezpieczeństwo, energetyka i współpraca przemysłowa.",
+  date: "2025-08-24",
+  component: "Articlemarkcarneywpolscekanadyjskipremierzaciesniastrategicznewiezi"
+},
+  {
   id: 77,
   link: "/prokuratura-zleca-sekcje-zwlok-stanislawa-soyki",
   img: "/prokuratura-zleca-sekcje-zwlok-stanislawa-soyki.webp",
