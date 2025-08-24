@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 77,
+  link: "/prokuratura-zleca-sekcje-zwlok-stanislawa-soyki",
+  img: "/prokuratura-zleca-sekcje-zwlok-stanislawa-soyki.webp",
+  title: "🎶 Prokuratura zleca sekcję zwłok Stanisława Soyki",
+  description: "Prokuratura zdecydowała o przeprowadzeniu sekcji zwłok Stanisława Soyki w celu ustalenia przyczyny śmierci artysty.",
+  date: "2025-08-24",
+  component: "Articleprokuraturazlecasekcjezwlokstanislawasoyki"
+},
+  {
   id: 76,
   link: "/wroclaw-na-liscie-najpiekniejszych-miast-europy",
   img: "/wroclaw-na-liscie-najpiekniejszych-miast-europy.webp",
