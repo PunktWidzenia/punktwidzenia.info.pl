@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 80,
+  link: "/rocznica-paktu-ribbentropmolotow-ostrzezenie-prezydenta-nawrockiego",
+  img: "/rocznica-paktu-ribbentropmolotow-ostrzezenie-prezydenta-nawrockiego.webp",
+  title: "📜 Rocznica Paktu Ribbentrop–Mołotow – ostrzeżenie prezydenta Nawrockiego",
+  description: "Prezydent Karol Nawrocki upamiętnił rocznicę Paktu Ribbentrop–Mołotow, ostrzegając przed odradzającymi się imperialnymi ambicjami Rosji.",
+  date: "2025-08-24",
+  component: "Articlerocznicapakturibbentropmolotowostrzezenieprezydentanawrockiego"
+},
+  {
   id: 79,
   link: "/polsko-irlandzka-akcja-rozbija-gangi-narkotykowe-warte-240-mln",
   img: "/polsko-irlandzka-akcja-rozbija-gangi-narkotykowe-warte-240-mln.webp",
