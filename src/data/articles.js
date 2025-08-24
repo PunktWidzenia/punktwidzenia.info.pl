@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 79,
+  link: "/polsko-irlandzka-akcja-rozbija-gangi-narkotykowe-warte-240-mln",
+  img: "/polsko-irlandzka-akcja-rozbija-gangi-narkotykowe-warte-240-mln.webp",
+  title: "🚔 Polsko-irlandzka akcja rozbija gangi narkotykowe warte 240 mln €",
+  description: "Irlandzka Garda i polska policja rozbiły szlak narkotykowy wart 240 mln euro. Zatrzymano kilkanaście osób i zabezpieczono setki kilogramów narkotyków.",
+  date: "2025-08-24",
+  component: "Articlepolskoirlandzkaakcjarozbijaganginarkotykowewarte240mln"
+},
+  {
   id: 78,
   link: "/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi",
   img: "/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi.webp",
