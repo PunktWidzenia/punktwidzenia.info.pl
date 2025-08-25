@@ -265,60 +265,15 @@ export default function ArticleGenerator() {
     const componentName = `Article${slugified.replace(/-/g, "")}`;
     const safeSections = formattedSections.replace(/\$\{/g, "\\${");
 
-    const jsCode = `import Head from "next/head";
-import Link from "next/link";
-import AdSlot from "@/components/AdSlot";
-import RelatedArticles from "@/components/RelatedArticles";
-import NextImage from "next/image";
+    const jsCode = `import Link from "next/link";
+    import dynamic from "next/dynamic";
+    import RelatedArticles from "@/components/RelatedArticles";
+    import NextImage from "next/image";
+    const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
 
 function ${componentName}() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{${js(title)}}</title>
-        <meta name="description" content={${js(descSafe)}} />
-        <meta property="og:title" content={${js(title)}} />
-        <meta property="article:published_time" content={${js(isoDate)}} />
-        <meta property="article:modified_time" content={${js(isoDate)}} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={${js(descSafe)}} />
-        <meta property="og:image" content={${js(ogAbsUrl)}} />
-        <meta property="og:url" content={${js("https://punktwidzenia.info.pl/" + slugified)}} />
-        <meta property="og:image:alt" content={${js(title)}} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={${js(title)}} />
-        <meta name="twitter:description" content={${js(descSafe)}} />
-        <meta name="twitter:image" content={${js(ogAbsUrl)}} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={${js("https://punktwidzenia.info.pl/" + slugified)}} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: ${js(title)},
-              image: [${js(ogAbsUrl)}],
-              datePublished: ${js(isoDate)},
-              dateModified: ${js(isoDate)},
-              mainEntityOfPage: ${js("https://punktwidzenia.info.pl/" + slugified)},
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: ${js(descSafe)}
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

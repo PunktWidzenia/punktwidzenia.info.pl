@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "generate:sitemap": "next-sitemap",
-  "build": "next build && npm run generate:sitemap",
-  "start": "next start",
-  "lint": "next lint"
+    "predev": "npm run generate:registry",
+    "dev": "next dev",
+    "generate:registry": "node scripts/generateRegistry.js",
+    "generate:sitemap": "next-sitemap",
+    "build": "npm run generate:registry && next build && npm run generate:sitemap",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
