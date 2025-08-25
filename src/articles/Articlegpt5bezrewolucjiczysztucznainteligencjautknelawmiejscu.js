@@ -1,7 +1,6 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
-import AdSlot from "@/components/AdSlot";
 import RelatedArticles from "@/components/RelatedArticles";
 import NextImage from "next/image";
 
