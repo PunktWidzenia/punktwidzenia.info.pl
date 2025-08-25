@@ -23,17 +23,19 @@ function NormalizeUrl([string]$url) {
   }
 }
 
-# Regexy jako here-stringi (literalne)
+# Regexy (odporne na kolejność atrybutów, case-insensitive)
 $LocPattern = @'
 <loc>([^<]+)</loc>
 '@
 
+# <meta name="robots" content="...">  (kolejność atrybutów dowolna)
 $MetaRobotsPattern = @'
-<meta[^>]+name=["'']robots["''][^>]*content=["'']([^"'']+)["'']
+<meta\b(?=[^>]*\bname=["'']robots["''])(?=[^>]*\bcontent=["'']([^"'']+)["''])[^>]*>
 '@
 
+# <link rel="canonical" href="...">   (kolejność atrybutów dowolna)
 $CanonicalPattern = @'
-<link[^>]+rel=["'']canonical["''][^>]*href=["'']([^"'']+)["'']
+<link\b(?=[^>]*\brel=["'']canonical["''])(?=[^>]*\bhref=["'']([^"'']+)["''])[^>]*>
 '@
 
 # 1) Pobierz listę części sitemapy
@@ -65,7 +67,7 @@ foreach ($p in $parts) {
   }
 }
 
-# Deduplikacja URL-i
+# Deduplikacja
 $urls = $urls | Sort-Object -Unique
 
 # (opcjonalnie) pomiń strony statyczne
@@ -83,25 +85,49 @@ if ($isPS7 -and $Throttle -gt 1) {
     param($UA,$Fast,$MetaRobotsPattern,$CanonicalPattern,$ConnectTimeout,$MaxTime)
 
     $u = $_
+    # HEAD
     $headers = & curl.exe -s -L -I --connect-timeout $ConnectTimeout --max-time $MaxTime -A $UA $u 2>$null
     $statusMatches = [regex]::Matches($headers, 'HTTP/\d\.\d\s+(\d{3})')
     $status = if ($statusMatches.Count) { $statusMatches[$statusMatches.Count-1].Groups[1].Value } else { "" }
+
+    # Fallback: jeżeli HEAD ≠ 200, sprawdź GET
+    $effectiveStatus = $status
+    if ($status -ne "200") {
+      $codeGet = & curl.exe -s -o NUL -w "%{http_code}" --connect-timeout $ConnectTimeout --max-time $MaxTime -A $UA $u 2>$null
+      if ($codeGet -match '^\d{3}$') { $effectiveStatus = $codeGet }
+    }
 
     $xrMatch = [regex]::Matches($headers, '(?im)^x-robots-tag:\s*(.+)$')
     $xrobots = if ($xrMatch.Count) { $xrMatch[$xrMatch.Count-1].Groups[1].Value.Trim() } else { "" }
 
     $meta=""; $canonical=""; $ok=""
-    if (-not $Fast -and $status -eq "200") {
+    if (-not $Fast -and $effectiveStatus -eq "200") {
       $html = & curl.exe -s -L --connect-timeout $ConnectTimeout --max-time $MaxTime -A $UA $u 2>$null
+
       $m=[regex]::Match($html,$using:MetaRobotsPattern,[Text.RegularExpressions.RegexOptions]::IgnoreCase)
-      if($m.Success){ $meta=$m.Groups[1].Value }
+      if($m.Success){
+        $metaAttr = [regex]::Match($m.Value,'content=["'']([^"'']+)["'']',[Text.RegularExpressions.RegexOptions]::IgnoreCase)
+        if($metaAttr.Success){ $meta = $metaAttr.Groups[1].Value }
+      }
+
       $c=[regex]::Match($html,$using:CanonicalPattern,[Text.RegularExpressions.RegexOptions]::IgnoreCase)
-      if($c.Success){ $canonical=$c.Groups[1].Value }
+      if($c.Success){
+        $hrefAttr = [regex]::Match($c.Value,'href=["'']([^"'']+)["'']',[Text.RegularExpressions.RegexOptions]::IgnoreCase)
+        if($hrefAttr.Success){ $canonical = $hrefAttr.Groups[1].Value }
+      }
+
       function Norm([string]$uu){ try{ $uri=[Uri]$uu; "{0}://{1}{2}" -f $uri.Scheme.ToLower(),$uri.Host.ToLower(),$uri.AbsolutePath.TrimEnd('/') } catch { $uu.TrimEnd('/') } }
       $ok = if((Norm $canonical) -eq (Norm $u)){"true"} else {"false"}
     }
 
-    [pscustomobject]@{ url=$u; status=$status; x_robots=$xrobots; meta_robots=$meta; canonical=$canonical; canonical_ok=$ok }
+    [pscustomobject]@{
+      url          = $u
+      status       = $effectiveStatus
+      x_robots     = $xrobots
+      meta_robots  = $meta
+      canonical    = $canonical
+      canonical_ok = $ok
+    }
   } -ThrottleLimit $Throttle -ArgumentList $UA,$Fast,$MetaRobotsPattern,$CanonicalPattern,$ConnectTimeout,$MaxTime
 }
 else {
@@ -112,25 +138,49 @@ else {
     $i++
     Write-Progress -Activity "Health-check" -Status "$i / $n" -PercentComplete ([int](100*$i/$n))
 
+    # HEAD
     $headers = & curl.exe -s -L -I --connect-timeout $ConnectTimeout --max-time $MaxTime -A $UA $u 2>$null
     $statusMatches = [regex]::Matches($headers, 'HTTP/\d\.\d\s+(\d{3})')
     $status = if ($statusMatches.Count) { $statusMatches[$statusMatches.Count-1].Groups[1].Value } else { "" }
+
+    # Fallback GET
+    $effectiveStatus = $status
+    if ($status -ne "200") {
+      $codeGet = & curl.exe -s -o NUL -w "%{http_code}" --connect-timeout $ConnectTimeout --max-time $MaxTime -A $UA $u 2>$null
+      if ($codeGet -match '^\d{3}$') { $effectiveStatus = $codeGet }
+    }
 
     $xrMatch = [regex]::Matches($headers, '(?im)^x-robots-tag:\s*(.+)$')
     $xrobots = if ($xrMatch.Count) { $xrMatch[$xrMatch.Count-1].Groups[1].Value.Trim() } else { "" }
 
     $meta=""; $canonical=""; $ok=""
-    if (-not $Fast -and $status -eq "200") {
+    if (-not $Fast -and $effectiveStatus -eq "200") {
       $html = & curl.exe -s -L --connect-timeout $ConnectTimeout --max-time $MaxTime -A $UA $u 2>$null
+
       $m=[regex]::Match($html,$MetaRobotsPattern,[Text.RegularExpressions.RegexOptions]::IgnoreCase)
-      if($m.Success){ $meta=$m.Groups[1].Value }
+      if($m.Success){
+        $metaAttr = [regex]::Match($m.Value,'content=["'']([^"'']+)["'']',[Text.RegularExpressions.RegexOptions]::IgnoreCase)
+        if($metaAttr.Success){ $meta = $metaAttr.Groups[1].Value }
+      }
+
       $c=[regex]::Match($html,$CanonicalPattern,[Text.RegularExpressions.RegexOptions]::IgnoreCase)
-      if($c.Success){ $canonical=$c.Groups[1].Value }
+      if($c.Success){
+        $hrefAttr = [regex]::Match($c.Value,'href=["'']([^"'']+)["'']',[Text.RegularExpressions.RegexOptions]::IgnoreCase)
+        if($hrefAttr.Success){ $canonical = $hrefAttr.Groups[1].Value }
+      }
+
       function Norm([string]$uu){ try{ $uri=[Uri]$uu; "{0}://{1}{2}" -f $uri.Scheme.ToLower(),$uri.Host.ToLower(),$uri.AbsolutePath.TrimEnd('/') } catch { $uu.TrimEnd('/') } }
       $ok = if((Norm $canonical) -eq (Norm $u)){"true"} else {"false"}
     }
 
-    $results += [pscustomobject]@{ url=$u; status=$status; x_robots=$xrobots; meta_robots=$meta; canonical=$canonical; canonical_ok=$ok }
+    $results += [pscustomobject]@{
+      url          = $u
+      status       = $effectiveStatus
+      x_robots     = $xrobots
+      meta_robots  = $meta
+      canonical    = $canonical
+      canonical_ok = $ok
+    }
   }
   Write-Progress -Activity "Health-check" -Completed
 }
