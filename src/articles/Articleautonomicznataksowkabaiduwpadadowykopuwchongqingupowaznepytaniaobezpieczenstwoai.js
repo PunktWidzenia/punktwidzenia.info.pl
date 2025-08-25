@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import Link from "next/link";
-import AdSlot from "@/components/AdSlot";
+import dynamic from "next/dynamic";
+const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
 import RelatedArticles from "@/components/RelatedArticles";
 import NextImage from "next/image";
 
