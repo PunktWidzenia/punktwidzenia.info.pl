@@ -46,6 +46,8 @@ export default function ArticlePage({ articleData }) {
   />
 
   <meta property="og:title" content={articleData.title} />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Punkt Widzenia" />
   <meta property="og:description" content={articleData.description} />
   <meta property="og:image" content={`https://punktwidzenia.info.pl${articleData.img}`} />
   <meta property="og:url" content={`https://punktwidzenia.info.pl${articleData.link}`} />
