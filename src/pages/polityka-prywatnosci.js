@@ -7,6 +7,7 @@ export default function PrivacyPolicy() {
       <Head>
         <title>Polityka Prywatności – Punkt Widzenia</title>
         <meta name="description" content="Polityka prywatności serwisu Punkt Widzenia – informacje o cookies, RODO, Google AdSense i Analytics." />
+        <meta name="robots" content="index,follow" />
         <link rel="canonical" href="https://punktwidzenia.info.pl/polityka-prywatnosci" />
       </Head>
 

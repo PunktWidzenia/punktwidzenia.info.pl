@@ -36,46 +36,35 @@ export default function ArticlePage({ articleData }) {
   return (
     <>
       <Head>
-        <title>{articleData.title} | Punkt Widzenia</title>
-        <meta name="description" content={articleData.description} />
-        <meta property="og:title" content={articleData.title} />
-        <meta property="og:description" content={articleData.description} />
-        <meta
-          property="og:image"
-          content={`https://punktwidzenia.info.pl${articleData.img}`}
-        />
-        <meta
-          property="og:url"
-          content={`https://punktwidzenia.info.pl${articleData.link}`}
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "NewsArticle",
-              headline: articleData.title,
-              description: articleData.description,
-              image: `https://punktwidzenia.info.pl${articleData.img}`,
-              author: {
-                "@type": "Organization",
-                name: "Punkt Widzenia",
-                url: "https://punktwidzenia.info.pl",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Punkt Widzenia",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://punktwidzenia.info.pl/logo.png",
-                },
-              },
-              datePublished: articleData.date,
-            }),
-          }}
-        />
-      </Head>
+  <title>{articleData.title} | Punkt Widzenia</title>
+  <meta name="description" content={articleData.description} />
+  <meta name="robots" content="index,follow" />
+
+  <link
+    rel="canonical"
+    href={`https://punktwidzenia.info.pl${articleData.link}`}
+  />
+
+  <meta property="og:title" content={articleData.title} />
+  <meta property="og:description" content={articleData.description} />
+  <meta property="og:image" content={`https://punktwidzenia.info.pl${articleData.img}`} />
+  <meta property="og:url" content={`https://punktwidzenia.info.pl${articleData.link}`} />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      headline: articleData.title,
+      description: articleData.description,
+      image: `https://punktwidzenia.info.pl${articleData.img}`,
+      author: { "@type": "Organization", name: "Punkt Widzenia", url: "https://punktwidzenia.info.pl" },
+      publisher: { "@type": "Organization", name: "Punkt Widzenia", logo: { "@type": "ImageObject", url: "https://punktwidzenia.info.pl/logo.png" } },
+      datePublished: articleData.date,
+    })}
+  </script>
+</Head>
+
 
       <Component />
     </>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 import { FaFacebookSquare, FaEnvelope, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
 import articles from "@/data/articles";
@@ -17,7 +18,17 @@ export default function Home() {
   };
 
   return (
-    <main className="px-6 py-10 space-y-16">
+    <>
+      <Head>
+        <title>Punkt Widzenia – Najnowsze newsy, ciekawostki i opinie</title>
+        <meta
+          name="description"
+          content="Punkt Widzenia – autorski portal z newsami, ciekawostkami i opiniami z Polski i świata. Sprawdź, o czym mówi dziś cała Polska."
+        />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="https://punktwidzenia.info.pl/" />
+      </Head>
+      <main className="px-6 py-10 space-y-16">
       <section id="newsy" className="space-y-6">
         <h2 className="text-3xl font-bold">Najnowsze newsy</h2>
 
@@ -112,5 +123,6 @@ export default function Home() {
         </ul>
       </section>
     </main>
++    </>
   );
 }
