@@ -1,6 +1,4 @@
-import { useEffect, useRef, useState } from "react";
-import Head from "next/head";
-import Script from "next/script";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -15,8 +13,8 @@ function Articleautonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniao
 
   useEffect(() => setMounted(true), []);
 
-  // Bezpieczne doładowanie skryptu X, jeśli z jakiegoś powodu Next/Script nie zadziała
-  const ensureTwitterScript = () => {
+  // Bezpieczne doładowanie skryptu X
+  const ensureTwitterScript = useCallback(() => {
     if (typeof window === "undefined") return;
     const present = !!document.querySelector('script[src^="https://platform.twitter.com/widgets.js"]');
     if (!present) {
@@ -26,10 +24,10 @@ function Articleautonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniao
       s.dataset.purpose = "pv-twitter-widgets";
       document.body.appendChild(s);
     }
-  };
+  }, []);
 
   // Próba renderu z pollingiem (czeka na window.twttr.widgets.createTweet)
-  const renderTweet = () => {
+  const renderTweet = useCallback(() => {
     if (!mounted || !tweetWrapRef.current || tweetRenderedRef.current) return;
 
     let elapsed = 0;
@@ -66,58 +64,16 @@ function Articleautonomicznataksowkabaiduwpadadowykopuwchongqingupowaznepytaniao
 
     ensureTwitterScript();
     tryOnce();
-  };
+  }, [mounted, ensureTwitterScript]);
 
   // Start renderu po montażu
   useEffect(() => {
     if (!mounted) return;
     renderTweet();
-  }, [mounted]);
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    headline:
-      "🛑 Autonomiczna taksówka Baidu wpada do wykopu w Chongqingu – poważne pytania o bezpieczeństwo AI",
-    image: [
-      "https://punktwidzenia.info.pl/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai.webp",
-    ],
-    datePublished: "2025-08-12",
-    author: { "@type": "Organization", name: "Punkt Widzenia" },
-    publisher: {
-      "@type": "Organization",
-      name: "Punkt Widzenia",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://punktwidzenia.info.pl/logo.png",
-      },
-    },
-    description:
-      "Awaria autonomicznej taksówki Baidu z pasażerką na pokładzie wywołała debatę o bezpieczeństwie robotaxi i konieczności zaostrzenia przepisów w Chinach.",
-  };
+  }, [mounted, renderTweet]);
 
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🛑 Autonomiczna taksówka Baidu wpada do wykopu w Chongqingu – poważne pytania o bezpieczeństwo AI</title>
-        <meta name="description" content="Awaria autonomicznej taksówki Baidu z pasażerką na pokładzie wywołała debatę o bezpieczeństwie robotaxi i konieczności zaostrzenia przepisów w Chinach." />
-        <meta property="og:title" content="🛑 Autonomiczna taksówka Baidu wpada do wykopu w Chongqingu – poważne pytania o bezpieczeństwo AI" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content="Awaria autonomicznej taksówki Baidu z pasażerką na pokładzie wywołała debatę o bezpieczeństwie robotaxi i konieczności zaostrzenia przepisów w Chinach." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai" />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href="https://punktwidzenia.info.pl/autonomiczna-taksowka-baidu-wpada-do-wykopu-w-chongqingu-powazne-pytania-o-bezpieczenstwo-ai" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      </Head>
-
-      {/* Oficjalny skrypt X – jeśli się załaduje, odpal render */}
-      <Script
-        src="https://platform.twitter.com/widgets.js"
-        strategy="lazyOnload"
-        onLoad={renderTweet}
-      />
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
