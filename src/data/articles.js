@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 82,
+  link: "/tragiczny-wypadek-na-autostradzie-a2-ciezarowka-stanela-w-ogniu",
+  img: "/tragiczny-wypadek-na-autostradzie-a2-ciezarowka-stanela-w-ogniu.webp",
+  title: "🚨 Tragiczny wypadek na autostradzie A2 – ciężarówka stanęła w ogniu",
+  description: "Na autostradzie A2 doszło do tragicznego wypadku. Ciężarówka stanęła w ogniu, a kierowca poniósł śmierć na miejscu.",
+  date: "2025-08-25",
+  component: "Articletragicznywypadeknaautostradziea2ciezarowkastanelawogniu"
+},
+  {
   id: 81,
   link: "/wisla-na-rekordowo-niskim-poziomie-historyczne-ostrzezenie-dla-polski",
   img: "/wisla-na-rekordowo-niskim-poziomie-historyczne-ostrzezenie-dla-polski.webp",
