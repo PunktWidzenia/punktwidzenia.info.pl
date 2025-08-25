@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 83,
+  link: "/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym",
+  img: "/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym.webp",
+  title: "✈️ Polacy uciekają na „workation” – praca zdalna i urlop w jednym",
+  description: "Coraz więcej Polaków wybiera „workation” – łączenie pracy zdalnej i podróży, a hitem stał się Dubaj.",
+  date: "2025-08-25",
+  component: "Articlepolacyuciekajanaworkationpracazdalnaiurlopwjednym"
+},
+  {
   id: 82,
   link: "/tragiczny-wypadek-na-autostradzie-a2-ciezarowka-stanela-w-ogniu",
   img: "/tragiczny-wypadek-na-autostradzie-a2-ciezarowka-stanela-w-ogniu.webp",
