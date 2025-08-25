@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlemasowystopdrivedlacitroenowkierowcybezautserwisysparalizowane() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🛑 Masowy „stop-drive” dla Citroënów – kierowcy bez aut, serwisy sparaliżowane</title>
-        <meta name="description" content="Citroën wzywa właścicieli C3 i DS3 do natychmiastowego zaprzestania jazdy z powodu wadliwych poduszek Takata. Problem dotyczy setek tysięcy aut w Europie." />
-        <meta property="og:title" content="🛑 Masowy „stop-drive” dla Citroënów – kierowcy bez aut, serwisy sparaliżowane" />
-        <meta property="og:description" content="Citroën wzywa właścicieli C3 i DS3 do natychmiastowego zaprzestania jazdy z powodu wadliwych poduszek Takata. Problem dotyczy setek tysięcy aut w Europie." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/masowy-stop-drive-dla-citroenow-kierowcy-bez-aut-serwisy-sparalizowane.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/masowy-stop-drive-dla-citroenow-kierowcy-bez-aut-serwisy-sparalizowane" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🛑 Masowy „stop-drive” dla Citroënów – kierowcy bez aut, serwisy sparaliżowane',
-            image: ['https://punktwidzenia.info.pl/masowy-stop-drive-dla-citroenow-kierowcy-bez-aut-serwisy-sparalizowane.webp'],
-            datePublished: '2025-08-08',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Citroën wzywa właścicieli C3 i DS3 do natychmiastowego zaprzestania jazdy z powodu wadliwych poduszek Takata. Problem dotyczy setek tysięcy aut w Europie.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

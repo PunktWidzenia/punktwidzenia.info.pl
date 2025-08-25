@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlejosemnetoperekmezczyznarozebrasienadachurestauracjihelniezapomnitejnocy() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🦇 „Jo sem netoperek!” – Mężczyzna rozebrał się na dachu restauracji. Hel nie zapomni tej nocy</title>
-        <meta name="description" content="Nietypowa scena w Helu: pijany mężczyzna krzyczał „Jo sem netoperek!” z dachu restauracji. Interweniowała policja i straż." />
-        <meta property="og:title" content="🦇 „Jo sem netoperek!” – Mężczyzna rozebrał się na dachu restauracji. Hel nie zapomni tej nocy" />
-        <meta property="og:description" content="Nietypowa scena w Helu: pijany mężczyzna krzyczał „Jo sem netoperek!” z dachu restauracji. Interweniowała policja i straż." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/jo-sem-netoperek-mezczyzna-rozebra-sie-na-dachu-restauracji-hel-nie-zapomni-tej-nocy.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/jo-sem-netoperek-mezczyzna-rozebra-sie-na-dachu-restauracji-hel-nie-zapomni-tej-nocy" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🦇 „Jo sem netoperek!” – Mężczyzna rozebrał się na dachu restauracji. Hel nie zapomni tej nocy',
-            image: ['https://punktwidzenia.info.pl/jo-sem-netoperek-mezczyzna-rozebra-sie-na-dachu-restauracji-hel-nie-zapomni-tej-nocy.webp'],
-            datePublished: '2025-07-11',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Nietypowa scena w Helu: pijany mężczyzna krzyczał „Jo sem netoperek!” z dachu restauracji. Interweniowała policja i straż.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

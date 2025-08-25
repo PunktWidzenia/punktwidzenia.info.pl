@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articleusykznokautowaduboisawembleywidziaodominacje() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>💥 Usyk znokautował Duboisa! Wembley widziało dominację</title>
-        <meta name="description" content="Oleksandr Usyk pokonał Daniela Dubois przez nokaut techniczny na Wembley, zdobywając tytuł niekwestionowanego mistrza świata wagi ciężkiej. Zobacz nagranie decydującego momentu!" />
-        <meta property="og:title" content="💥 Usyk znokautował Duboisa! Wembley widziało dominację" />
-        <meta property="og:description" content="Oleksandr Usyk pokonał Daniela Dubois przez nokaut techniczny na Wembley, zdobywając tytuł niekwestionowanego mistrza świata wagi ciężkiej. Zobacz nagranie decydującego momentu!" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/usyk-znokautowa-duboisa-wembley-widziao-dominacje.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/usyk-znokautowa-duboisa-wembley-widziao-dominacje" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '💥 Usyk znokautował Duboisa! Wembley widziało dominację',
-            image: ['https://punktwidzenia.info.pl/usyk-znokautowa-duboisa-wembley-widziao-dominacje.webp'],
-            datePublished: '2025-07-20',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Oleksandr Usyk pokonał Daniela Dubois przez nokaut techniczny na Wembley, zdobywając tytuł niekwestionowanego mistrza świata wagi ciężkiej. Zobacz nagranie decydującego momentu!'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

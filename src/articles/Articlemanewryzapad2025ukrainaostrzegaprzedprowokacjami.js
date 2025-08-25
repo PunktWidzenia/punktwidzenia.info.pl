@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articlemanewryzapad2025ukrainaostrzegaprzedprowokacjami() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"⚔️ Manewry „Zapad-2025” – Ukraina ostrzega przed prowokacjami"}</title>
-        <meta name="description" content={"Ukraina ostrzegła Białoruś przed prowokacjami podczas wrześniowych ćwiczeń wojskowych „Zapad-2025”, wskazując na ryzyko eskalacji konfliktu w regionie."} />
-        <meta property="og:title" content={"⚔️ Manewry „Zapad-2025” – Ukraina ostrzega przed prowokacjami"} />
-        <meta property="article:published_time" content={"2025-08-23T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-23T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Ukraina ostrzegła Białoruś przed prowokacjami podczas wrześniowych ćwiczeń wojskowych „Zapad-2025”, wskazując na ryzyko eskalacji konfliktu w regionie."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami"} />
-        <meta property="og:image:alt" content={"⚔️ Manewry „Zapad-2025” – Ukraina ostrzega przed prowokacjami"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"⚔️ Manewry „Zapad-2025” – Ukraina ostrzega przed prowokacjami"} />
-        <meta name="twitter:description" content={"Ukraina ostrzegła Białoruś przed prowokacjami podczas wrześniowych ćwiczeń wojskowych „Zapad-2025”, wskazując na ryzyko eskalacji konfliktu w regionie."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "⚔️ Manewry „Zapad-2025” – Ukraina ostrzega przed prowokacjami",
-              image: ["https://punktwidzenia.info.pl/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami.webp"],
-              datePublished: "2025-08-23T10:00:00.000Z",
-              dateModified: "2025-08-23T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/manewry-zapad-2025-ukraina-ostrzega-przed-prowokacjami",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Ukraina ostrzegła Białoruś przed prowokacjami podczas wrześniowych ćwiczeń wojskowych „Zapad-2025”, wskazując na ryzyko eskalacji konfliktu w regionie."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

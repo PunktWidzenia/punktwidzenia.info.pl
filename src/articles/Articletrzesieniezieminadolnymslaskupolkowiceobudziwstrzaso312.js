@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articletrzesieniezieminadolnymslaskupolkowiceobudziwstrzaso312() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🌍 Trzęsienie ziemi na Dolnym Śląsku – Polkowice obudził wstrząs o 3:12</title>
-        <meta name="description" content="W nocy z 4 na 5 sierpnia doszło do trzęsienia ziemi w okolicach Polkowic. Magnituda wyniosła 3,0. Choć wstrząs był odczuwalny w regionie, nie odnotowano szkód ani poszkodowanych. To kolejny incydent sejsmiczny w tej części Dolnego Śląska." />
-        <meta property="og:title" content="🌍 Trzęsienie ziemi na Dolnym Śląsku – Polkowice obudził wstrząs o 3:12" />
-        <meta property="og:description" content="W nocy z 4 na 5 sierpnia doszło do trzęsienia ziemi w okolicach Polkowic. Magnituda wyniosła 3,0. Choć wstrząs był odczuwalny w regionie, nie odnotowano szkód ani poszkodowanych. To kolejny incydent sejsmiczny w tej części Dolnego Śląska." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🌍 Trzęsienie ziemi na Dolnym Śląsku – Polkowice obudził wstrząs o 3:12',
-            image: ['https://punktwidzenia.info.pl/trzesienie-ziemi-na-dolnym-slasku-polkowice-obudzi-wstrzas-o-312.webp'],
-            datePublished: '2025-08-05',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'W nocy z 4 na 5 sierpnia doszło do trzęsienia ziemi w okolicach Polkowic. Magnituda wyniosła 3,0. Choć wstrząs był odczuwalny w regionie, nie odnotowano szkód ani poszkodowanych. To kolejny incydent sejsmiczny w tej części Dolnego Śląska.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

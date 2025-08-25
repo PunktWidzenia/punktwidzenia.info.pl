@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articledemolkawizbieprzyjecwsosnowcu36latekwtargnadoszpitalaizdewastowawnetrze() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🧨 Demolka w izbie przyjęć w Sosnowcu – 36-latek wtargnął do szpitala i zdewastował wnętrze</title>
-        <meta name="description" content="W izbie przyjęć Sosnowieckiego Szpitala Miejskiego doszło do aktu agresji – 36-letni mężczyzna wtargnął do środka i zdemolował pomieszczenie. Zatrzymany nie był pod wpływem alkoholu i nie figurował jako pacjent." />
-        <meta property="og:title" content="🧨 Demolka w izbie przyjęć w Sosnowcu – 36-latek wtargnął do szpitala i zdewastował wnętrze" />
-        <meta property="og:description" content="W izbie przyjęć Sosnowieckiego Szpitala Miejskiego doszło do aktu agresji – 36-letni mężczyzna wtargnął do środka i zdemolował pomieszczenie. Zatrzymany nie był pod wpływem alkoholu i nie figurował jako pacjent." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🧨 Demolka w izbie przyjęć w Sosnowcu – 36-latek wtargnął do szpitala i zdewastował wnętrze',
-            image: ['https://punktwidzenia.info.pl/demolka-w-izbie-przyjec-w-sosnowcu-36-latek-wtargna-do-szpitala-i-zdewastowa-wnetrze.webp'],
-            datePublished: '2025-08-02',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'W izbie przyjęć Sosnowieckiego Szpitala Miejskiego doszło do aktu agresji – 36-letni mężczyzna wtargnął do środka i zdemolował pomieszczenie. Zatrzymany nie był pod wpływem alkoholu i nie figurował jako pacjent.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

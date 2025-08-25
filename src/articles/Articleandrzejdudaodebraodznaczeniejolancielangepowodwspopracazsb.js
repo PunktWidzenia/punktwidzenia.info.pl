@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articleandrzejdudaodebraodznaczeniejolancielangepowodwspopracazsb() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🎖️ Andrzej Duda odebrał odznaczenie Jolancie Lange – powód: współpraca z SB</title>
-        <meta name="description" content="Prezydent RP unieważnił przyznanie Krzyża Zasługi znanej aktywistce. Powodem były ujawnione materiały dotyczące jej działalności agenturalnej w czasach PRL." />
-        <meta property="og:title" content="🎖️ Andrzej Duda odebrał odznaczenie Jolancie Lange – powód: współpraca z SB" />
-        <meta property="og:description" content="Prezydent RP unieważnił przyznanie Krzyża Zasługi znanej aktywistce. Powodem były ujawnione materiały dotyczące jej działalności agenturalnej w czasach PRL." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/andrzej-duda-odebra-odznaczenie-jolancie-lange-powod-wspopraca-z-sb.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/andrzej-duda-odebra-odznaczenie-jolancie-lange-powod-wspopraca-z-sb" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🎖️ Andrzej Duda odebrał odznaczenie Jolancie Lange – powód: współpraca z SB',
-            image: ['https://punktwidzenia.info.pl/andrzej-duda-odebra-odznaczenie-jolancie-lange-powod-wspopraca-z-sb.webp'],
-            datePublished: '2025-08-30',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Prezydent RP unieważnił przyznanie Krzyża Zasługi znanej aktywistce. Powodem były ujawnione materiały dotyczące jej działalności agenturalnej w czasach PRL.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

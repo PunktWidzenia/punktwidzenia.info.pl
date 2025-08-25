@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlefimendurovintagetrophy2025klasycznemotocyklewracajanaszlakipiekoszowa() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🏍️ FIM Enduro Vintage Trophy 2025: klasyczne motocykle wracają na szlaki Piekoszowa</title>
-        <meta name="description" content="Od 6 do 9 sierpnia 2025 roku Piekoszów gości 9. edycję FIM Enduro Vintage Trophy – prestiżowej imprezy dla fanów klasycznych motocykli terenowych. Udział biorą zawodnicy z całego świata, a wydarzeniu towarzyszy wyjątkowa retro atmosfera." />
-        <meta property="og:title" content="🏍️ FIM Enduro Vintage Trophy 2025: klasyczne motocykle wracają na szlaki Piekoszowa" />
-        <meta property="og:description" content="Od 6 do 9 sierpnia 2025 roku Piekoszów gości 9. edycję FIM Enduro Vintage Trophy – prestiżowej imprezy dla fanów klasycznych motocykli terenowych. Udział biorą zawodnicy z całego świata, a wydarzeniu towarzyszy wyjątkowa retro atmosfera." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/fim-enduro-vintage-trophy-2025-klasyczne-motocykle-wracaja-na-szlaki-piekoszowa.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/fim-enduro-vintage-trophy-2025-klasyczne-motocykle-wracaja-na-szlaki-piekoszowa" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🏍️ FIM Enduro Vintage Trophy 2025: klasyczne motocykle wracają na szlaki Piekoszowa',
-            image: ['https://punktwidzenia.info.pl/fim-enduro-vintage-trophy-2025-klasyczne-motocykle-wracaja-na-szlaki-piekoszowa.webp'],
-            datePublished: '2025-08-04',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Od 6 do 9 sierpnia 2025 roku Piekoszów gości 9. edycję FIM Enduro Vintage Trophy – prestiżowej imprezy dla fanów klasycznych motocykli terenowych. Udział biorą zawodnicy z całego świata, a wydarzeniu towarzyszy wyjątkowa retro atmosfera.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

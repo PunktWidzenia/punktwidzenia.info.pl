@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articleozzyosbourneniezyjelegendarockapozegnaasiezfanami() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>☠️ Ozzy Osbourne nie żyje – legenda rocka pożegnała się z fanami</title>
-        <meta name="description" content="Ozzy Osbourne zmarł w wieku 76 lat. Ostatni koncert zagrał 5 lipca w Birmingham. Świat muzyki w żałobie." />
-        <meta property="og:title" content="☠️ Ozzy Osbourne nie żyje – legenda rocka pożegnała się z fanami" />
-        <meta property="og:description" content="Ozzy Osbourne zmarł w wieku 76 lat. Ostatni koncert zagrał 5 lipca w Birmingham. Świat muzyki w żałobie." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/ozzy-osbourne-nie-zyje-legenda-rocka-pozegnaa-sie-z-fanami.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/ozzy-osbourne-nie-zyje-legenda-rocka-pozegnaa-sie-z-fanami" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '☠️ Ozzy Osbourne nie żyje – legenda rocka pożegnała się z fanami',
-            image: ['https://punktwidzenia.info.pl/ozzy-osbourne-nie-zyje-legenda-rocka-pozegnaa-sie-z-fanami.webp'],
-            datePublished: '2025-07-23',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Ozzy Osbourne zmarł w wieku 76 lat. Ostatni koncert zagrał 5 lipca w Birmingham. Świat muzyki w żałobie.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

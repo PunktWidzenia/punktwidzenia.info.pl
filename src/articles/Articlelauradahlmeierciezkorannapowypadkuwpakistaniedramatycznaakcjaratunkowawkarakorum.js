@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlelauradahlmeierciezkorannapowypadkuwpakistaniedramatycznaakcjaratunkowawkarakorum() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🧗 Laura Dahlmeier ciężko ranna po wypadku w Pakistanie – dramatyczna akcja ratunkowa w Karakorum</title>
-        <meta name="description" content="Laura Dahlmeier doznała poważnych obrażeń podczas wyprawy wysokogórskiej w Karakorum. Trwa akcja ratunkowa, sytuacja jest dramatyczna." />
-        <meta property="og:title" content="🧗 Laura Dahlmeier ciężko ranna po wypadku w Pakistanie – dramatyczna akcja ratunkowa w Karakorum" />
-        <meta property="og:description" content="Laura Dahlmeier doznała poważnych obrażeń podczas wyprawy wysokogórskiej w Karakorum. Trwa akcja ratunkowa, sytuacja jest dramatyczna." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/laura-dahlmeier-ciezko-ranna-po-wypadku-w-pakistanie-dramatyczna-akcja-ratunkowa-w-karakorum.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/laura-dahlmeier-ciezko-ranna-po-wypadku-w-pakistanie-dramatyczna-akcja-ratunkowa-w-karakorum" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🧗 Laura Dahlmeier ciężko ranna po wypadku w Pakistanie – dramatyczna akcja ratunkowa w Karakorum',
-            image: ['https://punktwidzenia.info.pl/laura-dahlmeier-ciezko-ranna-po-wypadku-w-pakistanie-dramatyczna-akcja-ratunkowa-w-karakorum.webp'],
-            datePublished: '2025-07-29',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Laura Dahlmeier doznała poważnych obrażeń podczas wyprawy wysokogórskiej w Karakorum. Trwa akcja ratunkowa, sytuacja jest dramatyczna.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

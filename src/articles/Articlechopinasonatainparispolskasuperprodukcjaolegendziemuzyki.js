@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,50 +7,6 @@ import NextImage from "next/image";
 function Articlechopinasonatainparispolskasuperprodukcjaolegendziemuzyki() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🎬 „Chopin, a Sonata in Paris” – polska superprodukcja o legendzie muzyki"}</title>
-        <meta name="description" content={"Jesienią 2025 roku do kin trafi „Chopin, a Sonata in Paris” – biograficzny film o Fryderyku Chopinie. Superprodukcja z budżetem 72 mln zł."} />
-        <meta property="og:title" content={"🎬 „Chopin, a Sonata in Paris” – polska superprodukcja o legendzie muzyki"} />
-        <meta property="article:published_time" content={"2025-08-17T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-17T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Jesienią 2025 roku do kin trafi „Chopin, a Sonata in Paris” – biograficzny film o Fryderyku Chopinie. Superprodukcja z budżetem 72 mln zł."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki"} />
-        <meta property="og:image:alt" content={"🎬 „Chopin, a Sonata in Paris” – polska superprodukcja o legendzie muzyki"} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={"🎬 „Chopin, a Sonata in Paris” – polska superprodukcja o legendzie muzyki"} />
-      <meta name="twitter:description" content={"Jesienią 2025 roku do kin trafi „Chopin, a Sonata in Paris” – biograficzny film o Fryderyku Chopinie. Superprodukcja z budżetem 72 mln zł."} />
-      <meta name="twitter:image" content={"https://punktwidzenia.info.pl/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki"} />
-<script
-   type="application/ld+json"
-   dangerouslySetInnerHTML={{
-     __html: JSON.stringify({
-       '@context': 'https://schema.org',
-       '@type': 'NewsArticle',
-       headline: "🎬 „Chopin, a Sonata in Paris” – polska superprodukcja o legendzie muzyki",
-       image: ["https://punktwidzenia.info.pl/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki.webp"],
-       datePublished: "2025-08-17T10:00:00.000Z",
-       dateModified: "2025-08-17T10:00:00.000Z",
-       mainEntityOfPage: "https://punktwidzenia.info.pl/chopin-a-sonata-in-paris-polska-superprodukcja-o-legendzie-muzyki",
-       articleSection: 'news',
-       author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-       publisher: {
-         '@type': 'Organization',
-         name: 'Punkt Widzenia',
-         logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-       },
-       description: "Jesienią 2025 roku do kin trafi „Chopin, a Sonata in Paris” – biograficzny film o Fryderyku Chopinie. Superprodukcja z budżetem 72 mln zł."
-     })
-   }}
- />      </Head>
-
       <article className="space-y-6">
   <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

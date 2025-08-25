@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlemauritiuspodwodaostrzezenieprzedsilnymifalaminawybrzezu() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🌊 Mauritius pod wodą? Ostrzeżenie przed silnymi falami na wybrzeżu</title>
-        <meta name="description" content="Mieszkańcy i turyści na Mauritiusie otrzymali pilne ostrzeżenie pogodowe. Służby apelują o unikanie plaż i zachowanie maksymalnej ostrożności." />
-        <meta property="og:title" content="🌊 Mauritius pod wodą? Ostrzeżenie przed silnymi falami na wybrzeżu" />
-        <meta property="og:description" content="Mieszkańcy i turyści na Mauritiusie otrzymali pilne ostrzeżenie pogodowe. Służby apelują o unikanie plaż i zachowanie maksymalnej ostrożności." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/mauritius-pod-woda-ostrzezenie-przed-silnymi-falami-na-wybrzezu.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/mauritius-pod-woda-ostrzezenie-przed-silnymi-falami-na-wybrzezu" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🌊 Mauritius pod wodą? Ostrzeżenie przed silnymi falami na wybrzeżu',
-            image: ['https://punktwidzenia.info.pl/mauritius-pod-woda-ostrzezenie-przed-silnymi-falami-na-wybrzezu.webp'],
-            datePublished: '2025-07-30',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Mieszkańcy i turyści na Mauritiusie otrzymali pilne ostrzeżenie pogodowe. Służby apelują o unikanie plaż i zachowanie maksymalnej ostrożności.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

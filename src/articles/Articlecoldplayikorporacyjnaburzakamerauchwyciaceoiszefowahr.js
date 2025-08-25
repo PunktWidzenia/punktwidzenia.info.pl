@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlecoldplayikorporacyjnaburzakamerauchwyciaceoiszefowahr() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🎥 Coldplay i korporacyjna burza. Kamera uchwyciła CEO i szefową HR</title>
-        <meta name="description" content="Podczas koncertu Coldplay w Monachium kamera pokazała Andy'ego Byrona, CEO firmy Astronomer, i Kristin Cabot, szefową działu HR. Ich obecność wywołała dyskusję o relacjach służbowych i etyce korporacyjnej." />
-        <meta property="og:title" content="🎥 Coldplay i korporacyjna burza. Kamera uchwyciła CEO i szefową HR" />
-        <meta property="og:description" content="Podczas koncertu Coldplay w Monachium kamera pokazała Andy'ego Byrona, CEO firmy Astronomer, i Kristin Cabot, szefową działu HR. Ich obecność wywołała dyskusję o relacjach służbowych i etyce korporacyjnej." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/coldplay-i-korporacyjna-burza-kamera-uchwycia-ceo-i-szefowa-hr.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/coldplay-i-korporacyjna-burza-kamera-uchwycia-ceo-i-szefowa-hr" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🎥 Coldplay i korporacyjna burza. Kamera uchwyciła CEO i szefową HR',
-            image: ['https://punktwidzenia.info.pl/coldplay-i-korporacyjna-burza-kamera-uchwycia-ceo-i-szefowa-hr.webp'],
-            datePublished: '2025-07-18',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Podczas koncertu Coldplay w Monachium kamera pokazała Andy`ego Byrona, CEO firmy Astronomer, i Kristin Cabot, szefową działu HR. Ich obecność wywołała dyskusję o relacjach służbowych i etyce korporacyjnej.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

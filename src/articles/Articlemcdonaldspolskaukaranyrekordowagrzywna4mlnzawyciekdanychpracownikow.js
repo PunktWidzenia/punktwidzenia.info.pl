@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,34 +7,6 @@ import NextImage from "next/image";
 function Articlemcdonaldspolskaukaranyrekordowagrzywna4mlnzawyciekdanychpracownikow() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"⚠️ McDonald’s Polska ukarany rekordową grzywną – 4 mln € za wyciek danych pracowników"}</title>
-        <meta name="description" content={"Urząd Ochrony Danych Osobowych nałożył na McDonald’s Polska karę 4 mln € za ujawnienie danych pracowników w internecie. Analizujemy przyczyny, skutki i konsekwencje tej decyzji."} />
-        <meta property="og:title" content={"⚠️ McDonald’s Polska ukarany rekordową grzywną – 4 mln € za wyciek danych pracowników"} />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Urząd Ochrony Danych Osobowych nałożył na McDonald’s Polska karę 4 mln € za ujawnienie danych pracowników w internecie. Analizujemy przyczyny, skutki i konsekwencje tej decyzji."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow"} />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: "⚠️ McDonald’s Polska ukarany rekordową grzywną – 4 mln € za wyciek danych pracowników",
-            image: ["https://punktwidzenia.info.pl/mcdonalds-polska-ukarany-rekordowa-grzywna-4-mln-za-wyciek-danych-pracownikow.webp"],
-            datePublished: "2025-08-14",
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: "Urząd Ochrony Danych Osobowych nałożył na McDonald’s Polska karę 4 mln € za ujawnienie danych pracowników w internecie. Analizujemy przyczyny, skutki i konsekwencje tej decyzji."
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

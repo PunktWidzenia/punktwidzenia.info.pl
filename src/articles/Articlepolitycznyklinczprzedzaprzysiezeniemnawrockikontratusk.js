@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlepolitycznyklinczprzedzaprzysiezeniemnawrockikontratusk() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>⚰️ Polityczny klincz przed zaprzysiężeniem – Nawrocki kontra Tusk</title>
-        <meta name="description" content="Nowo wybrany prezydent Karol Nawrocki ma zostać zaprzysiężony 6 sierpnia. Wszystko wskazuje na to, że już na starcie dojdzie do ostrego sporu z premierem Tuskiem. Polityczne napięcie może sparaliżować prace Sejmu i rządu." />
-        <meta property="og:title" content="⚰️ Polityczny klincz przed zaprzysiężeniem – Nawrocki kontra Tusk" />
-        <meta property="og:description" content="Nowo wybrany prezydent Karol Nawrocki ma zostać zaprzysiężony 6 sierpnia. Wszystko wskazuje na to, że już na starcie dojdzie do ostrego sporu z premierem Tuskiem. Polityczne napięcie może sparaliżować prace Sejmu i rządu." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/polityczny-klincz-przed-zaprzysiezeniem-nawrocki-kontra-tusk.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/polityczny-klincz-przed-zaprzysiezeniem-nawrocki-kontra-tusk" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '⚰️ Polityczny klincz przed zaprzysiężeniem – Nawrocki kontra Tusk',
-            image: ['https://punktwidzenia.info.pl/polityczny-klincz-przed-zaprzysiezeniem-nawrocki-kontra-tusk.webp'],
-            datePublished: '2025-08-05',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Nowo wybrany prezydent Karol Nawrocki ma zostać zaprzysiężony 6 sierpnia. Wszystko wskazuje na to, że już na starcie dojdzie do ostrego sporu z premierem Tuskiem. Polityczne napięcie może sparaliżować prace Sejmu i rządu.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

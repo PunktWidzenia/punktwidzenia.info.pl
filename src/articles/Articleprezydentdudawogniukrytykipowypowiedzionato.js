@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articleprezydentdudawogniukrytykipowypowiedzionato() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🧸 Prezydent Duda w ogniu krytyki po wypowiedzi o NATO!</title>
-        <meta name="description" content="Internauci ostro komentują słowa głowy państwa. 'To kompromitacja!' – Sprawdź szczegóły wypowiedzi prezydenta Andrzeja Dudy." />
-        <meta property="og:title" content="🧸 Prezydent Duda w ogniu krytyki po wypowiedzi o NATO!" />
-        <meta property="og:description" content="Internauci ostro komentują słowa głowy państwa. 'To kompromitacja!' – Sprawdź szczegóły wypowiedzi prezydenta Andrzeja Dudy." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/prezydent-duda-w-ogniu-krytyki-po-wypowiedzi-o-nato.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/prezydent-duda-w-ogniu-krytyki-po-wypowiedzi-o-nato" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🧸 Prezydent Duda w ogniu krytyki po wypowiedzi o NATO!',
-            image: ['https://punktwidzenia.info.pl/prezydent-duda-w-ogniu-krytyki-po-wypowiedzi-o-nato.webp'],
-            datePublished: '2025-07-13',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Internauci ostro komentują słowa głowy państwa. "To kompromitacja!" - Sprawdź szczegóły wypowiedzi prezydenta Andrzeja Dudy.'
-})
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

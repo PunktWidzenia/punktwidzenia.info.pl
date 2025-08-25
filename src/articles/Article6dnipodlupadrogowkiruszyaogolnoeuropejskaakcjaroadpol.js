@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Article6dnipodlupadrogowkiruszyaogolnoeuropejskaakcjaroadpol() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🚔 6 dni pod lupą drogówki – ruszyła ogólnoeuropejska akcja ROADPOL</title>
-        <meta name="description" content="Rozpoczęła się szeroko zakrojona akcja kontrolna ROADPOL. W całej Europie, w tym w Polsce, przez sześć dni kierowcy będą sprawdzani pod kątem najpoważniejszych wykroczeń. Mandaty mogą sięgać nawet 5 000 zł. Sprawdź, czego się spodziewać na drogach." />
-        <meta property="og:title" content="🚔 6 dni pod lupą drogówki – ruszyła ogólnoeuropejska akcja ROADPOL" />
-        <meta property="og:description" content="Rozpoczęła się szeroko zakrojona akcja kontrolna ROADPOL. W całej Europie, w tym w Polsce, przez sześć dni kierowcy będą sprawdzani pod kątem najpoważniejszych wykroczeń. Mandaty mogą sięgać nawet 5 000 zł. Sprawdź, czego się spodziewać na drogach." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/6-dni-pod-lupa-drogowki-ruszya-ogolnoeuropejska-akcja-roadpol.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/6-dni-pod-lupa-drogowki-ruszya-ogolnoeuropejska-akcja-roadpol" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🚔 6 dni pod lupą drogówki – ruszyła ogólnoeuropejska akcja ROADPOL',
-            image: ['https://punktwidzenia.info.pl/6-dni-pod-lupa-drogowki-ruszya-ogolnoeuropejska-akcja-roadpol.webp'],
-            datePublished: '2025-08-04',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Rozpoczęła się szeroko zakrojona akcja kontrolna ROADPOL. W całej Europie, w tym w Polsce, przez sześć dni kierowcy będą sprawdzani pod kątem najpoważniejszych wykroczeń. Mandaty mogą sięgać nawet 5 000 zł. Sprawdź, czego się spodziewać na drogach.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

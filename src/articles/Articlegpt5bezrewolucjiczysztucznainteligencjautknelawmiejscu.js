@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
 import RelatedArticles from "@/components/RelatedArticles";
@@ -7,50 +7,6 @@ import NextImage from "next/image";
 function Articlegpt5bezrewolucjiczysztucznainteligencjautknelawmiejscu() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"}</title>
-        <meta name="description" content={"GPT-5 nie przyniósł przełomu. Zamiast rewolucji mamy drobne ulepszenia i rosnący sceptycyzm. Czy rozwój AI faktycznie spowolnił?"} />
-        <meta property="og:title" content={"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"} />
-        <meta property="article:published_time" content={"2025-08-16T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-16T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"GPT-5 nie przyniósł przełomu. Zamiast rewolucji mamy drobne ulepszenia i rosnący sceptycyzm. Czy rozwój AI faktycznie spowolnił?"} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu"} />
-        <meta property="og:image:alt" content={"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={"🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?"} />
-      <meta name="twitter:description" content={"GPT-5 nie przyniósł przełomu. Zamiast rewolucji mamy drobne ulepszenia i rosnący sceptycyzm. Czy rozwój AI faktycznie spowolnił?"} />
-      <meta name="twitter:image" content={"https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu"} />
-<script
-   type="application/ld+json"
-   dangerouslySetInnerHTML={{
-     __html: JSON.stringify({
-       '@context': 'https://schema.org',
-       '@type': 'NewsArticle',
-       headline: "🤖 GPT-5 bez rewolucji – czy sztuczna inteligencja utknęła w miejscu?",
-       image: ["https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu.webp"],
-       datePublished: "2025-08-16T10:00:00.000Z",
-       dateModified: "2025-08-16T10:00:00.000Z",
-       mainEntityOfPage: "https://punktwidzenia.info.pl/gpt-5-bez-rewolucji-czy-sztuczna-inteligencja-utknela-w-miejscu",
-       articleSection: 'news',
-       author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-       publisher: {
-         '@type': 'Organization',
-         name: 'Punkt Widzenia',
-         logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-       },
-       description: "GPT-5 nie przyniósł przełomu. Zamiast rewolucji mamy drobne ulepszenia i rosnący sceptycyzm. Czy rozwój AI faktycznie spowolnił?"
-     })
-   }}
- />      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

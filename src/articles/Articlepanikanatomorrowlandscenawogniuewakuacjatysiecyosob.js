@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlepanikanatomorrowlandscenawogniuewakuacjatysiecyosob() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🔥 Panika na Tomorrowland! Scena w ogniu, ewakuacja tysięcy osób</title>
-        <meta name="description" content="Dramatyczne sceny na Tomorrowland – pożar na głównej scenie doprowadził do ewakuacji tysięcy uczestników." />
-        <meta property="og:title" content="🔥 Panika na Tomorrowland! Scena w ogniu, ewakuacja tysięcy osób" />
-        <meta property="og:description" content="Dramatyczne sceny na Tomorrowland – pożar na głównej scenie doprowadził do ewakuacji tysięcy uczestników." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/panika-na-tomorrowland-scena-w-ogniu-ewakuacja-tysiecy-osob.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/panika-na-tomorrowland-scena-w-ogniu-ewakuacja-tysiecy-osob" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🔥 Panika na Tomorrowland! Scena w ogniu, ewakuacja tysięcy osób',
-            image: ['https://punktwidzenia.info.pl/panika-na-tomorrowland-scena-w-ogniu-ewakuacja-tysiecy-osob.webp'],
-            datePublished: '2025-07-15',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Dramatyczne sceny na Tomorrowland – pożar na głównej scenie doprowadził do ewakuacji tysięcy uczestników.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

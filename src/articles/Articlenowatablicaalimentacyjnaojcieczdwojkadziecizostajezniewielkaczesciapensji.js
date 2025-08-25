@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlenowatablicaalimentacyjnaojcieczdwojkadziecizostajezniewielkaczesciapensji() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>💥 Nowa tablica alimentacyjna. Ojciec z dwójką dzieci zostaje z niewielką częścią pensji!</title>
-        <meta name="description" content="Ministerstwo wprowadza tablicę alimentacyjną. Przykład ojca z dwójką dzieci pokazuje, że po alimentach może mu zostać mniej niż 2500 zł miesięcznie. Zobacz szczegóły!" />
-        <meta property="og:title" content="💥 Nowa tablica alimentacyjna. Ojciec z dwójką dzieci zostaje z niewielką częścią pensji!" />
-        <meta property="og:description" content="Ministerstwo wprowadza tablicę alimentacyjną. Przykład ojca z dwójką dzieci pokazuje, że po alimentach może mu zostać mniej niż 2500 zł miesięcznie. Zobacz szczegóły!" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/nowa-tablica-alimentacyjna-ojciec-z-dwojka-dzieci-zostaje-z-niewielka-czescia-pensji.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/nowa-tablica-alimentacyjna-ojciec-z-dwojka-dzieci-zostaje-z-niewielka-czescia-pensji" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '💥 Nowa tablica alimentacyjna. Ojciec z dwójką dzieci zostaje z niewielką częścią pensji!',
-            image: ['https://punktwidzenia.info.pl/nowa-tablica-alimentacyjna-ojciec-z-dwojka-dzieci-zostaje-z-niewielka-czescia-pensji.webp'],
-            datePublished: '2025-07-24',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Ministerstwo wprowadza tablicę alimentacyjną. Przykład ojca z dwójką dzieci pokazuje, że po alimentach może mu zostać mniej niż 2500 zł miesięcznie. Zobacz szczegóły!'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

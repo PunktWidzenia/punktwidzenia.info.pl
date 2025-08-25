@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articletyrolskieograniczeniamogasparalizowactransportprzezalpy() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🚛 Tyrolskie ograniczenia mogą sparaliżować transport przez Alpy</title>
-        <meta name="description" content="Austria planuje roczny limit ciężarówek w Tyrolu. Zmiany mogą uderzyć w polskich przewoźników. Sprawdź szczegóły!" />
-        <meta property="og:title" content="🚛 Tyrolskie ograniczenia mogą sparaliżować transport przez Alpy" />
-        <meta property="og:description" content="Austria planuje roczny limit ciężarówek w Tyrolu. Zmiany mogą uderzyć w polskich przewoźników. Sprawdź szczegóły!" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/tyrolskie-ograniczenia-moga-sparalizowac-transport-przez-alpy.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/tyrolskie-ograniczenia-moga-sparalizowac-transport-przez-alpy" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🚛 Tyrolskie ograniczenia mogą sparaliżować transport przez Alpy',
-            image: ['https://punktwidzenia.info.pl/tyrolskie-ograniczenia-moga-sparalizowac-transport-przez-alpy.webp'],
-            datePublished: '2025-07-29',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Austria planuje roczny limit ciężarówek w Tyrolu. Zmiany mogą uderzyć w polskich przewoźników. Sprawdź szczegóły!'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

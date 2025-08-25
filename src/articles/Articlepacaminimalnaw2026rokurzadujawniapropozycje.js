@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlepacaminimalnaw2026rokurzadujawniapropozycje() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>💰 Płaca minimalna w 2026 roku – rząd ujawnia propozycję</title>
-        <meta name="description" content="Rząd zaproponował wzrost płacy minimalnej w Polsce od stycznia 2026 roku do 4 806 zł brutto miesięcznie oraz 31,40 zł brutto za godzinę. To podwyżka o 140 zł względem 2025 roku, która ma objąć setki tysięcy pracowników w całym kraju." />
-        <meta property="og:title" content="💰 Płaca minimalna w 2026 roku – rząd ujawnia propozycję" />
-        <meta property="og:description" content="Rząd zaproponował wzrost płacy minimalnej w Polsce od stycznia 2026 roku do 4 806 zł brutto miesięcznie oraz 31,40 zł brutto za godzinę. To podwyżka o 140 zł względem 2025 roku, która ma objąć setki tysięcy pracowników w całym kraju." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '💰 Płaca minimalna w 2026 roku – rząd ujawnia propozycję',
-            image: ['https://punktwidzenia.info.pl/paca-minimalna-w-2026-roku-rzad-ujawnia-propozycje.webp'],
-            datePublished: '2025-08-08',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Rząd zaproponował wzrost płacy minimalnej w Polsce od stycznia 2026 roku do 4 806 zł brutto miesięcznie oraz 31,40 zł brutto za godzinę. To podwyżka o 140 zł względem 2025 roku, która ma objąć setki tysięcy pracowników w całym kraju.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

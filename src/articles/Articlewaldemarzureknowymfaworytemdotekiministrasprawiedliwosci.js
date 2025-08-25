@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlewaldemarzureknowymfaworytemdotekiministrasprawiedliwosci() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>⚖️ Waldemar Żurek nowym faworytem do teki ministra sprawiedliwości?</title>
-        <meta name="description" content="Waldemar Żurek może zastąpić Adama Bodnara na stanowisku ministra sprawiedliwości. Kim jest niezależny sędzia, który pojawił się w politycznych spekulacjach?" />
-        <meta property="og:title" content="⚖️ Waldemar Żurek nowym faworytem do teki ministra sprawiedliwości?" />
-        <meta property="og:description" content="Waldemar Żurek może zastąpić Adama Bodnara na stanowisku ministra sprawiedliwości. Kim jest niezależny sędzia, który pojawił się w politycznych spekulacjach?" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/waldemar-zurek-nowym-faworytem-do-teki-ministra-sprawiedliwosci.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/waldemar-zurek-nowym-faworytem-do-teki-ministra-sprawiedliwosci" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '⚖️ Waldemar Żurek nowym faworytem do teki ministra sprawiedliwości?',
-            image: ['https://punktwidzenia.info.pl/waldemar-zurek-nowym-faworytem-do-teki-ministra-sprawiedliwosci.webp'],
-            datePublished: '2025-07-22',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Waldemar Żurek może zastąpić Adama Bodnara na stanowisku ministra sprawiedliwości. Kim jest niezależny sędzia, który pojawił się w politycznych spekulacjach?'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

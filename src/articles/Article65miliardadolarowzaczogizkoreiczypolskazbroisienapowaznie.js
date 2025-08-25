@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Article65miliardadolarowzaczogizkoreiczypolskazbroisienapowaznie() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🛡️ 6,5 miliarda dolarów za czołgi z Korei – czy Polska zbroi się na poważnie?</title>
-        <meta name="description" content="Polska podpisała ogromny kontrakt na zakup czołgów K2 z Korei Południowej. Czy inwestycje zbrojeniowe są odpowiedzią na realne zagrożenie, czy politycznym ruchem przed wyborami?" />
-        <meta property="og:title" content="🛡️ 6,5 miliarda dolarów za czołgi z Korei – czy Polska zbroi się na poważnie?" />
-        <meta property="og:description" content="Polska podpisała ogromny kontrakt na zakup czołgów K2 z Korei Południowej. Czy inwestycje zbrojeniowe są odpowiedzią na realne zagrożenie, czy politycznym ruchem przed wyborami?" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🛡️ 6,5 miliarda dolarów za czołgi z Korei – czy Polska zbroi się na poważnie?',
-            image: ['https://punktwidzenia.info.pl/65-miliarda-dolarow-za-czogi-z-korei-czy-polska-zbroi-sie-na-powaznie.webp'],
-            datePublished: '2025-08-02',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Polska podpisała ogromny kontrakt na zakup czołgów K2 z Korei Południowej. Czy inwestycje zbrojeniowe są odpowiedzią na realne zagrożenie, czy politycznym ruchem przed wyborami?'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

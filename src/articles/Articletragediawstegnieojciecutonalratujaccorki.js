@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,50 +7,6 @@ import NextImage from "next/image";
 function Articletragediawstegnieojciecutonalratujaccorki() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🚨 Tragedia w Stegnie: ojciec utonął ratując córki"}</title>
-        <meta name="description" content={"W Stegnie 48-letni ojciec utonął, ratując dwie córki porwane przez fale. Dziewczynki dopłynęły do brzegu, ale mimo reanimacji mężczyzny nie udało się uratować."} />
-        <meta property="og:title" content={"🚨 Tragedia w Stegnie: ojciec utonął ratując córki"} />
-        <meta property="article:published_time" content={"2025-08-18T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-18T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"W Stegnie 48-letni ojciec utonął, ratując dwie córki porwane przez fale. Dziewczynki dopłynęły do brzegu, ale mimo reanimacji mężczyzny nie udało się uratować."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/tragedia-w-stegnie-ojciec-utonal-ratujac-corki.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/tragedia-w-stegnie-ojciec-utonal-ratujac-corki"} />
-        <meta property="og:image:alt" content={"🚨 Tragedia w Stegnie: ojciec utonął ratując córki"} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={"🚨 Tragedia w Stegnie: ojciec utonął ratując córki"} />
-      <meta name="twitter:description" content={"W Stegnie 48-letni ojciec utonął, ratując dwie córki porwane przez fale. Dziewczynki dopłynęły do brzegu, ale mimo reanimacji mężczyzny nie udało się uratować."} />
-      <meta name="twitter:image" content={"https://punktwidzenia.info.pl/tragedia-w-stegnie-ojciec-utonal-ratujac-corki.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/tragedia-w-stegnie-ojciec-utonal-ratujac-corki"} />
-<script
-   type="application/ld+json"
-   dangerouslySetInnerHTML={{
-     __html: JSON.stringify({
-       '@context': 'https://schema.org',
-       '@type': 'NewsArticle',
-       headline: "🚨 Tragedia w Stegnie: ojciec utonął ratując córki",
-       image: ["https://punktwidzenia.info.pl/tragedia-w-stegnie-ojciec-utonal-ratujac-corki.webp"],
-       datePublished: "2025-08-18T10:00:00.000Z",
-       dateModified: "2025-08-18T10:00:00.000Z",
-       mainEntityOfPage: "https://punktwidzenia.info.pl/tragedia-w-stegnie-ojciec-utonal-ratujac-corki",
-       articleSection: 'news',
-       author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-       publisher: {
-         '@type': 'Organization',
-         name: 'Punkt Widzenia',
-         logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-       },
-       description: "W Stegnie 48-letni ojciec utonął, ratując dwie córki porwane przez fale. Dziewczynki dopłynęły do brzegu, ale mimo reanimacji mężczyzny nie udało się uratować."
-     })
-   }}
- />      </Head>
-
       <article className="space-y-6">
   <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

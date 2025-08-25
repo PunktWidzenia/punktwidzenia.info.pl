@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlelauradahlmeierniezyjetragicznyfinawyprawywkarakorum() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🏔️ Laura Dahlmeier nie żyje – tragiczny finał wyprawy w Karakorum</title>
-        <meta name="description" content="Po trzech dniach od wypadku wspinaczkowego potwierdzono śmierć niemieckiej mistrzyni olimpijskiej. Jej ciało pozostanie w górach – zgodnie z wolą sportowczyni." />
-        <meta property="og:title" content="🏔️ Laura Dahlmeier nie żyje – tragiczny finał wyprawy w Karakorum" />
-        <meta property="og:description" content="Po trzech dniach od wypadku wspinaczkowego potwierdzono śmierć niemieckiej mistrzyni olimpijskiej. Jej ciało pozostanie w górach – zgodnie z wolą sportowczyni." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/laura-dahlmeier-nie-zyje-tragiczny-fina-wyprawy-w-karakorum.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/laura-dahlmeier-nie-zyje-tragiczny-fina-wyprawy-w-karakorum" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🏔️ Laura Dahlmeier nie żyje – tragiczny finał wyprawy w Karakorum',
-            image: ['https://punktwidzenia.info.pl/laura-dahlmeier-nie-zyje-tragiczny-fina-wyprawy-w-karakorum.webp'],
-            datePublished: '2025-07-30',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Po trzech dniach od wypadku wspinaczkowego potwierdzono śmierć niemieckiej mistrzyni olimpijskiej. Jej ciało pozostanie w górach – zgodnie z wolą sportowczyni.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

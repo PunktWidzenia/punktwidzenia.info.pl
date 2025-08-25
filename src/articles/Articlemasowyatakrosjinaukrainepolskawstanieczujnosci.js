@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articlemasowyatakrosjinaukrainepolskawstanieczujnosci() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"💥 Masowy atak Rosji na Ukrainę – Polska w stanie czujności"}</title>
-        <meta name="description" content={"Rosja przeprowadziła największy atak powietrzny na Ukrainę, Polska poderwała myśliwce w obronie granic."} />
-        <meta property="og:title" content={"💥 Masowy atak Rosji na Ukrainę – Polska w stanie czujności"} />
-        <meta property="article:published_time" content={"2025-08-22T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-22T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Rosja przeprowadziła największy atak powietrzny na Ukrainę, Polska poderwała myśliwce w obronie granic."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci"} />
-        <meta property="og:image:alt" content={"💥 Masowy atak Rosji na Ukrainę – Polska w stanie czujności"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"💥 Masowy atak Rosji na Ukrainę – Polska w stanie czujności"} />
-        <meta name="twitter:description" content={"Rosja przeprowadziła największy atak powietrzny na Ukrainę, Polska poderwała myśliwce w obronie granic."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "💥 Masowy atak Rosji na Ukrainę – Polska w stanie czujności",
-              image: ["https://punktwidzenia.info.pl/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci.webp"],
-              datePublished: "2025-08-22T10:00:00.000Z",
-              dateModified: "2025-08-22T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/masowy-atak-rosji-na-ukraine-polska-w-stanie-czujnosci",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Rosja przeprowadziła największy atak powietrzny na Ukrainę, Polska poderwała myśliwce w obronie granic."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

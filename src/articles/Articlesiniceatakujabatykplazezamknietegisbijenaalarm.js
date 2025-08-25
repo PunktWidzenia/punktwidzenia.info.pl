@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlesiniceatakujabatykplazezamknietegisbijenaalarm() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🌊 Sinice atakują Bałtyk! Plaże zamknięte, GIS bije na alarm</title>
-        <meta name="description" content="Masowe zakwity sinic zamknęły dziesiątki kąpielisk nad Bałtykiem. GIS ostrzega: kontakt z wodą może być groźny dla zdrowia – zwłaszcza dla dzieci!" />
-        <meta property="og:title" content="🌊 Sinice atakują Bałtyk! Plaże zamknięte, GIS bije na alarm" />
-        <meta property="og:description" content="Masowe zakwity sinic zamknęły dziesiątki kąpielisk nad Bałtykiem. GIS ostrzega: kontakt z wodą może być groźny dla zdrowia – zwłaszcza dla dzieci!" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/sinice-atakuja-batyk-plaze-zamkniete-gis-bije-na-alarm.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/sinice-atakuja-batyk-plaze-zamkniete-gis-bije-na-alarm" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🌊 Sinice atakują Bałtyk! Plaże zamknięte, GIS bije na alarm',
-            image: ['https://punktwidzenia.info.pl/sinice-atakuja-batyk-plaze-zamkniete-gis-bije-na-alarm.webp'],
-            datePublished: '2025-07-21',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Masowe zakwity sinic zamknęły dziesiątki kąpielisk nad Bałtykiem. GIS ostrzega: kontakt z wodą może być groźny dla zdrowia – zwłaszcza dla dzieci!'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

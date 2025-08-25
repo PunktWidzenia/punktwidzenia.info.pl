@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articlemarkcarneywpolscekanadyjskipremierzaciesniastrategicznewiezi() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🤝 Mark Carney w Polsce – kanadyjski premier zacieśnia strategiczne więzi"}</title>
-        <meta name="description" content={"Premier Kanady Mark Carney rozpoczął wizytę w Polsce, Niemczech i na Łotwie. Główne tematy to bezpieczeństwo, energetyka i współpraca przemysłowa."} />
-        <meta property="og:title" content={"🤝 Mark Carney w Polsce – kanadyjski premier zacieśnia strategiczne więzi"} />
-        <meta property="article:published_time" content={"2025-08-24T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-24T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Premier Kanady Mark Carney rozpoczął wizytę w Polsce, Niemczech i na Łotwie. Główne tematy to bezpieczeństwo, energetyka i współpraca przemysłowa."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi"} />
-        <meta property="og:image:alt" content={"🤝 Mark Carney w Polsce – kanadyjski premier zacieśnia strategiczne więzi"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"🤝 Mark Carney w Polsce – kanadyjski premier zacieśnia strategiczne więzi"} />
-        <meta name="twitter:description" content={"Premier Kanady Mark Carney rozpoczął wizytę w Polsce, Niemczech i na Łotwie. Główne tematy to bezpieczeństwo, energetyka i współpraca przemysłowa."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "🤝 Mark Carney w Polsce – kanadyjski premier zacieśnia strategiczne więzi",
-              image: ["https://punktwidzenia.info.pl/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi.webp"],
-              datePublished: "2025-08-24T10:00:00.000Z",
-              dateModified: "2025-08-24T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/mark-carney-w-polsce-kanadyjski-premier-zaciesnia-strategiczne-wiezi",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Premier Kanady Mark Carney rozpoczął wizytę w Polsce, Niemczech i na Łotwie. Główne tematy to bezpieczeństwo, energetyka i współpraca przemysłowa."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

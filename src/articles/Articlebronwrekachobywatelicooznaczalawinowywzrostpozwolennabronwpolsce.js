@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,34 +7,6 @@ import NextImage from "next/image";
 function Articlebronwrekachobywatelicooznaczalawinowywzrostpozwolennabronwpolsce() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"📈 Broń w rękach obywateli – co oznacza lawinowy wzrost pozwoleń na broń w Polsce?"}</title>
-        <meta name="description" content={"W Polsce od 2020 roku liczba pozwoleń na broń wzrosła czterokrotnie. Analiza przyczyn, skutków i możliwych scenariuszy."} />
-        <meta property="og:title" content={"📈 Broń w rękach obywateli – co oznacza lawinowy wzrost pozwoleń na broń w Polsce?"} />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"W Polsce od 2020 roku liczba pozwoleń na broń wzrosła czterokrotnie. Analiza przyczyn, skutków i możliwych scenariuszy."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce"} />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: "📈 Broń w rękach obywateli – co oznacza lawinowy wzrost pozwoleń na broń w Polsce?",
-            image: ["https://punktwidzenia.info.pl/bron-w-rekach-obywateli-co-oznacza-lawinowy-wzrost-pozwolen-na-bron-w-polsce.webp"],
-            datePublished: "2025-08-13",
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: "W Polsce od 2020 roku liczba pozwoleń na broń wzrosła czterokrotnie. Analiza przyczyn, skutków i możliwych scenariuszy."
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

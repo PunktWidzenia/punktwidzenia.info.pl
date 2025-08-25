@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articleholandiawysylazolnierzyisystempatriotdopolskisolidarnoscnatowpraktyce() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🛡️ Holandia wysyła żołnierzy i system Patriot do Polski – solidarność NATO w praktyce"}</title>
-        <meta name="description" content={"Holandia ogłosiła wysłanie 300 żołnierzy i systemu Patriot do Polski. To element wsparcia NATO i odpowiedź na rosnące zagrożenie ze strony Rosji."} />
-        <meta property="og:title" content={"🛡️ Holandia wysyła żołnierzy i system Patriot do Polski – solidarność NATO w praktyce"} />
-        <meta property="article:published_time" content={"2025-08-21T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-21T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Holandia ogłosiła wysłanie 300 żołnierzy i systemu Patriot do Polski. To element wsparcia NATO i odpowiedź na rosnące zagrożenie ze strony Rosji."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce"} />
-        <meta property="og:image:alt" content={"🛡️ Holandia wysyła żołnierzy i system Patriot do Polski – solidarność NATO w praktyce"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"🛡️ Holandia wysyła żołnierzy i system Patriot do Polski – solidarność NATO w praktyce"} />
-        <meta name="twitter:description" content={"Holandia ogłosiła wysłanie 300 żołnierzy i systemu Patriot do Polski. To element wsparcia NATO i odpowiedź na rosnące zagrożenie ze strony Rosji."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "🛡️ Holandia wysyła żołnierzy i system Patriot do Polski – solidarność NATO w praktyce",
-              image: ["https://punktwidzenia.info.pl/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce.webp"],
-              datePublished: "2025-08-21T10:00:00.000Z",
-              dateModified: "2025-08-21T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/holandia-wysyla-zolnierzy-i-system-patriot-do-polski-solidarnosc-nato-w-praktyce",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Holandia ogłosiła wysłanie 300 żołnierzy i systemu Patriot do Polski. To element wsparcia NATO i odpowiedź na rosnące zagrożenie ze strony Rosji."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

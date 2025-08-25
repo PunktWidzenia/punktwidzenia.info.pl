@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlemojpiespijewodezkranuhitczyobciachweterynarzepodzieleni() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🐶 Mój pies pije wodę z kranu – hit czy obciach? Weterynarze podzieleni</title>
-        <meta name="description" content="Czy podawanie psu wody z kranu to przejaw odpowiedzialności, czy lekkomyślność? Weterynarze nie są zgodni, a właściciele dzielą się na dwa obozy. Oto fakty, mity i kontrowersje wokół kranówki dla zwierząt." />
-        <meta property="og:title" content="🐶 Mój pies pije wodę z kranu – hit czy obciach? Weterynarze podzieleni" />
-        <meta property="og:description" content="Czy podawanie psu wody z kranu to przejaw odpowiedzialności, czy lekkomyślność? Weterynarze nie są zgodni, a właściciele dzielą się na dwa obozy. Oto fakty, mity i kontrowersje wokół kranówki dla zwierząt." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🐶 Mój pies pije wodę z kranu – hit czy obciach? Weterynarze podzieleni',
-            image: ['https://punktwidzenia.info.pl/moj-pies-pije-wode-z-kranu-hit-czy-obciach-weterynarze-podzieleni.webp'],
-            datePublished: '2025-08-06',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Czy podawanie psu wody z kranu to przejaw odpowiedzialności, czy lekkomyślność? Weterynarze nie są zgodni, a właściciele dzielą się na dwa obozy. Oto fakty, mity i kontrowersje wokół kranówki dla zwierząt.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

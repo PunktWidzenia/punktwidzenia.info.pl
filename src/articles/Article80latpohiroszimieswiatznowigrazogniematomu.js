@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,30 +7,6 @@ import Image from "next/image";
 function Article80latpohiroszimieswiatznowigrazogniematomu() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🕯️ 80 lat po Hiroszimie – świat znów igra z ogniem atomu</title>
-        <meta name="description" content="W 80. rocznicę zrzucenia bomby atomowej na Hiroszimę prezydent miasta Kazumi Matsui zaapelował o globalne rozbrojenie. W swoim przemówieniu odniósł się do zagrożeń nuklearnych we współczesnych konfliktach – od Ukrainy po Bliski Wschód." />
-        <meta property="og:title" content="🕯️ 80 lat po Hiroszimie – świat znów igra z ogniem atomu" />
-        <meta property="og:description" content="W 80. rocznicę zrzucenia bomby atomowej na Hiroszimę prezydent miasta Kazumi Matsui zaapelował o globalne rozbrojenie. W swoim przemówieniu odniósł się do zagrożeń nuklearnych we współczesnych konfliktach – od Ukrainy po Bliski Wschód." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🕯️ 80 lat po Hiroszimie – świat znów igra z ogniem atomu',
-            image: ['https://punktwidzenia.info.pl/80-lat-po-hiroszimie-swiat-znow-igra-z-ogniem-atomu.webp'],
-            datePublished: '2025-08-06',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'W 80. rocznicę zrzucenia bomby atomowej na Hiroszimę prezydent miasta Kazumi Matsui zaapelował o globalne rozbrojenie. W swoim przemówieniu odniósł się do zagrożeń nuklearnych we współczesnych konfliktach – od Ukrainy po Bliski Wschód.'
-          })
-        }</script>
-      </Head>
 
       <article className="space-y-6">
 <header className="mb-4">

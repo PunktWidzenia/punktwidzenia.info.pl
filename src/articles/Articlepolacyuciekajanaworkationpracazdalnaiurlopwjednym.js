@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articlepolacyuciekajanaworkationpracazdalnaiurlopwjednym() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"✈️ Polacy uciekają na „workation” – praca zdalna i urlop w jednym"}</title>
-        <meta name="description" content={"Coraz więcej Polaków wybiera „workation” – łączenie pracy zdalnej i podróży, a hitem stał się Dubaj."} />
-        <meta property="og:title" content={"✈️ Polacy uciekają na „workation” – praca zdalna i urlop w jednym"} />
-        <meta property="article:published_time" content={"2025-08-25T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-25T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Coraz więcej Polaków wybiera „workation” – łączenie pracy zdalnej i podróży, a hitem stał się Dubaj."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym"} />
-        <meta property="og:image:alt" content={"✈️ Polacy uciekają na „workation” – praca zdalna i urlop w jednym"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"✈️ Polacy uciekają na „workation” – praca zdalna i urlop w jednym"} />
-        <meta name="twitter:description" content={"Coraz więcej Polaków wybiera „workation” – łączenie pracy zdalnej i podróży, a hitem stał się Dubaj."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "✈️ Polacy uciekają na „workation” – praca zdalna i urlop w jednym",
-              image: ["https://punktwidzenia.info.pl/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym.webp"],
-              datePublished: "2025-08-25T10:00:00.000Z",
-              dateModified: "2025-08-25T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Coraz więcej Polaków wybiera „workation” – łączenie pracy zdalnej i podróży, a hitem stał się Dubaj."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

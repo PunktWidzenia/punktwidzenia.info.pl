@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlebryanadamszgwiazdawkrakowietumyfanowiwyprzedanykoncert() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🎸 Bryan Adams z gwiazdą w Krakowie! Tłumy fanów i wyprzedany koncert</title>
-        <meta name="description" content="Legenda muzyki rockowej odsłoniła swoją gwiazdę pod Wawelem i zagrała w Tauron Arenie. Publiczność nie zawiodła, a emocje sięgnęły zenitu." />
-        <meta property="og:title" content="🎸 Bryan Adams z gwiazdą w Krakowie! Tłumy fanów i wyprzedany koncert" />
-        <meta property="og:description" content="Legenda muzyki rockowej odsłoniła swoją gwiazdę pod Wawelem i zagrała w Tauron Arenie. Publiczność nie zawiodła, a emocje sięgnęły zenitu." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/bryan-adams-z-gwiazda-w-krakowie-tumy-fanow-i-wyprzedany-koncert.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/bryan-adams-z-gwiazda-w-krakowie-tumy-fanow-i-wyprzedany-koncert" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🎸 Bryan Adams z gwiazdą w Krakowie! Tłumy fanów i wyprzedany koncert',
-            image: ['https://punktwidzenia.info.pl/bryan-adams-z-gwiazda-w-krakowie-tumy-fanow-i-wyprzedany-koncert.webp'],
-            datePublished: '2025-07-31',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Legenda muzyki rockowej odsłoniła swoją gwiazdę pod Wawelem i zagrała w Tauron Arenie. Publiczność nie zawiodła, a emocje sięgnęły zenitu.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

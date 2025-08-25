@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articletrzyniedzwiedziedoodstrzauochronaludziczyskandalekologiczny() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🐻 Trzy niedźwiedzie do odstrzału — ochrona ludzi czy skandal ekologiczny?</title>
-        <meta name="description" content="Decyzja polskich władz o odstrzale trzech dzikich niedźwiedzi wywołała falę oburzenia wśród organizacji ekologicznych. Czy bezpieczeństwo ludzi usprawiedliwia eliminację zagrożonych gatunków? Oto szczegóły tej bulwersującej sprawy." />
-        <meta property="og:title" content="🐻 Trzy niedźwiedzie do odstrzału — ochrona ludzi czy skandal ekologiczny?" />
-        <meta property="og:description" content="Decyzja polskich władz o odstrzale trzech dzikich niedźwiedzi wywołała falę oburzenia wśród organizacji ekologicznych. Czy bezpieczeństwo ludzi usprawiedliwia eliminację zagrożonych gatunków? Oto szczegóły tej bulwersującej sprawy." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🐻 Trzy niedźwiedzie do odstrzału — ochrona ludzi czy skandal ekologiczny?',
-            image: ['https://punktwidzenia.info.pl/trzy-niedzwiedzie-do-odstrzau-ochrona-ludzi-czy-skandal-ekologiczny.webp'],
-            datePublished: '2025-08-06',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Decyzja polskich władz o odstrzale trzech dzikich niedźwiedzi wywołała falę oburzenia wśród organizacji ekologicznych. Czy bezpieczeństwo ludzi usprawiedliwia eliminację zagrożonych gatunków? Oto szczegóły tej bulwersującej sprawy.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

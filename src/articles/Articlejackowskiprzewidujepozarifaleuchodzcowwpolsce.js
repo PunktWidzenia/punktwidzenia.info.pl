@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlejackowskiprzewidujepozarifaleuchodzcowwpolsce() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🔥 Jackowski przewiduje pożar i falę uchodźców w Polsce!</title>
-        <meta name="description" content="Zobacz, co zobaczył najpopularniejszy jasnowidz w Polsce…" />
-        <meta property="og:title" content="🔥 Jackowski przewiduje pożar i falę uchodźców w Polsce!" />
-        <meta property="og:description" content="Zobacz, co zobaczył najpopularniejszy jasnowidz w Polsce…" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/jackowski-przewiduje-pozar-i-fale-uchodzcow-w-polsce.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/jackowski-przewiduje-pozar-i-fale-uchodzcow-w-polsce" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🔥 Jackowski przewiduje pożar i falę uchodźców w Polsce!',
-            image: ['https://punktwidzenia.info.pl/jackowski-przewiduje-pozar-i-fale-uchodzcow-w-polsce.webp'],
-            datePublished: '2025-07-13',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Zobacz, co zobaczył najpopularniejszy jasnowidz w Polsce…'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

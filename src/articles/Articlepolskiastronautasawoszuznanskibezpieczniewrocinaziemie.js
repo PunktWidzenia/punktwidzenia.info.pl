@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articlepolskiastronautasawoszuznanskibezpieczniewrocinaziemie() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>Polski astronauta Sławosz Uznański bezpiecznie wrócił na Ziemię!</title>
-        <meta name="description" content="Sławosz Uznański, uczestnik misji Axiom Mission 4, bezpiecznie wrócił na Ziemię po pobycie na Międzynarodowej Stacji Kosmicznej." />
-        <meta property="og:title" content="Polski astronauta Sławosz Uznański bezpiecznie wrócił na Ziemię!" />
-        <meta property="og:description" content="Sławosz Uznański, uczestnik misji Axiom Mission 4, bezpiecznie wrócił na Ziemię po pobycie na Międzynarodowej Stacji Kosmicznej." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/polski-astronauta-sawosz-uznanski-bezpiecznie-wroci-na-ziemie.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/polski-astronauta-sawosz-uznanski-bezpiecznie-wroci-na-ziemie" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: 'Polski astronauta Sławosz Uznański bezpiecznie wrócił na Ziemię!',
-            image: ['https://punktwidzenia.info.pl/polski-astronauta-sawosz-uznanski-bezpiecznie-wroci-na-ziemie.webp'],
-            datePublished: '2025-07-16',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Sławosz Uznański, uczestnik misji Axiom Mission 4, bezpiecznie wrócił na Ziemię po pobycie na Międzynarodowej Stacji Kosmicznej.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

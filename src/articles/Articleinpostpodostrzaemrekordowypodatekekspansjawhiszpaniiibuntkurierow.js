@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articleinpostpodostrzaemrekordowypodatekekspansjawhiszpaniiibuntkurierow() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>📦 InPost pod ostrzałem: rekordowy podatek, ekspansja w Hiszpanii i bunt kurierów</title>
-        <meta name="description" content="InPost zapłacił rekordowy podatek i rozwija się w Hiszpanii, ale jednocześnie zmaga się z falą niezadowolenia wśród kurierów. Sprawdź szczegóły." />
-        <meta property="og:title" content="📦 InPost pod ostrzałem: rekordowy podatek, ekspansja w Hiszpanii i bunt kurierów" />
-        <meta property="og:description" content="InPost zapłacił rekordowy podatek i rozwija się w Hiszpanii, ale jednocześnie zmaga się z falą niezadowolenia wśród kurierów. Sprawdź szczegóły." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/inpost-pod-ostrzaem-rekordowy-podatek-ekspansja-w-hiszpanii-i-bunt-kurierow.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/inpost-pod-ostrzaem-rekordowy-podatek-ekspansja-w-hiszpanii-i-bunt-kurierow" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '📦 InPost pod ostrzałem: rekordowy podatek, ekspansja w Hiszpanii i bunt kurierów',
-            image: ['https://punktwidzenia.info.pl/inpost-pod-ostrzaem-rekordowy-podatek-ekspansja-w-hiszpanii-i-bunt-kurierow.webp'],
-            datePublished: '2025-07-29',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'InPost zapłacił rekordowy podatek i rozwija się w Hiszpanii, ale jednocześnie zmaga się z falą niezadowolenia wśród kurierów. Sprawdź szczegóły.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

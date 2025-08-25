@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articlesmiercpodczaspolowanianalubelszczyznietragediawlesie() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🎯 Śmierć podczas polowania na Lubelszczyźnie – tragedia w lesie"}</title>
-        <meta name="description" content={"Tragedia na polowaniu w Lubelskiem. 60-letni mężczyzna zginął od strzału oddanego przez 40-letniego myśliwego, który usłyszał zarzut zabójstwa."} />
-        <meta property="og:title" content={"🎯 Śmierć podczas polowania na Lubelszczyźnie – tragedia w lesie"} />
-        <meta property="article:published_time" content={"2025-08-19T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-19T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Tragedia na polowaniu w Lubelskiem. 60-letni mężczyzna zginął od strzału oddanego przez 40-letniego myśliwego, który usłyszał zarzut zabójstwa."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie"} />
-        <meta property="og:image:alt" content={"🎯 Śmierć podczas polowania na Lubelszczyźnie – tragedia w lesie"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"🎯 Śmierć podczas polowania na Lubelszczyźnie – tragedia w lesie"} />
-        <meta name="twitter:description" content={"Tragedia na polowaniu w Lubelskiem. 60-letni mężczyzna zginął od strzału oddanego przez 40-letniego myśliwego, który usłyszał zarzut zabójstwa."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "🎯 Śmierć podczas polowania na Lubelszczyźnie – tragedia w lesie",
-              image: ["https://punktwidzenia.info.pl/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie.webp"],
-              datePublished: "2025-08-19T10:00:00.000Z",
-              dateModified: "2025-08-19T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/smierc-podczas-polowania-na-lubelszczyznie-tragedia-w-lesie",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Tragedia na polowaniu w Lubelskiem. 60-letni mężczyzna zginął od strzału oddanego przez 40-letniego myśliwego, który usłyszał zarzut zabójstwa."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

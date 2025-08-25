@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,33 +7,6 @@ import NextImage from "next/image";
 function Article15sierpniaajedzeniemiesarozwiewamywatpliwosci() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🥩 15 sierpnia a jedzenie mięsa – rozwiewamy wątpliwości"}</title>
-        <meta name="description" content={"15 sierpnia to święto Wniebowzięcia NMP. Wyjaśniamy, czy w ten dzień można jeść mięso, gdy wypada w piątek."} />
-        <meta property="og:title" content={"🥩 15 sierpnia a jedzenie mięsa – rozwiewamy wątpliwości"} />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"15 sierpnia to święto Wniebowzięcia NMP. Wyjaśniamy, czy w ten dzień można jeść mięso, gdy wypada w piątek."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci"} />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: "🥩 15 sierpnia a jedzenie mięsa – rozwiewamy wątpliwości",
-            image: ["https://punktwidzenia.info.pl/15-sierpnia-a-jedzenie-miesa-rozwiewamy-watpliwosci.webp"],
-            datePublished: "2025-08-15",
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: "15 sierpnia to święto Wniebowzięcia NMP. Wyjaśniamy, czy w ten dzień można jeść mięso, gdy wypada w piątek."
-          })
-        }</script>
-      </Head>
 
       <article className="space-y-6">
 <header className="mb-4">

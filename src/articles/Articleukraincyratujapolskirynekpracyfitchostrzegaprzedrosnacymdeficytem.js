@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articleukraincyratujapolskirynekpracyfitchostrzegaprzedrosnacymdeficytem() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"💼 Ukraińcy ratują polski rynek pracy – Fitch ostrzega przed rosnącym deficytem"}</title>
-        <meta name="description" content={"Fitch prognozuje wzrost polskiej gospodarki dzięki pracownikom z Ukrainy, ale ostrzega przed rosnącym deficytem budżetowym."} />
-        <meta property="og:title" content={"💼 Ukraińcy ratują polski rynek pracy – Fitch ostrzega przed rosnącym deficytem"} />
-        <meta property="article:published_time" content={"2025-08-20T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-20T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Fitch prognozuje wzrost polskiej gospodarki dzięki pracownikom z Ukrainy, ale ostrzega przed rosnącym deficytem budżetowym."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem"} />
-        <meta property="og:image:alt" content={"💼 Ukraińcy ratują polski rynek pracy – Fitch ostrzega przed rosnącym deficytem"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"💼 Ukraińcy ratują polski rynek pracy – Fitch ostrzega przed rosnącym deficytem"} />
-        <meta name="twitter:description" content={"Fitch prognozuje wzrost polskiej gospodarki dzięki pracownikom z Ukrainy, ale ostrzega przed rosnącym deficytem budżetowym."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "💼 Ukraińcy ratują polski rynek pracy – Fitch ostrzega przed rosnącym deficytem",
-              image: ["https://punktwidzenia.info.pl/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem.webp"],
-              datePublished: "2025-08-20T10:00:00.000Z",
-              dateModified: "2025-08-20T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/ukraincy-ratuja-polski-rynek-pracy-fitch-ostrzega-przed-rosnacym-deficytem",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Fitch prognozuje wzrost polskiej gospodarki dzięki pracownikom z Ukrainy, ale ostrzega przed rosnącym deficytem budżetowym."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

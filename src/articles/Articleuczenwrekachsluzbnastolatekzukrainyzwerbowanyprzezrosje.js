@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,34 +7,6 @@ import NextImage from "next/image";
 function Articleuczenwrekachsluzbnastolatekzukrainyzwerbowanyprzezrosje() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🚨 Uczeń w rękach służb – nastolatek z Ukrainy zwerbowany przez Rosję"}</title>
-        <meta name="description" content={"Polska policja zatrzymała 17-letniego obywatela Ukrainy podejrzanego o planowany akt wandalizmu na zlecenie rosyjskich służb."} />
-        <meta property="og:title" content={"🚨 Uczeń w rękach służb – nastolatek z Ukrainy zwerbowany przez Rosję"} />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Polska policja zatrzymała 17-letniego obywatela Ukrainy podejrzanego o planowany akt wandalizmu na zlecenie rosyjskich służb."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje"} />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: "🚨 Uczeń w rękach służb – nastolatek z Ukrainy zwerbowany przez Rosję",
-            image: ["https://punktwidzenia.info.pl/uczen-w-rekach-sluzb-nastolatek-z-ukrainy-zwerbowany-przez-rosje.webp"],
-            datePublished: "2025-08-14",
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: "Polska policja zatrzymała 17-letniego obywatela Ukrainy podejrzanego o planowany akt wandalizmu na zlecenie rosyjskich służb."
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

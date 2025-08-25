@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,50 +7,6 @@ import NextImage from "next/image";
 function Articlepolskazmedalaminaigrzyskachswiatowych2025imponujacydorobekwchinach() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🥇 Polska z medalami na Igrzyskach Światowych 2025 – imponujący dorobek w Chinach"}</title>
-        <meta name="description" content={"Polska reprezentacja zdobyła aż 13 medali na Igrzyskach Światowych 2025 w Chinach. Złoto, srebro i brąz w różnych dyscyplinach pokazują siłę i wszechstronność p"} />
-        <meta property="og:title" content={"🥇 Polska z medalami na Igrzyskach Światowych 2025 – imponujący dorobek w Chinach"} />
-        <meta property="article:published_time" content={"2025-08-17T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-17T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Polska reprezentacja zdobyła aż 13 medali na Igrzyskach Światowych 2025 w Chinach. Złoto, srebro i brąz w różnych dyscyplinach pokazują siłę i wszechstronność p"} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach"} />
-        <meta property="og:image:alt" content={"🥇 Polska z medalami na Igrzyskach Światowych 2025 – imponujący dorobek w Chinach"} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={"🥇 Polska z medalami na Igrzyskach Światowych 2025 – imponujący dorobek w Chinach"} />
-      <meta name="twitter:description" content={"Polska reprezentacja zdobyła aż 13 medali na Igrzyskach Światowych 2025 w Chinach. Złoto, srebro i brąz w różnych dyscyplinach pokazują siłę i wszechstronność p"} />
-      <meta name="twitter:image" content={"https://punktwidzenia.info.pl/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach"} />
-<script
-   type="application/ld+json"
-   dangerouslySetInnerHTML={{
-     __html: JSON.stringify({
-       '@context': 'https://schema.org',
-       '@type': 'NewsArticle',
-       headline: "🥇 Polska z medalami na Igrzyskach Światowych 2025 – imponujący dorobek w Chinach",
-       image: ["https://punktwidzenia.info.pl/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach.webp"],
-       datePublished: "2025-08-17T10:00:00.000Z",
-       dateModified: "2025-08-17T10:00:00.000Z",
-       mainEntityOfPage: "https://punktwidzenia.info.pl/polska-z-medalami-na-igrzyskach-swiatowych-2025-imponujacy-dorobek-w-chinach",
-       articleSection: 'news',
-       author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-       publisher: {
-         '@type': 'Organization',
-         name: 'Punkt Widzenia',
-         logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-       },
-       description: "Polska reprezentacja zdobyła aż 13 medali na Igrzyskach Światowych 2025 w Chinach. Złoto, srebro i brąz w różnych dyscyplinach pokazują siłę i wszechstronność p"
-     })
-   }}
- />      </Head>
-
       <article className="space-y-6">
   <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

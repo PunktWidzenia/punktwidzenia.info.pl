@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,51 +7,6 @@ import NextImage from "next/image";
 function Articlewystawaourboyswgdanskuwywolalapolitycznaburze() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"🏛️ Wystawa „Our Boys” w Gdańsku wywołała polityczną burzę"}</title>
-        <meta name="description" content={"Wystawa w Muzeum Gdańska o Polakach wcielanych do Wehrmachtu wywołała ostre spory polityczne i historyczne."} />
-        <meta property="og:title" content={"🏛️ Wystawa „Our Boys” w Gdańsku wywołała polityczną burzę"} />
-        <meta property="article:published_time" content={"2025-08-20T10:00:00.000Z"} />
-        <meta property="article:modified_time" content={"2025-08-20T10:00:00.000Z"} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Punkt Widzenia" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Wystawa w Muzeum Gdańska o Polakach wcielanych do Wehrmachtu wywołała ostre spory polityczne i historyczne."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze"} />
-        <meta property="og:image:alt" content={"🏛️ Wystawa „Our Boys” w Gdańsku wywołała polityczną burzę"} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={"🏛️ Wystawa „Our Boys” w Gdańsku wywołała polityczną burzę"} />
-        <meta name="twitter:description" content={"Wystawa w Muzeum Gdańska o Polakach wcielanych do Wehrmachtu wywołała ostre spory polityczne i historyczne."} />
-        <meta name="twitter:image" content={"https://punktwidzenia.info.pl/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze.webp"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze"} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'NewsArticle',
-              headline: "🏛️ Wystawa „Our Boys” w Gdańsku wywołała polityczną burzę",
-              image: ["https://punktwidzenia.info.pl/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze.webp"],
-              datePublished: "2025-08-20T10:00:00.000Z",
-              dateModified: "2025-08-20T10:00:00.000Z",
-              mainEntityOfPage: "https://punktwidzenia.info.pl/wystawa-our-boys-w-gdansku-wywolala-polityczna-burze",
-              articleSection: 'news',
-              author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Punkt Widzenia',
-                logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-              },
-              description: "Wystawa w Muzeum Gdańska o Polakach wcielanych do Wehrmachtu wywołała ostre spory polityczne i historyczne."
-            })
-          }}
-        />
-      </Head>
-
       <article className="space-y-6">
         <header className="mb-4">
           <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

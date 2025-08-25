@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articletragicznywypadekwegipciezginelipolscyturysci() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🚨 Tragiczny wypadek w Egipcie – zginęli polscy turyści</title>
-        <meta name="description" content="Polska matka i dziecko zginęli w wypadku autokaru w okolicach Marsa Alam. Ministerstwo Spraw Zagranicznych potwierdza tragedię." />
-        <meta property="og:title" content="🚨 Tragiczny wypadek w Egipcie – zginęli polscy turyści" />
-        <meta property="og:description" content="Polska matka i dziecko zginęli w wypadku autokaru w okolicach Marsa Alam. Ministerstwo Spraw Zagranicznych potwierdza tragedię." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/tragiczny-wypadek-w-egipcie-zgineli-polscy-turysci.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/tragiczny-wypadek-w-egipcie-zgineli-polscy-turysci" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🚨 Tragiczny wypadek w Egipcie – zginęli polscy turyści',
-            image: ['https://punktwidzenia.info.pl/tragiczny-wypadek-w-egipcie-zgineli-polscy-turysci.webp'],
-            datePublished: '2025-07-29',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'Polska matka i dziecko zginęli w wypadku autokaru w okolicach Marsa Alam. Ministerstwo Spraw Zagranicznych potwierdza tragedię.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

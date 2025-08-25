@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articleukrainskiwkazdejszkolerzadanalizujekontrowersyjnyprojektustawy() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>📚 Ukraiński w każdej szkole? Rząd analizuje kontrowersyjny projekt ustawy</title>
-        <meta name="description" content="W ramach nowej strategii integracyjnej Ministerstwo Edukacji rozważa naukę języka ukraińskiego jako obowiązkowego przedmiotu. Społeczeństwo jest podzielone." />
-        <meta property="og:title" content="📚 Ukraiński w każdej szkole? Rząd analizuje kontrowersyjny projekt ustawy" />
-        <meta property="og:description" content="W ramach nowej strategii integracyjnej Ministerstwo Edukacji rozważa naukę języka ukraińskiego jako obowiązkowego przedmiotu. Społeczeństwo jest podzielone." />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/ukrainski-w-kazdej-szkole-rzad-analizuje-kontrowersyjny-projekt-ustawy.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/ukrainski-w-kazdej-szkole-rzad-analizuje-kontrowersyjny-projekt-ustawy" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '📚 Ukraiński w każdej szkole? Rząd analizuje kontrowersyjny projekt ustawy',
-            image: ['https://punktwidzenia.info.pl/ukrainski-w-kazdej-szkole-rzad-analizuje-kontrowersyjny-projekt-ustawy.webp'],
-            datePublished: '2025-07-31',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: 'W ramach nowej strategii integracyjnej Ministerstwo Edukacji rozważa naukę języka ukraińskiego jako obowiązkowego przedmiotu. Społeczeństwo jest podzielone.'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

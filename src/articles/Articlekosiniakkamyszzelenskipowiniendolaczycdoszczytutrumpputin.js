@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,34 +7,6 @@ import NextImage from "next/image";
 function Article_kosiniakkamyszzelenskipowiniendolaczycdoszczytutrumpputin() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>{"📰 Kosiniak-Kamysz: Zełenski powinien dołączyć do szczytu Trump–Putin"}</title>
-        <meta name="description" content={"Kosiniak-Kamysz chce, by Zełenski dołączył do szczytu Trump–Putin. Ma to zagwarantować uwzględnienie interesów Ukrainy w rozmowach."} />
-        <meta property="og:title" content={"📰 Kosiniak-Kamysz: Zełenski powinien dołączyć do szczytu Trump–Putin"} />
-        <meta property="og:type" content="article" />
-        <meta property="og:description" content={"Kosiniak-Kamysz chce, by Zełenski dołączył do szczytu Trump–Putin. Ma to zagwarantować uwzględnienie interesów Ukrainy w rozmowach."} />
-        <meta property="og:image" content={"https://punktwidzenia.info.pl/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin.webp"} />
-        <meta property="og:url" content={"https://punktwidzenia.info.pl/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin"} />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href={"https://punktwidzenia.info.pl/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin"} />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: "📰 Kosiniak-Kamysz: Zełenski powinien dołączyć do szczytu Trump–Putin",
-            image: ["https://punktwidzenia.info.pl/kosiniak-kamysz-zelenski-powinien-dolaczyc-do-szczytu-trumpputin.webp"],
-            datePublished: "2025-08-11",
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: "Kosiniak-Kamysz chce, by Zełenski dołączył do szczytu Trump–Putin. Ma to zagwarantować uwzględnienie interesów Ukrainy w rozmowach."
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">

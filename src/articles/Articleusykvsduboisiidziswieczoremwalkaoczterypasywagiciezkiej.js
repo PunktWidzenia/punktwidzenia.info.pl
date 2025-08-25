@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const AdSlot = dynamic(() => import("@/components/AdSlot"), { ssr: false });
@@ -8,31 +7,6 @@ import Image from "next/image";
 function Articleusykvsduboisiidziswieczoremwalkaoczterypasywagiciezkiej() {
   return (
     <main className="px-4 pt-10 pb-20 max-w-3xl mx-auto">
-      <Head>
-        <title>🔥 Usyk vs Dubois II. Dziś wieczorem walka o cztery pasy wagi ciężkiej!</title>
-        <meta name="description" content="19 lipca 2025 na Wembley dojdzie do długo wyczekiwanego rewanżu: Oleksandr Usyk zmierzy się z Danielem Duboisem o niedyskusyjne mistrzostwo świata wagi ciężkiej. Emocje gwarantowane!" />
-        <meta property="og:title" content="🔥 Usyk vs Dubois II. Dziś wieczorem walka o cztery pasy wagi ciężkiej!" />
-        <meta property="og:description" content="19 lipca 2025 na Wembley dojdzie do długo wyczekiwanego rewanżu: Oleksandr Usyk zmierzy się z Danielem Duboisem o niedyskusyjne mistrzostwo świata wagi ciężkiej. Emocje gwarantowane!" />
-        <meta property="og:image" content="https://punktwidzenia.info.pl/usyk-vs-dubois-ii-dzis-wieczorem-walka-o-cztery-pasy-wagi-ciezkiej.webp" />
-        <meta property="og:url" content="https://punktwidzenia.info.pl/usyk-vs-dubois-ii-dzis-wieczorem-walka-o-cztery-pasy-wagi-ciezkiej" />
-        <script type="application/ld+json">{
-          JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'NewsArticle',
-            headline: '🔥 Usyk vs Dubois II. Dziś wieczorem walka o cztery pasy wagi ciężkiej!',
-            image: ['https://punktwidzenia.info.pl/usyk-vs-dubois-ii-dzis-wieczorem-walka-o-cztery-pasy-wagi-ciezkiej.webp'],
-            datePublished: '2025-07-19',
-            author: { '@type': 'Organization', name: 'Punkt Widzenia' },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Punkt Widzenia',
-              logo: { '@type': 'ImageObject', url: 'https://punktwidzenia.info.pl/logo.png' }
-            },
-            description: '19 lipca 2025 na Wembley dojdzie do długo wyczekiwanego rewanżu: Oleksandr Usyk zmierzy się z Danielem Duboisem o niedyskusyjne mistrzostwo świata wagi ciężkiej. Emocje gwarantowane!'
-          })
-        }</script>
-      </Head>
-
       <article className="space-y-6">
 <header className="mb-4">
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
