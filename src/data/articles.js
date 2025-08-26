@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 84,
+  link: "/prezydent-nawrocki-zawetowal-trzy-ustawy-najwiekszy-kryzys-legislacyjny-kadencji",
+  img: "/prezydent-nawrocki-zawetowal-trzy-ustawy-najwiekszy-kryzys-legislacyjny-kadencji.webp",
+  title: "🇵🇱 Prezydent Nawrocki zawetował trzy ustawy – największy kryzys legislacyjny kadencji",
+  description: "Prezydent Karol Nawrocki zawetował trzy ustawy, w tym o pomocy Ukraińcom. Decyzja wywołała spór polityczny i zapowiedź nowego projektu.",
+  date: "2025-08-26",
+  component: "Articleprezydentnawrockizawetowaltrzyustawynajwiekszykryzyslegislacyjnykadencji"
+},
+  {
   id: 83,
   link: "/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym",
   img: "/polacy-uciekaja-na-workation-praca-zdalna-i-urlop-w-jednym.webp",
