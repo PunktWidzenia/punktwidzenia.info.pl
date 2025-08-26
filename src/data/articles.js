@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 85,
+  link: "/zolnierz-ranny-przy-granicy-z-bialorusia-napieta-sytuacja-w-rejonie-czeremchy",
+  img: "/zolnierz-ranny-przy-granicy-z-bialorusia-napieta-sytuacja-w-rejonie-czeremchy.webp",
+  title: "🚨 Żołnierz ranny przy granicy z Białorusią – napięta sytuacja w rejonie Czeremchy",
+  description: "Polski żołnierz został ranny przy granicy w rejonie Czeremchy. Minister obrony Kosiniak-Kamysz potwierdził zdarzenie i zapowiedział działania.",
+  date: "2025-08-26",
+  component: "Articlezolnierzrannyprzygranicyzbialorusianapietasytuacjawrejonieczeremchy"
+},
+  {
   id: 84,
   link: "/prezydent-nawrocki-zawetowal-trzy-ustawy-najwiekszy-kryzys-legislacyjny-kadencji",
   img: "/prezydent-nawrocki-zawetowal-trzy-ustawy-najwiekszy-kryzys-legislacyjny-kadencji.webp",
