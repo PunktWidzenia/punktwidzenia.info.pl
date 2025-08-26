@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 86,
+  link: "/kosiniak-kamysz-wolyn-warunkiem-akcesji-ukrainy-do-ue",
+  img: "/kosiniak-kamysz-wolyn-warunkiem-akcesji-ukrainy-do-ue.webp",
+  title: "🌍 Kosiniak-Kamysz: Wołyń warunkiem akcesji Ukrainy do UE",
+  description: "Kosiniak-Kamysz oświadczył, że bez uznania zbrodni wołyńskiej za ludobójstwo Ukraina nie ma szans na wejście do Unii Europejskiej.",
+  date: "2025-08-26",
+  component: "Articlekosiniakkamyszwolynwarunkiemakcesjiukrainydoue"
+},
+  {
   id: 85,
   link: "/zolnierz-ranny-przy-granicy-z-bialorusia-napieta-sytuacja-w-rejonie-czeremchy",
   img: "/zolnierz-ranny-przy-granicy-z-bialorusia-napieta-sytuacja-w-rejonie-czeremchy.webp",
