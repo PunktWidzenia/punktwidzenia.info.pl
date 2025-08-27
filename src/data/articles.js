@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 87,
+  link: "/wroclaw-walczy-z-komarami-przy-uzyciu-dronow-pierwsze-takie-rozwiazanie-w-polsce",
+  img: "/wroclaw-walczy-z-komarami-przy-uzyciu-dronow-pierwsze-takie-rozwiazanie-w-polsce.webp",
+  title: "🛰️ Wrocław walczy z komarami przy użyciu dronów – pierwsze takie rozwiązanie w Polsce",
+  description: "Wrocław jako pierwsze miasto w Polsce wdrożył drony do walki z komarami. Nowa metoda ma ograniczyć uciążliwe owady w ekologiczny i skuteczny sposób.",
+  date: "2025-08-27",
+  component: "Articlewroclawwalczyzkomaramiprzyuzyciudronowpierwszetakierozwiazaniewpolsce"
+},
+  {
   id: 86,
   link: "/kosiniak-kamysz-wolyn-warunkiem-akcesji-ukrainy-do-ue",
   img: "/kosiniak-kamysz-wolyn-warunkiem-akcesji-ukrainy-do-ue.webp",
