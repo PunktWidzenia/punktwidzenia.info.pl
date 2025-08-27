@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 88,
+  link: "/czy-polacy-sa-gotowi-na-zycie-bez-alkoholu",
+  img: "/czy-polacy-sa-gotowi-na-zycie-bez-alkoholu.webp",
+  title: "🍷 Czy Polacy są gotowi na życie bez alkoholu?",
+  description: "Alkohol to tradycja i jednocześnie problem społeczny. Czy Polska mogłaby funkcjonować całkowicie bez niego?",
+  date: "2025-08-27",
+  component: "Articleczypolacysagotowinazyciebezalkoholu"
+},
+  {
   id: 87,
   link: "/wroclaw-walczy-z-komarami-przy-uzyciu-dronow-pierwsze-takie-rozwiazanie-w-polsce",
   img: "/wroclaw-walczy-z-komarami-przy-uzyciu-dronow-pierwsze-takie-rozwiazanie-w-polsce.webp",
