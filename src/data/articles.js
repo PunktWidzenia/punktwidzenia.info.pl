@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 89,
+  link: "/rosyjski-nalot-na-kijow-ofiary-i-zniszczenia-w-stolicy-ukrainy",
+  img: "/rosyjski-nalot-na-kijow-ofiary-i-zniszczenia-w-stolicy-ukrainy.webp",
+  title: "💥 Rosyjski nalot na Kijów – ofiary i zniszczenia w stolicy Ukrainy",
+  description: "Rosyjski nalot na Kijów – są ofiary i ranni, zniszczone budynki mieszkalne.",
+  date: "2025-08-28",
+  component: "Articlerosyjskinalotnakijowofiaryizniszczeniawstolicyukrainy"
+},
+  {
   id: 88,
   link: "/czy-polacy-sa-gotowi-na-zycie-bez-alkoholu",
   img: "/czy-polacy-sa-gotowi-na-zycie-bez-alkoholu.webp",
