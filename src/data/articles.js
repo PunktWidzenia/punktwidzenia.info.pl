@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 90,
+  link: "/katastrofa-f-16-w-radomiu-air-show-2025-przerwane-po-tragicznym-wypadku",
+  img: "/katastrofa-f-16-w-radomiu-air-show-2025-przerwane-po-tragicznym-wypadku.webp",
+  title: "✈️ Katastrofa F-16 w Radomiu – Air Show 2025 przerwane po tragicznym wypadku",
+  description: "Katastrofa F-16 w Radomiu zakończyła Air Show 2025. Pilot zginął, trwa dochodzenie wojska.",
+  date: "2025-08-29",
+  component: "Articlekatastrofaf16wradomiuairshow2025przerwanepotragicznymwypadku"
+},
+  {
   id: 89,
   link: "/rosyjski-nalot-na-kijow-ofiary-i-zniszczenia-w-stolicy-ukrainy",
   img: "/rosyjski-nalot-na-kijow-ofiary-i-zniszczenia-w-stolicy-ukrainy.webp",
