@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 91,
+  link: "/polska-kupuje-rekordowe-ilosci-zlota-swiatowy-lider-w-2025-roku",
+  img: "/polska-kupuje-rekordowe-ilosci-zlota-swiatowy-lider-w-2025-roku.webp",
+  title: "🪙 Polska kupuje rekordowe ilości złota – światowy lider w 2025 roku",
+  description: "Polska w pierwszym kwartale 2025 roku zakupiła najwięcej złota na świecie – 48,6 ton. To element strategii wzmocnienia rezerw i bezpieczeństwa finansowego.",
+  date: "2025-08-30",
+  component: "Articlepolskakupujerekordoweiloscizlotaswiatowyliderw2025roku"
+},
+  {
   id: 90,
   link: "/katastrofa-f-16-w-radomiu-air-show-2025-przerwane-po-tragicznym-wypadku",
   img: "/katastrofa-f-16-w-radomiu-air-show-2025-przerwane-po-tragicznym-wypadku.webp",
