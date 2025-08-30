@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 92,
+  link: "/status-uchodzcow-z-ukrainy-w-polsce-pod-znakiem-zapytania",
+  img: "/status-uchodzcow-z-ukrainy-w-polsce-pod-znakiem-zapytania.webp",
+  title: "🛑 Status uchodźców z Ukrainy w Polsce pod znakiem zapytania",
+  description: "Prezydent zablokował ustawę o ochronie dla Ukraińców. Przyszłość uchodźców w Polsce pozostaje niepewna.",
+  date: "2025-08-30",
+  component: "Articlestatusuchodzcowzukrainywpolscepodznakiemzapytania"
+},
+  {
   id: 91,
   link: "/polska-kupuje-rekordowe-ilosci-zlota-swiatowy-lider-w-2025-roku",
   img: "/polska-kupuje-rekordowe-ilosci-zlota-swiatowy-lider-w-2025-roku.webp",
