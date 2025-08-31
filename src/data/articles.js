@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 94,
+  link: "/ue-dziekuje-polsce-za-ochrone-wschodniej-granicy",
+  img: "/ue-dziekuje-polsce-za-ochrone-wschodniej-granicy.webp",
+  title: "🛡️ UE dziękuje Polsce za ochronę wschodniej granicy",
+  description: "Szefowa Komisji Europejskiej odwiedziła polsko-białoruską granicę i podkreśliła rolę Polski w ochronie całej Europy przed presją ze strony Rosji i Białorusi.",
+  date: "2025-08-31",
+  component: "Articleuedziekujepolscezaochronewschodniejgranicy"
+},
+  {
   id: 93,
   link: "/czy-dzis-jest-niedziela-handlowa-sprawdz-31-sierpnia-2025",
   img: "/czy-dzis-jest-niedziela-handlowa-sprawdz-31-sierpnia-2025.webp",
