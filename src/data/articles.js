@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 93,
+  link: "/czy-dzis-jest-niedziela-handlowa-sprawdz-31-sierpnia-2025",
+  img: "/czy-dzis-jest-niedziela-handlowa-sprawdz-31-sierpnia-2025.webp",
+  title: "🛒 Czy dziś jest niedziela handlowa? Sprawdź 31 sierpnia 2025",
+  description: "31 sierpnia 2025 przypada niedziela handlowa. Sklepy, galerie i markety są dziś otwarte — to ostatnia taka okazja przed grudniem.",
+  date: "2025-08-31",
+  component: "Articleczydzisjestniedzielahandlowasprawdz31sierpnia2025"
+},
+  {
   id: 92,
   link: "/status-uchodzcow-z-ukrainy-w-polsce-pod-znakiem-zapytania",
   img: "/status-uchodzcow-z-ukrainy-w-polsce-pod-znakiem-zapytania.webp",
