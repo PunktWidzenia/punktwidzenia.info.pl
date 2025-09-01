@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 95,
+  link: "/krwawy-ksiezyc-juz-7-wrzesnia-jedno-z-najdluzszych-zacmien-w-ostatnich-latach",
+  img: "/krwawy-ksiezyc-juz-7-wrzesnia-jedno-z-najdluzszych-zacmien-w-ostatnich-latach.webp",
+  title: "🌕 „Krwawy księżyc” już 7 września – jedno z najdłuższych zaćmień w ostatnich latach",
+  description: "7 września 2025 r. zobaczymy całkowite zaćmienie Księżyca zwane „krwawym księżycem”. Zjawisko potrwa ponad 80 minut i będzie widoczne na dużych obszarach świata",
+  date: "2025-09-01",
+  component: "Articlekrwawyksiezycjuz7wrzesniajednoznajdluzszychzacmienwostatnichlatach"
+},
+  {
   id: 94,
   link: "/ue-dziekuje-polsce-za-ochrone-wschodniej-granicy",
   img: "/ue-dziekuje-polsce-za-ochrone-wschodniej-granicy.webp",
