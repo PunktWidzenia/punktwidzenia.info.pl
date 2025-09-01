@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 96,
+  link: "/prezydent-polski-zada-reparacji-od-niemiec-w-rocznice-wybuchu-ii-wojny-swiatowej",
+  img: "/prezydent-polski-zada-reparacji-od-niemiec-w-rocznice-wybuchu-ii-wojny-swiatowej.webp",
+  title: "🇵🇱 Prezydent Polski żąda reparacji od Niemiec w rocznicę wybuchu II wojny światowej",
+  description: "Prezydent Karol Nawrocki zaapelował o reparacje wojenne od Niemiec w 86. rocznicę wybuchu II wojny światowej.",
+  date: "2025-09-01",
+  component: "Articleprezydentpolskizadareparacjiodniemiecwrocznicewybuchuiiwojnyswiatowej"
+},
+  {
   id: 95,
   link: "/krwawy-ksiezyc-juz-7-wrzesnia-jedno-z-najdluzszych-zacmien-w-ostatnich-latach",
   img: "/krwawy-ksiezyc-juz-7-wrzesnia-jedno-z-najdluzszych-zacmien-w-ostatnich-latach.webp",
