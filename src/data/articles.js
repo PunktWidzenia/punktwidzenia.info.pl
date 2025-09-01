@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 97,
+  link: "/tragiczne-trzesienie-ziemi-w-afganistanie-setki-ofiar-i-tysiace-rannych",
+  img: "/tragiczne-trzesienie-ziemi-w-afganistanie-setki-ofiar-i-tysiace-rannych.webp",
+  title: "🌍 Tragiczne trzęsienie ziemi w Afganistanie – setki ofiar i tysiące rannych",
+  description: "Silne trzęsienie ziemi we wschodnim Afganistanie spowodowało około 800 ofiar śmiertelnych i 2 500 rannych. Trwają akcje ratunkowe wśród gruzów domów i meczetów.",
+  date: "2025-09-01",
+  component: "Articletragicznetrzesienieziemiwafganistaniesetkiofiaritysiacerannych"
+},
+  {
   id: 96,
   link: "/prezydent-polski-zada-reparacji-od-niemiec-w-rocznice-wybuchu-ii-wojny-swiatowej",
   img: "/prezydent-polski-zada-reparacji-od-niemiec-w-rocznice-wybuchu-ii-wojny-swiatowej.webp",
