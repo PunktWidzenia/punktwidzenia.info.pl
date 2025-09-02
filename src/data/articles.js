@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 98,
+  link: "/polska-stawia-na-energetyke-wiatrowa-na-baltyku-miliardowe-inwestycje-i-ambitne-cele",
+  img: "/polska-stawia-na-energetyke-wiatrowa-na-baltyku-miliardowe-inwestycje-i-ambitne-cele.webp",
+  title: "🌊 Polska stawia na energetykę wiatrową na Bałtyku – miliardowe inwestycje i ambitne cele",
+  description: "Polska inwestuje w morską energetykę wiatrową. Projekt Baltic Power i kolejne farmy mają dać nawet 18 GW mocy do 2040 roku.",
+  date: "2025-09-02",
+  component: "Articlepolskastawianaenergetykewiatrowanabaltykumiliardoweinwestycjeiambitnecele"
+},
+  {
   id: 97,
   link: "/tragiczne-trzesienie-ziemi-w-afganistanie-setki-ofiar-i-tysiace-rannych",
   img: "/tragiczne-trzesienie-ziemi-w-afganistanie-setki-ofiar-i-tysiace-rannych.webp",
