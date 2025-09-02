@@ -32,7 +32,7 @@ function Articlepolskazbozemstoistabilnezbioryalewyzwaniarosna() {
 
         <div className="space-y-6">
             <h2 className="text-xl font-semibold">📊 Prognozy KE – bez rewolucji, ale też bez dramatu</h2>
-            <p>Komisja Europejska ogłosiła, że tegoroczne zbiory zbóż w Polsce osiągną poziom około 35 mln ton. To wynik zbliżony do średniej z ostatnich lat. Wiodące uprawy to pszenica, kukurydza, jęczmień i żyto. Rolnicy mówią o "normalnym roku", ale sytuacja na rynku daleka jest od stabilnej.</p>
+            <p>Komisja Europejska ogłosiła, że tegoroczne zbiory zbóż w Polsce osiągną poziom około 35 mln ton. To wynik zbliżony do średniej z ostatnich lat. Wiodące uprawy to pszenica, kukurydza, jęczmień i żyto. Rolnicy mówią o &quot;normalnym roku&quot;, ale sytuacja na rynku daleka jest od stabilnej.</p>
 
             <h2 className="text-xl font-semibold">🌍 Polska wśród liderów unijnych</h2>
             <p>Polska pozostaje jednym z największych producentów zbóż w Unii Europejskiej — czwarte miejsce po Francji, Niemczech i Rumunii. Część zbiorów trafia na eksport, zwłaszcza do Niemiec, krajów Maghrebu i Bliskiego Wschodu. Jednak konkurencja rośnie, a polscy rolnicy często narzekają na nieregularne ceny skupu i brak wsparcia logistycznego.</p>
