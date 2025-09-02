@@ -90,6 +90,7 @@ export default function ArticleGenerator() {
   const previewBtnRef = useRef(null);
   const lastActiveRef = useRef(null);
   const downloadUrlRef = useRef(null);
+  const sectionRefs = useRef([]);
 
   const baseFileName = useMemo(() => {
     const s = String(title || "")
@@ -335,6 +336,21 @@ export default ${componentName};
     setArticleObjectCode(objectCode);
   }, [title, date, isoDate, description, caption, sections, articleId]);
 
+    function addSection() {
+  setSections((prev) => {
+    const next = [...prev, { heading: "", paragraph: "" }];
+    // Po dodaniu — fokus na nowy nagłówek
+    const newIndex = next.length - 1;
+    // odroczone, aby DOM zdążył się zrenderować
+    setTimeout(() => {
+      sectionRefs.current?.[newIndex]?.focus?.();
+      // przewiń do nowej sekcji
+      sectionRefs.current?.[newIndex]?.scrollIntoView?.({ behavior: "smooth", block: "center" });
+    }, 0);
+    return next;
+  });
+}
+
   // CZYSZCZENIE formularza – tylko istniejące stany
   const clearForm = () => {
     if (masterUrl && masterUrl.startsWith("blob:")) URL.revokeObjectURL(masterUrl);
@@ -569,32 +585,45 @@ async function saveViaApi() {
 
       <div className="space-y-4">
         {sections.map((section, index) => (
-          <div key={index} className="space-y-2">
-            <input
-              type="text"
-              placeholder={`Nagłówek sekcji ${index + 1}`}
-              value={section.heading}
-              onChange={(e) => {
-                const newSections = [...sections];
-                newSections[index].heading = e.target.value;
-                setSections(newSections);
-              }}
-              className="border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white"
-            />
-            <textarea
-              placeholder={`Treść sekcji ${index + 1}`}
-              value={section.paragraph}
-              onChange={(e) => {
-                const newSections = [...sections];
-                newSections[index].paragraph = e.target.value;
-                setSections(newSections);
-              }}
-              className="border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white"
-              rows={4}
-            />
-          </div>
-        ))}
+  <div key={index} className="space-y-2">
+    <input
+      type="text"
+      placeholder={`Nagłówek sekcji ${index + 1}`}
+      value={section.heading}
+      onChange={(e) => {
+        const newSections = [...sections];
+        newSections[index].heading = e.target.value;
+        setSections(newSections);
+      }}
+      ref={(el) => { sectionRefs.current[index] = el; }}   // ← DODANE
+      className="border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white"
+    />
+    <textarea
+      placeholder={`Treść sekcji ${index + 1}`}
+      value={section.paragraph}
+      onChange={(e) => {
+        const newSections = [...sections];
+        newSections[index].paragraph = e.target.value;
+        setSections(newSections);
+      }}
+      className="border p-2 rounded w-full bg-white text-black dark:bg-gray-800 dark:text-white"
+      rows={4}
+    />
+  </div>
+))}
       </div>
+
+<div>
+  <button
+    type="button"
+    onClick={addSection}
+    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+    aria-label="Dodaj jedną sekcję artykułu"
+    title="Dodaj 1 sekcję"
+  >
+    ➕ Dodaj 1 sekcję
+  </button>
+</div>
 
       <div className="flex gap-4 flex-wrap">
       <button

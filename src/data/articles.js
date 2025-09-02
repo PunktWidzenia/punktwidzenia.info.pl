@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 99,
+  link: "/polska-zbozem-stoi-stabilne-zbiory-ale-wyzwania-rosna",
+  img: "/polska-zbozem-stoi-stabilne-zbiory-ale-wyzwania-rosna.webp",
+  title: "🌾 Polska zbożem stoi – stabilne zbiory, ale wyzwania rosną",
+  description: "Komisja Europejska szacuje, że Polska zbierze ok. 35 mln ton zbóż w 2025 roku. To wynik zbliżony do średniej, ale rynek nadal pozostaje niestabilny.",
+  date: "2025-09-02",
+  component: "Articlepolskazbozemstoistabilnezbioryalewyzwaniarosna"
+},
+  {
   id: 98,
   link: "/polska-stawia-na-energetyke-wiatrowa-na-baltyku-miliardowe-inwestycje-i-ambitne-cele",
   img: "/polska-stawia-na-energetyke-wiatrowa-na-baltyku-miliardowe-inwestycje-i-ambitne-cele.webp",
