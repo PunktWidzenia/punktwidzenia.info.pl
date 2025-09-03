@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 101,
+  link: "/orlen-sprzedaje-polska-press-koniec-eksperymentu-z-panstwowym-wlascicielem-mediow",
+  img: "/orlen-sprzedaje-polska-press-koniec-eksperymentu-z-panstwowym-wlascicielem-mediow.webp",
+  title: "📰 Orlen sprzedaje Polska Press – koniec eksperymentu z państwowym właścicielem mediów?",
+  description: "Orlen przygotowuje się do sprzedaży Polska Press – medialnej grupy przejętej w czasach rządu PiS. To symboliczny ruch na rynku informacji i wolności słowa.",
+  date: "2025-09-03",
+  component: "Articleorlensprzedajepolskapresskonieceksperymentuzpanstwowymwlascicielemmediow"
+},
+  {
   id: 100,
   link: "/ai-w-lodowce-i-na-biurku-przyszlosc-wlasnie-sie-zaczela",
   img: "/ai-w-lodowce-i-na-biurku-przyszlosc-wlasnie-sie-zaczela.webp",
