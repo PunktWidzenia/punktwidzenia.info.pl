@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 100,
+  link: "/ai-w-lodowce-i-na-biurku-przyszlosc-wlasnie-sie-zaczela",
+  img: "/ai-w-lodowce-i-na-biurku-przyszlosc-wlasnie-sie-zaczela.webp",
+  title: "🤖 AI w lodówce i na biurku — przyszłość właśnie się zaczęła",
+  description: "Czy Twoja lodówka wie, co lubisz jeść? AI w sprzęcie domowym i biurowym to już nie przyszłość. To standard, który działa tu i teraz.",
+  date: "2025-09-03",
+  component: "Articleaiwlodowceinabiurkuprzyszloscwlasniesiezaczela"
+},
+  {
   id: 99,
   link: "/polska-zbozem-stoi-stabilne-zbiory-ale-wyzwania-rosna",
   img: "/polska-zbozem-stoi-stabilne-zbiory-ale-wyzwania-rosna.webp",
