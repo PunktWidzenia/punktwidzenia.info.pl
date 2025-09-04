@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 102,
+  link: "/tragiczny-wypadek-w-lizbonie-zderzenie-tramwaju-z-samochodem-sa-ofiary-smiertelne",
+  img: "/tragiczny-wypadek-w-lizbonie-zderzenie-tramwaju-z-samochodem-sa-ofiary-smiertelne.webp",
+  title: "🚋 Tragiczny wypadek w Lizbonie – zderzenie tramwaju z samochodem, są ofiary śmiertelne",
+  description: "Co najmniej 15 ofiar śmiertelnych po zderzeniu tramwaju z samochodem w Lizbonie. Władze ogłosiły żałobę, trwa dochodzenie w sprawie przyczyn.",
+  date: "2025-09-04",
+  component: "Articletragicznywypadekwlizboniezderzenietramwajuzsamochodemsaofiarysmiertelne"
+},
+  {
   id: 101,
   link: "/orlen-sprzedaje-polska-press-koniec-eksperymentu-z-panstwowym-wlascicielem-mediow",
   img: "/orlen-sprzedaje-polska-press-koniec-eksperymentu-z-panstwowym-wlascicielem-mediow.webp",
