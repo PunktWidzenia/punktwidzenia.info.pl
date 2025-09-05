@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 104,
+  link: "/polak-zatrzymany-na-bialorusi-pod-zarzutem-szpiegostwa",
+  img: "/polak-zatrzymany-na-bialorusi-pod-zarzutem-szpiegostwa.webp",
+  title: "🚨 Polak zatrzymany na Białorusi pod zarzutem szpiegostwa",
+  description: "Białoruś zatrzymała Polaka, oskarżając go o szpiegostwo na rzecz Zachodu.",
+  date: "2025-09-05",
+  component: "Articlepolakzatrzymanynabialorusipodzarzutemszpiegostwa"
+},
+  {
   id: 103,
   link: "/polska-jasno-stawia-granice-wsparcie-dla-ukrainy-tak-ale-bez-polskich-zolnierzy",
   img: "/polska-jasno-stawia-granice-wsparcie-dla-ukrainy-tak-ale-bez-polskich-zolnierzy.webp",
