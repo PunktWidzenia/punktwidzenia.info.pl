@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 103,
+  link: "/polska-jasno-stawia-granice-wsparcie-dla-ukrainy-tak-ale-bez-polskich-zolnierzy",
+  img: "/polska-jasno-stawia-granice-wsparcie-dla-ukrainy-tak-ale-bez-polskich-zolnierzy.webp",
+  title: "🇵🇱 Polska jasno stawia granice: wsparcie dla Ukrainy tak, ale bez polskich żołnierzy",
+  description: "Polska wspiera Ukrainę politycznie i militarnie, ale premier Tusk wykluczył wysłanie polskich żołnierzy do misji gwarancyjnych.",
+  date: "2025-09-05",
+  component: "Articlepolskajasnostawiagranicewsparciedlaukrainytakalebezpolskichzolnierzy"
+},
+  {
   id: 102,
   link: "/tragiczny-wypadek-w-lizbonie-zderzenie-tramwaju-z-samochodem-sa-ofiary-smiertelne",
   img: "/tragiczny-wypadek-w-lizbonie-zderzenie-tramwaju-z-samochodem-sa-ofiary-smiertelne.webp",
