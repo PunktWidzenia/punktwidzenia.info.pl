@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 106,
+  link: "/polska-stawia-na-wlasny-przemysl-amunicji",
+  img: "/polska-stawia-na-wlasny-przemysl-amunicji.webp",
+  title: "💥 Polska stawia na własny przemysł amunicji",
+  description: "Polska inwestuje 2,4 mld zł w budowę dwóch fabryk amunicji, aby uniezależnić się od importu i wzmocnić swoją pozycję w Europie.",
+  date: "2025-09-06",
+  component: "Articlepolskastawianawlasnyprzemyslamunicji"
+},
+  {
   id: 105,
   link: "/coraz-wieksze-zmeczenie-wojna-na-ukrainie",
   img: "/coraz-wieksze-zmeczenie-wojna-na-ukrainie.webp",
