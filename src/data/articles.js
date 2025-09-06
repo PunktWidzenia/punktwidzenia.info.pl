@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 105,
+  link: "/coraz-wieksze-zmeczenie-wojna-na-ukrainie",
+  img: "/coraz-wieksze-zmeczenie-wojna-na-ukrainie.webp",
+  title: "😮‍💨 Coraz większe zmęczenie wojną na Ukrainie",
+  description: "Donald Trump stwierdził, że świat odczuwa rosnące zmęczenie konfliktem w Ukrainie, a Rosja mimo propagandy staje się globalnym przegranym.",
+  date: "2025-09-06",
+  component: "Articlecorazwiekszezmeczeniewojnanaukrainie"
+},
+  {
   id: 104,
   link: "/polak-zatrzymany-na-bialorusi-pod-zarzutem-szpiegostwa",
   img: "/polak-zatrzymany-na-bialorusi-pod-zarzutem-szpiegostwa.webp",
