@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 107,
+  link: "/fitch-obniza-prognoze-dla-polski-negatywne-perspektywy-finansow-publicznych",
+  img: "/fitch-obniza-prognoze-dla-polski-negatywne-perspektywy-finansow-publicznych.webp",
+  title: "📉 Fitch obniża prognozę dla Polski – „negatywne” perspektywy finansów publicznych",
+  description: "Agencja Fitch obniżyła rating Polski z „stabilnego” na „negatywny”, wskazując na rosnące zadłużenie i ryzyko dla finansów publicznych.",
+  date: "2025-09-06",
+  component: "Articlefitchobnizaprognozedlapolskinegatywneperspektywyfinansowpublicznych"
+},
+  {
   id: 106,
   link: "/polska-stawia-na-wlasny-przemysl-amunicji",
   img: "/polska-stawia-na-wlasny-przemysl-amunicji.webp",
