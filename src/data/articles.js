@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 110,
+  link: "/pierwsza-milenialska-swieta-kosciola-katolickiego",
+  img: "/pierwsza-milenialska-swieta-kosciola-katolickiego.webp",
+  title: "🙏 Pierwsza milenialska święta Kościoła katolickiego",
+  description: "W Watykanie ogłoszono świętą nastolatkę z pokolenia milenialsów, która zmarła w 2006 roku na białaczkę. To historyczna decyzja Kościoła katolickiego.",
+  date: "2025-09-07",
+  component: "Articlepierwszamilenialskaswietakosciolakatolickiego"
+},
+  {
   id: 109,
   link: "/opec-zapowiada-wolniejsze-zwiekszanie-wydobycia-ropy",
   img: "/opec-zapowiada-wolniejsze-zwiekszanie-wydobycia-ropy.webp",
