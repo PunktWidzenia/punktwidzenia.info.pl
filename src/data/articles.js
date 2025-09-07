@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 108,
+  link: "/tragiczny-rosyjski-atak-na-kijow-wsrod-ofiar-niemowle",
+  img: "/tragiczny-rosyjski-atak-na-kijow-wsrod-ofiar-niemowle.webp",
+  title: "💥 Tragiczny rosyjski atak na Kijów – wśród ofiar niemowlę",
+  description: "Rosyjski atak rakietowy na Kijów spowodował śmierć trzech osób, w tym dziecka. Kilkanaście osób zostało rannych, a budynki stanęły w ogniu.",
+  date: "2025-09-07",
+  component: "Articletragicznyrosyjskiataknakijowwsrodofiarniemowle"
+},
+  {
   id: 107,
   link: "/fitch-obniza-prognoze-dla-polski-negatywne-perspektywy-finansow-publicznych",
   img: "/fitch-obniza-prognoze-dla-polski-negatywne-perspektywy-finansow-publicznych.webp",
