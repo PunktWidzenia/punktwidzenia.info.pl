@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 109,
+  link: "/opec-zapowiada-wolniejsze-zwiekszanie-wydobycia-ropy",
+  img: "/opec-zapowiada-wolniejsze-zwiekszanie-wydobycia-ropy.webp",
+  title: "🛢️ OPEC+ zapowiada wolniejsze zwiększanie wydobycia ropy",
+  description: "OPEC+ ogłosił, że od października podniesie wydobycie ropy, ale w wolniejszym tempie. Ceny pozostają pod presją sankcji na Rosję i Iran.",
+  date: "2025-09-07",
+  component: "Articleopeczapowiadawolniejszezwiekszaniewydobyciaropy"
+},
+  {
   id: 108,
   link: "/tragiczny-rosyjski-atak-na-kijow-wsrod-ofiar-niemowle",
   img: "/tragiczny-rosyjski-atak-na-kijow-wsrod-ofiar-niemowle.webp",
