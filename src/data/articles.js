@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 112,
+  link: "/przyszlosc-motoryzacji-pokazana-w-monachium-elektryki-na-kazda-kieszen",
+  img: "/przyszlosc-motoryzacji-pokazana-w-monachium-elektryki-na-kazda-kieszen.webp",
+  title: "🚗 Przyszłość motoryzacji pokazana w Monachium – elektryki na każdą kieszeń",
+  description: "Na salonie w Monachium zaprezentowano nowe auta elektryczne, w tym tańsze modele dla europejskich kierowców.",
+  date: "2025-09-08",
+  component: "Articleprzyszloscmotoryzacjipokazanawmonachiumelektrykinakazdakieszen"
+},
+  {
   id: 111,
   link: "/polska-stawia-na-innowacje-obronne-razem-z-korea",
   img: "/polska-stawia-na-innowacje-obronne-razem-z-korea.webp",
