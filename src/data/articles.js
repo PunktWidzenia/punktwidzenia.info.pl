@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 111,
+  link: "/polska-stawia-na-innowacje-obronne-razem-z-korea",
+  img: "/polska-stawia-na-innowacje-obronne-razem-z-korea.webp",
+  title: "🤖 Polska stawia na innowacje obronne razem z Koreą",
+  description: "Polska i Korea Południowa rozwijają wspólne projekty obronne, wykorzystując sztuczną inteligencję i technologie podwójnego zastosowania (dual-use).",
+  date: "2025-09-08",
+  component: "Articlepolskastawianainnowacjeobronnerazemzkorea"
+},
+  {
   id: 110,
   link: "/pierwsza-milenialska-swieta-kosciola-katolickiego",
   img: "/pierwsza-milenialska-swieta-kosciola-katolickiego.webp",
