@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 114,
+  link: "/izrael-ostrzega-przed-poteznym-uderzeniem-w-gaze",
+  img: "/izrael-ostrzega-przed-poteznym-uderzeniem-w-gaze.webp",
+  title: "💥 Izrael ostrzega przed „potężnym uderzeniem” w Gazę",
+  description: "Izrael zagroził Hamasowi „huraganem” bombardowań i operacji lądowych, jeśli bojownicy nie uwolnią zakładników i nie złożą broni.",
+  date: "2025-09-09",
+  component: "Articleizraelostrzegaprzedpoteznymuderzeniemwgaze"
+},
+  {
   id: 113,
   link: "/dolar-traci-na-wartosci-rynki-oczekuja-ciec-stop-w-usa",
   img: "/dolar-traci-na-wartosci-rynki-oczekuja-ciec-stop-w-usa.webp",
