@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 113,
+  link: "/dolar-traci-na-wartosci-rynki-oczekuja-ciec-stop-w-usa",
+  img: "/dolar-traci-na-wartosci-rynki-oczekuja-ciec-stop-w-usa.webp",
+  title: "💵 Dolar traci na wartości – rynki oczekują cięć stóp w USA",
+  description: "Indeks dolara spadł do najniższego poziomu od siedmiu tygodni. Inwestorzy spodziewają się, że Fed obniży stopy procentowe, by wesprzeć gospodarkę.",
+  date: "2025-09-09",
+  component: "Articledolartracinawartoscirynkioczekujaciecstopwusa"
+},
+  {
   id: 112,
   link: "/przyszlosc-motoryzacji-pokazana-w-monachium-elektryki-na-kazda-kieszen",
   img: "/przyszlosc-motoryzacji-pokazana-w-monachium-elektryki-na-kazda-kieszen.webp",
