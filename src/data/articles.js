@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 115,
+  link: "/uzaleznienie-od-smartfonow-jak-rozpoznac-i-przeciwdzialac",
+  img: "/uzaleznienie-od-smartfonow-jak-rozpoznac-i-przeciwdzialac.webp",
+  title: "📱 Uzależnienie od smartfonów – jak rozpoznać i przeciwdziałać",
+  description: "Jak rozpoznać uzależnienie od smartfona i co zrobić, by ograniczyć czas spędzany przed ekranem?",
+  date: "2025-09-09",
+  component: "Articleuzaleznienieodsmartfonowjakrozpoznaciprzeciwdzialac"
+},
+  {
   id: 114,
   link: "/izrael-ostrzega-przed-poteznym-uderzeniem-w-gaze",
   img: "/izrael-ostrzega-przed-poteznym-uderzeniem-w-gaze.webp",
