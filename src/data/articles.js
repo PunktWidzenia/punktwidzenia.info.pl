@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 117,
+  link: "/polska-zestrzelila-rosyjskie-drony-najpowazniejsza-eskalacja-od-ii-wojny-swiatowej",
+  img: "/polska-zestrzelila-rosyjskie-drony-najpowazniejsza-eskalacja-od-ii-wojny-swiatowej.webp",
+  title: "🛡️ Polska zestrzeliła rosyjskie drony – najpoważniejsza eskalacja od II wojny światowej",
+  description: "Polska zestrzeliła rosyjskie drony naruszające przestrzeń powietrzną. Premier Tusk ostrzega przed ryzykiem otwartego konfliktu.",
+  date: "2025-09-10",
+  component: "Articlepolskazestrzelilarosyjskiedronynajpowazniejszaeskalacjaodiiwojnyswiatowej"
+},
+  {
   id: 116,
   link: "/francja-w-kryzysie-politycznym-trzeci-premier-w-ciagu-roku",
   img: "/francja-w-kryzysie-politycznym-trzeci-premier-w-ciagu-roku.webp",
