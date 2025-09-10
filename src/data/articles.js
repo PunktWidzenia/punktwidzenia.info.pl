@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 116,
+  link: "/francja-w-kryzysie-politycznym-trzeci-premier-w-ciagu-roku",
+  img: "/francja-w-kryzysie-politycznym-trzeci-premier-w-ciagu-roku.webp",
+  title: "🇫🇷 Francja w kryzysie politycznym – trzeci premier w ciągu roku",
+  description: "Premier François Bayrou podał się do dymisji po utracie wotum zaufania. To już trzeci premier Francji w ciągu roku, co pogłębia polityczną niestabilność kraju.",
+  date: "2025-09-10",
+  component: "Articlefrancjawkryzysiepolitycznymtrzecipremierwciaguroku"
+},
+  {
   id: 115,
   link: "/uzaleznienie-od-smartfonow-jak-rozpoznac-i-przeciwdzialac",
   img: "/uzaleznienie-od-smartfonow-jak-rozpoznac-i-przeciwdzialac.webp",
