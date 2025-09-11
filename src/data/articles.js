@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 119,
+  link: "/rosyjskie-drony-nad-polska-zagrozeniem-dla-lotnictwa-cywilnego",
+  img: "/rosyjskie-drony-nad-polska-zagrozeniem-dla-lotnictwa-cywilnego.webp",
+  title: "✈️ Rosyjskie drony nad Polską zagrożeniem dla lotnictwa cywilnego",
+  description: "Naruszenia polskiej przestrzeni powietrznej przez rosyjskie drony budzą obawy o bezpieczeństwo lotnictwa cywilnego w Europie.",
+  date: "2025-09-11",
+  component: "Articlerosyjskiedronynadpolskazagrozeniemdlalotnictwacywilnego"
+},
+  {
   id: 118,
   link: "/ogolnokrajowa-awaria-pradu-na-kubie-miliony-bez-dostepu-do-energii",
   img: "/ogolnokrajowa-awaria-pradu-na-kubie-miliony-bez-dostepu-do-energii.webp",
