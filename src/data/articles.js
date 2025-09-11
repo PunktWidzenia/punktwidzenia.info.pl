@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 118,
+  link: "/ogolnokrajowa-awaria-pradu-na-kubie-miliony-bez-dostepu-do-energii",
+  img: "/ogolnokrajowa-awaria-pradu-na-kubie-miliony-bez-dostepu-do-energii.webp",
+  title: "⚡ Ogólnokrajowa awaria prądu na Kubie – miliony bez dostępu do energii",
+  description: "Kuba zmaga się z masową awarią energetyczną. Miliony mieszkańców zostało bez prądu, a w wielu miejscach sieć przywracana jest bardzo powoli.",
+  date: "2025-09-11",
+  component: "Articleogolnokrajowaawariapradunakubiemilionybezdostepudoenergii"
+},
+  {
   id: 117,
   link: "/polska-zestrzelila-rosyjskie-drony-najpowazniejsza-eskalacja-od-ii-wojny-swiatowej",
   img: "/polska-zestrzelila-rosyjskie-drony-najpowazniejsza-eskalacja-od-ii-wojny-swiatowej.webp",
