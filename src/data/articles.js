@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 120,
+  link: "/wroclaw-wprowadza-nocna-prohibicje-alkohol-tylko-do-2200",
+  img: "/wroclaw-wprowadza-nocna-prohibicje-alkohol-tylko-do-2200.webp",
+  title: "🛑 Wrocław wprowadza nocną prohibicję – alkohol tylko do 22:00",
+  description: "We Wrocławiu wprowadzono zakaz sprzedaży alkoholu na wynos od 22:00 do 6:00. Decyzja obejmuje całe miasto i ma poprawić bezpieczeństwo nocą.",
+  date: "2025-09-11",
+  component: "Articlewroclawwprowadzanocnaprohibicjealkoholtylkodo2200"
+},
+  {
   id: 119,
   link: "/rosyjskie-drony-nad-polska-zagrozeniem-dla-lotnictwa-cywilnego",
   img: "/rosyjskie-drony-nad-polska-zagrozeniem-dla-lotnictwa-cywilnego.webp",
