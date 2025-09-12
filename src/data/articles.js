@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 123,
+  link: "/rosja-i-bialorus-rozpoczely-manewry-zapad-2025-przy-granicy-nato",
+  img: "/rosja-i-bialorus-rozpoczely-manewry-zapad-2025-przy-granicy-nato.webp",
+  title: "🚨 Rosja i Białoruś rozpoczęły manewry „Zapad-2025” przy granicy NATO",
+  description: "Rosja i Białoruś rozpoczęły manewry „Zapad-2025” blisko granic NATO.",
+  date: "2025-09-12",
+  component: "Articlerosjaibialorusrozpoczelymanewryzapad2025przygranicynato"
+},
+  {
   id: 122,
   link: "/francja-wysyla-mysliwce-rafale-do-ochrony-polski",
   img: "/francja-wysyla-mysliwce-rafale-do-ochrony-polski.webp",
