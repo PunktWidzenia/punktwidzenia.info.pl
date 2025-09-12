@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 122,
+  link: "/francja-wysyla-mysliwce-rafale-do-ochrony-polski",
+  img: "/francja-wysyla-mysliwce-rafale-do-ochrony-polski.webp",
+  title: "✈️ Francja wysyła myśliwce Rafale do ochrony Polski",
+  description: "Francja skierowała trzy myśliwce Rafale do wsparcia obrony polskiej przestrzeni powietrznej po incydentach z rosyjskimi dronami.",
+  date: "2025-09-12",
+  component: "Articlefrancjawysylamysliwcerafaledoochronypolski"
+},
+  {
   id: 121,
   link: "/zloto-czwarty-tydzien-z-rzedu-drozeje-inwestorzy-uciekaja-w-bezpieczne-aktywa",
   img: "/zloto-czwarty-tydzien-z-rzedu-drozeje-inwestorzy-uciekaja-w-bezpieczne-aktywa.webp",
