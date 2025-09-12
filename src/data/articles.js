@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 124,
+  link: "/nato-wzmacnia-wschodnia-flanke-rusza-operacja-eastern-sentry",
+  img: "/nato-wzmacnia-wschodnia-flanke-rusza-operacja-eastern-sentry.webp",
+  title: "🛡️ NATO wzmacnia wschodnią flankę – rusza operacja „Eastern Sentry”",
+  description: "NATO uruchamia operację „Eastern Sentry”, by wzmocnić bezpieczeństwo Polski i krajów bałtyckich po naruszeniu przestrzeni powietrznej przez rosyjskie drony.",
+  date: "2025-09-12",
+  component: "Articlenatowzmacniawschodniaflankeruszaoperacjaeasternsentry"
+},
+  {
   id: 123,
   link: "/rosja-i-bialorus-rozpoczely-manewry-zapad-2025-przy-granicy-nato",
   img: "/rosja-i-bialorus-rozpoczely-manewry-zapad-2025-przy-granicy-nato.webp",
