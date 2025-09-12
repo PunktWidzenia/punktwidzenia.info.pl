@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 121,
+  link: "/zloto-czwarty-tydzien-z-rzedu-drozeje-inwestorzy-uciekaja-w-bezpieczne-aktywa",
+  img: "/zloto-czwarty-tydzien-z-rzedu-drozeje-inwestorzy-uciekaja-w-bezpieczne-aktywa.webp",
+  title: "🪙 Złoto czwarty tydzień z rzędu drożeje – inwestorzy uciekają w bezpieczne aktywa",
+  description: "Ceny złota rosną czwarty tydzień z rzędu. Słabe dane z gospodarki USA i oczekiwania na obniżki stóp procentowych przez Fed zwiększają popyt na ten kruszec.",
+  date: "2025-09-12",
+  component: "Articlezlotoczwartytydzienzrzedudrozejeinwestorzyuciekajawbezpieczneaktywa"
+},
+  {
   id: 120,
   link: "/wroclaw-wprowadza-nocna-prohibicje-alkohol-tylko-do-2200",
   img: "/wroclaw-wprowadza-nocna-prohibicje-alkohol-tylko-do-2200.webp",
