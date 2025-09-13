@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 126,
+  link: "/polacy-masowo-zapisuja-sie-na-szkolenia-wojskowe",
+  img: "/polacy-masowo-zapisuja-sie-na-szkolenia-wojskowe.webp",
+  title: "🪖 Polacy masowo zapisują się na szkolenia wojskowe",
+  description: "Coraz więcej Polaków zgłasza się na szkolenia wojskowe. To efekt obaw przed rosyjską agresją i rosnącego napięcia w regionie.",
+  date: "2025-09-13",
+  component: "Articlepolacymasowozapisujasienaszkoleniawojskowe"
+},
+  {
   id: 125,
   link: "/mlodzi-rezygnuja-z-mediow-spolecznosciowych-wybieraja-ai-jako-towarzyszy",
   img: "/mlodzi-rezygnuja-z-mediow-spolecznosciowych-wybieraja-ai-jako-towarzyszy.webp",
