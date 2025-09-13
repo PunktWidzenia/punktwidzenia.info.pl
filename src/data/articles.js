@@ -1,5 +1,14 @@
 const articles = [
   {
+  id: 125,
+  link: "/mlodzi-rezygnuja-z-mediow-spolecznosciowych-wybieraja-ai-jako-towarzyszy",
+  img: "/mlodzi-rezygnuja-z-mediow-spolecznosciowych-wybieraja-ai-jako-towarzyszy.webp",
+  title: "🤖 Młodzi rezygnują z mediów społecznościowych – wybierają AI jako towarzyszy",
+  description: "Coraz więcej młodych osób porzuca media społecznościowe na rzecz aplikacji AI-towarzyszy.",
+  date: "2025-09-13",
+  component: "Articlemlodzirezygnujazmediowspolecznosciowychwybierajaaijakotowarzyszy"
+},
+  {
   id: 124,
   link: "/nato-wzmacnia-wschodnia-flanke-rusza-operacja-eastern-sentry",
   img: "/nato-wzmacnia-wschodnia-flanke-rusza-operacja-eastern-sentry.webp",
